@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="footerLinks.ascx.cs" Inherits="resellerUserA.Controls.footerLinks" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="footerLinks.ascx.cs" Inherits="resellerAdminA.Controls.footerLinks" %>
 
 		<!--begin::Scrolltop-->
 		<div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">

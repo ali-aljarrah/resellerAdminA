@@ -7,9 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
-namespace resellerUserA.Controls
+namespace resellerAdminA.Controls
 {
+
+
     public partial class footer
     {
     }

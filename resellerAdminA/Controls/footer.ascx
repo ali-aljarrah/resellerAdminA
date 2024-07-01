@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="footer.ascx.cs" Inherits="resellerUserA.Controls.footer" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="footer.ascx.cs" Inherits="resellerAdminA.Controls.footer" %>
 
 <div id="kt_app_footer" class="app-footer">
 							<!--begin::Footer container-->

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace resellerUserA.Controls
+namespace resellerAdminA.Controls
 {
     public partial class menuTop : System.Web.UI.UserControl
     {

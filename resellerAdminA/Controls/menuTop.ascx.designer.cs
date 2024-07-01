@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace resellerUserA.Controls
+namespace resellerAdminA.Controls
 {
 
 

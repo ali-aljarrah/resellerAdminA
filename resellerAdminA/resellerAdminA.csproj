@@ -2176,42 +2176,49 @@
   <ItemGroup>
     <Compile Include="Controls\footer.ascx.cs">
       <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Controls\footer.ascx.designer.cs">
       <DependentUpon>footer.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\footerLinks.ascx.cs">
       <DependentUpon>footerLinks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Controls\footerLinks.ascx.designer.cs">
       <DependentUpon>footerLinks.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\head.ascx.cs">
       <DependentUpon>head.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Controls\head.ascx.designer.cs">
       <DependentUpon>head.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\loader.ascx.cs">
       <DependentUpon>loader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Controls\loader.ascx.designer.cs">
       <DependentUpon>loader.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\menuTop.ascx.cs">
       <DependentUpon>menuTop.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Controls\menuTop.ascx.designer.cs">
       <DependentUpon>menuTop.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\sideBar.ascx.cs">
       <DependentUpon>sideBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Controls\sideBar.ascx.designer.cs">
       <DependentUpon>sideBar.ascx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>

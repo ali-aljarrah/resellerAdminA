@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace resellerUserA
+namespace resellerAdminA
 {
 
 
@@ -21,7 +21,7 @@ namespace resellerUserA
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::resellerUserA.Controls.head head;
+        protected global::resellerAdminA.Controls.head head;
 
         /// <summary>
         /// loader control.
@@ -30,7 +30,7 @@ namespace resellerUserA
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::resellerUserA.Controls.loader loader;
+        protected global::resellerAdminA.Controls.loader loader;
 
         /// <summary>
         /// menuTop1 control.
@@ -39,7 +39,7 @@ namespace resellerUserA
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::resellerUserA.Controls.menuTop menuTop1;
+        protected global::resellerAdminA.Controls.menuTop menuTop1;
 
         /// <summary>
         /// sideBar control.
@@ -48,7 +48,7 @@ namespace resellerUserA
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::resellerUserA.Controls.sideBar sideBar;
+        protected global::resellerAdminA.Controls.sideBar sideBar;
 
         /// <summary>
         /// footer control.
@@ -57,7 +57,7 @@ namespace resellerUserA
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::resellerUserA.Controls.footer footer;
+        protected global::resellerAdminA.Controls.footer footer;
 
         /// <summary>
         /// footerLinks control.
@@ -66,6 +66,6 @@ namespace resellerUserA
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::resellerUserA.Controls.footerLinks footerLinks;
+        protected global::resellerAdminA.Controls.footerLinks footerLinks;
     }
 }

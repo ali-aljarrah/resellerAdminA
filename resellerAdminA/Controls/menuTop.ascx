@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="menuTop.ascx.cs" Inherits="resellerUserA.Controls.menuTop" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="menuTop.ascx.cs" Inherits="resellerAdminA.Controls.menuTop" %>
 
 <div id="kt_app_header" class="app-header d-flex">
 	<!--begin::Header container-->

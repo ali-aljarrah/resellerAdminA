@@ -1,4 +1,5 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="head.ascx.cs" Inherits="resellerUserA.Controls.head" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="head.ascx.cs" Inherits="resellerAdminA.Controls.head" %>
+
 
 <!DOCTYPE html>
 <html lang="en">
