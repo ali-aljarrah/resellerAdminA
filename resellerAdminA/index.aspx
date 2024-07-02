@@ -55,7 +55,7 @@
 												</clipPath>
 												</defs>
 											</svg>
-											<h1 class="fw-bold dark-color ps-5">Hello, Adam Selvich.</h1>
+											<h1 class="fw-bold color-black-1 ps-5">Hello, Adam Selvich.</h1>
 										</div>
 									</div>
 									    <!--end::Row-->
@@ -64,7 +64,7 @@
 										<div class="col-lg-6 d-flex  flex-wrap">
 													<div class="border-1 rounded-1 px-4 py-2 m-2">
 														<a href="#">
-															<span class="dark-color fs-14 pe-2">Bulk SMS</span>
+															<span class="color-black-1 fs-14 pe-2">Bulk SMS</span>
 															<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M5.00003 5.83333C5.00003 6.29167 5.37503 6.66667 5.83337 6.66667H12.1584L4.75837 14.0667C4.68121 14.1438 4.62001 14.2354 4.57826 14.3362C4.53651 14.437 4.51501 14.5451 4.51501 14.6542C4.51501 14.7633 4.53651 14.8713 4.57826 14.9721C4.62001 15.0729 4.68121 15.1645 4.75837 15.2417C4.83552 15.3188 4.92711 15.38 5.02791 15.4218C5.12872 15.4635 5.23676 15.485 5.34587 15.485C5.45497 15.485 5.56301 15.4635 5.66382 15.4218C5.76462 15.38 5.85621 15.3188 5.93337 15.2417L13.3334 7.84167V14.1667C13.3334 14.625 13.7084 15 14.1667 15C14.625 15 15 14.625 15 14.1667V5.83333C15 5.375 14.625 5 14.1667 5H5.83337C5.37503 5 5.00003 5.375 5.00003 5.83333Z" fill="#121212"/>
 															</svg>
@@ -72,7 +72,7 @@
 													</div>
 													<div class="border-1 rounded-1 px-4 py-2 m-2">
 														<a href="#">
-															<span class="dark-color fs-14 pe-2">API</span>
+															<span class="color-black-1 fs-14 pe-2">API</span>
 															<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M5.00003 5.83333C5.00003 6.29167 5.37503 6.66667 5.83337 6.66667H12.1584L4.75837 14.0667C4.68121 14.1438 4.62001 14.2354 4.57826 14.3362C4.53651 14.437 4.51501 14.5451 4.51501 14.6542C4.51501 14.7633 4.53651 14.8713 4.57826 14.9721C4.62001 15.0729 4.68121 15.1645 4.75837 15.2417C4.83552 15.3188 4.92711 15.38 5.02791 15.4218C5.12872 15.4635 5.23676 15.485 5.34587 15.485C5.45497 15.485 5.56301 15.4635 5.66382 15.4218C5.76462 15.38 5.85621 15.3188 5.93337 15.2417L13.3334 7.84167V14.1667C13.3334 14.625 13.7084 15 14.1667 15C14.625 15 15 14.625 15 14.1667V5.83333C15 5.375 14.625 5 14.1667 5H5.83337C5.37503 5 5.00003 5.375 5.00003 5.83333Z" fill="#121212"/>
 															</svg>
@@ -80,7 +80,7 @@
 													</div>
 													<div class="border-1 rounded-1 px-4 py-2 m-2">
 														<a href="#">
-															<span class="dark-color fs-14 pe-2">Files Manager</span>
+															<span class="color-black-1 fs-14 pe-2">Files Manager</span>
 															<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M5.00003 5.83333C5.00003 6.29167 5.37503 6.66667 5.83337 6.66667H12.1584L4.75837 14.0667C4.68121 14.1438 4.62001 14.2354 4.57826 14.3362C4.53651 14.437 4.51501 14.5451 4.51501 14.6542C4.51501 14.7633 4.53651 14.8713 4.57826 14.9721C4.62001 15.0729 4.68121 15.1645 4.75837 15.2417C4.83552 15.3188 4.92711 15.38 5.02791 15.4218C5.12872 15.4635 5.23676 15.485 5.34587 15.485C5.45497 15.485 5.56301 15.4635 5.66382 15.4218C5.76462 15.38 5.85621 15.3188 5.93337 15.2417L13.3334 7.84167V14.1667C13.3334 14.625 13.7084 15 14.1667 15C14.625 15 15 14.625 15 14.1667V5.83333C15 5.375 14.625 5 14.1667 5H5.83337C5.37503 5 5.00003 5.375 5.00003 5.83333Z" fill="#121212"/>
 															</svg>
@@ -88,7 +88,7 @@
 													</div>
 													<div class="border-1 rounded-1 px-4 py-2 m-2">
 														<a href="#">
-															<span class="dark-color fs-14 pe-2">Send Email</span>
+															<span class="color-black-1 fs-14 pe-2">Send Email</span>
 															<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M5.00003 5.83333C5.00003 6.29167 5.37503 6.66667 5.83337 6.66667H12.1584L4.75837 14.0667C4.68121 14.1438 4.62001 14.2354 4.57826 14.3362C4.53651 14.437 4.51501 14.5451 4.51501 14.6542C4.51501 14.7633 4.53651 14.8713 4.57826 14.9721C4.62001 15.0729 4.68121 15.1645 4.75837 15.2417C4.83552 15.3188 4.92711 15.38 5.02791 15.4218C5.12872 15.4635 5.23676 15.485 5.34587 15.485C5.45497 15.485 5.56301 15.4635 5.66382 15.4218C5.76462 15.38 5.85621 15.3188 5.93337 15.2417L13.3334 7.84167V14.1667C13.3334 14.625 13.7084 15 14.1667 15C14.625 15 15 14.625 15 14.1667V5.83333C15 5.375 14.625 5 14.1667 5H5.83337C5.37503 5 5.00003 5.375 5.00003 5.83333Z" fill="#121212"/>
 															</svg>
@@ -143,9 +143,9 @@
 													<div class="card card-flush shadow-xs">
 														<div class="d-flex align-items-start">
 															<div class="flex-stack flex-row-fluid p-4">
-															<span class="dark-color fw-bold fs-12">Last Recharge</span>
+															<span class="color-black-1 fw-bold fs-12">Last Recharge</span>
 																<div class="d-flex py-2">
-																	<span class="dark-color fw-600 fs-25 pe-3">$100k</span>
+																	<span class="color-black-1 fw-600 fs-25 pe-3">$100k</span>
 																 </div>
 																<span class="gray fs-12">since last recharge</span>													
 															</div>
@@ -163,9 +163,9 @@
 													<div class="card card-flush shadow-xs mb-1">
 														<div class="d-flex align-items-start">
 															<div class="flex-stack flex-row-fluid p-4">
-																<span class="dark-color fw-bold fs-12">Credits Used</span>
+																<span class="color-black-1 fw-bold fs-12">Credits Used</span>
 																<div class="d-flex py-2">
-																	<span class="dark-color fw-600 fs-25 pe-3">$500k</span>
+																	<span class="color-black-1 fw-600 fs-25 pe-3">$500k</span>
 																		<svg class="pt-1" width="28" height="29" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 																			<g clip-path="url(#clip0_375_10033)">
 																			<circle cx="10.7499" cy="10" r="6.66667" fill="#50CD89"/>
@@ -196,9 +196,9 @@
 														<div class="d-flex align-items-start">
 															<!--begin::Wrapper-->
 																<div class="flex-stack flex-row-fluid p-4">
-																	<span class="dark-color fw-bold fs-12">Credits Used</span>
+																	<span class="color-black-1 fw-bold fs-12">Credits Used</span>
 																	<div class="d-flex py-2">
-																		<span class="dark-color fw-600 fs-25 pe-3">$400k</span>
+																		<span class="color-black-1 fw-600 fs-25 pe-3">$400k</span>
 																		<svg class="pt-1" width="28" height="29" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 																			<g clip-path="url(#clip0_375_10033)">
 																			<circle cx="10.7499" cy="10" r="6.66667" fill="#50CD89"/>
@@ -235,11 +235,9 @@
 															</h3>
 															<!--end::Title-->
 														</div>
-														<div class="card card-bordered">
 															<div class="card-body">
-																<div id="kt_docs_google_chart_column" style="height: 500px;"></div>
+																<div id="kt_docs_google_chart_column" style="height: 250px;"></div>
 															</div>
-														</div>
 												    </div>
 												</div>
 												<!--end::Col-->
@@ -518,6 +516,22 @@ google.setOnLoadCallback(function () {
         }, 10, 10],
     ]);
 
+	var data = google.visualization.arrayToDataTable([
+         ['Element', 'Density', { role: 'style' }],
+         ['Jan', 10.94, '#E9EDF7'], 
+		 ['Feb', 10.94, '#E9EDF7'],
+		 ['Mar', 32.49, '#bfbff8'],            
+		 ['Apr', 20.30, '#e5e4e2'],
+		 ['May', 10.94, '#E9EDF7'],           
+         ['Jun', 32.49, '#bfbff8'],            
+         ['Jul', 20.30, '#E9EDF7'],
+         ['Aug', 30.45, 'color: #e5e4e2' ],
+		 ['Sep', 20.30, '#E9EDF7'],
+		 ['Oct', 10.94, '#E9EDF7'],           
+         ['Nov', 32.49, '#bfbff8'],            
+         ['Dec', 20.30, '#E9EDF7'],
+      ]);
+
     var options = {
         title: 'Motivation and Energy Level Throughout the Day',
         focusTarget: 'category',
@@ -534,6 +548,8 @@ google.setOnLoadCallback(function () {
         },
         colors: ['#6e4ff5', '#fe3995']
     };
+
+
 
     var chart = new google.visualization.ColumnChart(document.getElementById('kt_docs_google_chart_column'));
     chart.draw(data, options);
