@@ -553,3 +553,7 @@ button.tablinks.active {
     margin-bottom: 1rem;
     margin-left: 10%;
 }
+.border-1.rounded-1.px-4.py-2.m-2:hover {
+    background: #f0f0f06e;
+    box-shadow: var(--bs-box-shadow-xs);
+}
