@@ -237,7 +237,7 @@
 														</div>
 														<div class="card card-bordered">
 															<div class="card-body">
-																<div id="kt_amcharts_1" style="height: 500px;"></div>
+																<div id="kt_docs_google_chart_column" style="height: 500px;"></div>
 															</div>
 														</div>
 												    </div>
@@ -461,132 +461,86 @@
 		</div>
 		<!--end::App-->
 			<uc1:footerLinks runat="server" id="footerLinks" />
+			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+			<script>
+			// GOOGLE CHARTS INIT
+google.load('visualization', '1', {
+    packages: ['corechart', 'bar', 'line']
+});
 
+google.setOnLoadCallback(function () {
+    // COLUMN CHART
+    var data = new google.visualization.DataTable();
+    data.addColumn('timeofday', 'Time of Day');
+    data.addColumn('number', 'Motivation Level');
+    data.addColumn('number', 'Energy Level');
 
-		<script>
-
-		am5.ready(function() {
-
-    // Create root element
-    // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-    var root = am5.Root.new("kt_amcharts_1");
-
-    // Set themes
-    // https://www.amcharts.com/docs/v5/concepts/themes/
-    root.setThemes([
-        am5themes_Animated.new(root)
+    data.addRows([
+        [{
+            v: [8, 0, 0],
+            f: '8 am'
+        }, 1, .25],
+        [{
+            v: [9, 0, 0],
+            f: '9 am'
+        }, 2, .5],
+        [{
+            v: [10, 0, 0],
+            f: '10 am'
+        }, 3, 1],
+        [{
+            v: [11, 0, 0],
+            f: '11 am'
+        }, 4, 2.25],
+        [{
+            v: [12, 0, 0],
+            f: '12 pm'
+        }, 5, 2.25],
+        [{
+            v: [13, 0, 0],
+            f: '1 pm'
+        }, 6, 3],
+        [{
+            v: [14, 0, 0],
+            f: '2 pm'
+        }, 7, 4],
+        [{
+            v: [15, 0, 0],
+            f: '3 pm'
+        }, 8, 5.25],
+        [{
+            v: [16, 0, 0],
+            f: '4 pm'
+        }, 9, 7.5],
+        [{
+            v: [17, 0, 0],
+            f: '5 pm'
+        }, 10, 10],
     ]);
 
-    // Create chart
-    // https://www.amcharts.com/docs/v5/charts/xy-chart/
-    var chart = root.container.children.push(am5xy.XYChart.new(root, {
-        panX: false,
-        panY: false,
-        wheelX: "panX",
-        wheelY: "zoomX",
-        layout: root.verticalLayout
-    }));
+    var options = {
+        title: 'Motivation and Energy Level Throughout the Day',
+        focusTarget: 'category',
+        hAxis: {
+            title: 'Time of Day',
+            format: 'h:mm a',
+            viewWindow: {
+                min: [7, 30, 0],
+                max: [17, 30, 0]
+            },
+        },
+        vAxis: {
+            title: 'Rating (scale of 1-10)'
+        },
+        colors: ['#6e4ff5', '#fe3995']
+    };
 
-    // Add legend
-    // https://www.amcharts.com/docs/v5/charts/xy-chart/legend-xy-series/
-    var legend = chart.children.push(
-        am5.Legend.new(root, {
-            centerX: am5.p50,
-            x: am5.p50
-        })
-    );
+    var chart = new google.visualization.ColumnChart(document.getElementById('kt_docs_google_chart_column'));
+    chart.draw(data, options);
+});
+            </script>
 
-    var data = [30, 40, 40, 90, 90, 70, 15, 30, 25, 60, 40, 5]
-
-    // Create axes
-    // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
-    var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
-        categoryField: "year",
-        renderer: am5xy.AxisRendererX.new(root, {
-            cellStartLocation: 0.1,
-            cellEndLocation: 0.9
-        }),
-        tooltip: am5.Tooltip.new(root, {})
-    }));
-
-    xAxis.data.setAll(data);
-
-    var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
-        renderer: am5xy.AxisRendererY.new(root, {})
-    }));
-
-    // Add series
-    // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
-    function makeSeries(name, fieldName) {
-        var series = chart.series.push(am5xy.ColumnSeries.new(root, {
-            name: name,
-            xAxis: xAxis,
-            yAxis: yAxis,
-            valueYField: fieldName,
-            categoryXField: "year"
-        }));
-
-        series.columns.template.setAll({
-            tooltipText: "{name}, {categoryX}:{valueY}",
-            width: am5.percent(90),
-            tooltipY: 0
-        });
-
-        series.data.setAll(data);
-
-        // Make stuff animate on load
-        // https://www.amcharts.com/docs/v5/concepts/animations/
-        series.appear();
-
-        series.bullets.push(function () {
-            return am5.Bullet.new(root, {
-                locationY: 0,
-                sprite: am5.Label.new(root, {
-                    text: "{valueY}",
-                    fill: root.interfaceColors.get("alternativeText"),
-                    centerY: 0,
-                    centerX: am5.p50,
-                    populateText: true
-                })
-            });
-        });
-
-        legend.data.push(series);
-    }
-
-    makeSeries("Europe", "europe");
-    makeSeries("North America", "namerica");
-    makeSeries("Asia", "asia");
-    makeSeries("Latin America", "lamerica");
-    makeSeries("Middle East", "meast");
-    makeSeries("Africa", "africa");
-
-
-    // Make stuff animate on load
-    // https://www.amcharts.com/docs/v5/concepts/animations/
-    chart.appear(1000, 100);
-
-}); // end am5.ready()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		<script>
             var element = document.getElementById('kt_apexcharts_3');
             var height = parseInt(KTUtil.css(element, 'height'));
             var labelColor = KTUtil.getCssVariableValue('--kt-gray-500');
