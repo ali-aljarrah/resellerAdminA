@@ -517,7 +517,7 @@ google.setOnLoadCallback(function () {
     ]);
 
 	var data = google.visualization.arrayToDataTable([
-         ['Element', 'Density', { role: 'style' }],
+         ['Element', 'SMS', { role: 'style' }],
          ['Jan', 10.94, '#E9EDF7'], 
 		 ['Feb', 10.94, '#E9EDF7'],
 		 ['Mar', 32.49, '#bfbff8'],            
@@ -533,7 +533,7 @@ google.setOnLoadCallback(function () {
       ]);
 
     var options = {
-        title: 'Motivation and Energy Level Throughout the Day',
+       
         focusTarget: 'category',
         hAxis: {
             title: 'Time of Day',
