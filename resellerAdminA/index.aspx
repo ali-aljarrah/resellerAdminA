@@ -235,9 +235,10 @@
 															</h3>
 															<!--end::Title-->
 														</div>
-														
-														<div class="card-body">
-															<div id="kt_apexcharts_5" style="height: 250px;"></div>
+														<div class="card card-bordered">
+															<div class="card-body">
+																<div id="kt_amcharts_1" style="height: 500px;"></div>
+															</div>
 														</div>
 												    </div>
 												</div>
@@ -463,138 +464,128 @@
 
 
 		<script>
-			var element = document.getElementById('kt_apexcharts_5');
-            var height = parseInt(KTUtil.css(element, 'height'));
-            var labelColor = KTUtil.getCssVariableValue('--kt-gray-500');
-            var borderColor = KTUtil.getCssVariableValue('--kt-gray-200');
-            var baseColor = KTUtil.getCssVariableValue('--kt-primary');
-            var baseLightColor = KTUtil.getCssVariableValue('--kt-primary-light');
-            var secondaryColor = KTUtil.getCssVariableValue('--kt-info');
-         //  if (!element) {
-              //  return;
-            //}
-            var options = {
-                series: [{
-                    name: 'Net Profit',
-                    type: 'bar',
-                    stacked: true,
-                    data: [40, 50, 65, 70, 50, 30]
-                }, {
-                    name: 'Revenue',
-                    type: 'bar',
-                    stacked: true,
-                    data: [20, 20, 25, 30, 30, 20]
-                }, {
-                    name: 'Expenses',
-                    type: 'area',
-                    data: [50, 80, 60, 90, 50, 70]
-                }],
-                chart: {
-                    fontFamily: 'inherit',
-                    stacked: true,
-                    height: height,
-                    toolbar: {
-                        show: false
-                    }
-                },
-                plotOptions: {
-                    bar: {
-                        stacked: true,
-                        horizontal: false,
-                        endingShape: 'rounded',
-                        columnWidth: ['12%']
-                    },
-                },
-                legend: {
-                    show: false
-                },
-                dataLabels: {
-                    enabled: false
-                },
-                stroke: {
-                    curve: 'smooth',
-                    show: true,
-                    width: 2,
-                    colors: ['transparent']
-                },
-                xaxis: {
-                    categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
-                    axisBorder: {
-                        show: false,
-                    },
-                    axisTicks: {
-                        show: false
-                    },
-                    labels: {
-                        style: {
-                            colors: labelColor,
-                            fontSize: '12px'
-                        }
-                    }
-                },
-                yaxis: {
-                    max: 120,
-                    labels: {
-                        style: {
-                            colors: labelColor,
-                            fontSize: '12px'
-                        }
-                    }
-                },
-                fill: {
-                    opacity: 1
-                },
-                states: {
-                    normal: {
-                        filter: {
-                            type: 'none',
-                            value: 0
-                        }
-                    },
-                    hover: {
-                        filter: {
-                            type: 'none',
-                            value: 0
-                        }
-                    },
-                    active: {
-                        allowMultipleDataPointsSelection: false,
-                        filter: {
-                            type: 'none',
-                            value: 0
-                        }
-                    }
-                },
-                tooltip: {
-                    style: {
-                        fontSize: '12px'
-                    },
-                    y: {
-                        formatter: function (val) {
-                            return '$' + val + ' thousands'
-                        }
-                    }
-                },
-                colors: [baseColor, secondaryColor, baseLightColor],
-                grid: {
-                    borderColor: borderColor,
-                    strokeDashArray: 4,
-                    yaxis: {
-                        lines: {
-                            show: true
-                        }
-                    },
-                    padding: {
-                        top: 0,
-                        right: 0,
-                        bottom: 0,
-                        left: 0
-                    }
-                }
-            };
 
-            var chart = new ApexCharts(element, options);
-            chart.render();
+		am5.ready(function() {
+
+    // Create root element
+    // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+    var root = am5.Root.new("kt_amcharts_1");
+
+    // Set themes
+    // https://www.amcharts.com/docs/v5/concepts/themes/
+    root.setThemes([
+        am5themes_Animated.new(root)
+    ]);
+
+    // Create chart
+    // https://www.amcharts.com/docs/v5/charts/xy-chart/
+    var chart = root.container.children.push(am5xy.XYChart.new(root, {
+        panX: false,
+        panY: false,
+        wheelX: "panX",
+        wheelY: "zoomX",
+        layout: root.verticalLayout
+    }));
+
+    // Add legend
+    // https://www.amcharts.com/docs/v5/charts/xy-chart/legend-xy-series/
+    var legend = chart.children.push(
+        am5.Legend.new(root, {
+            centerX: am5.p50,
+            x: am5.p50
+        })
+    );
+
+    var data = [30, 40, 40, 90, 90, 70, 15, 30, 25, 60, 40, 5]
+
+    // Create axes
+    // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+    var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+        categoryField: "year",
+        renderer: am5xy.AxisRendererX.new(root, {
+            cellStartLocation: 0.1,
+            cellEndLocation: 0.9
+        }),
+        tooltip: am5.Tooltip.new(root, {})
+    }));
+
+    xAxis.data.setAll(data);
+
+    var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+        renderer: am5xy.AxisRendererY.new(root, {})
+    }));
+
+    // Add series
+    // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+    function makeSeries(name, fieldName) {
+        var series = chart.series.push(am5xy.ColumnSeries.new(root, {
+            name: name,
+            xAxis: xAxis,
+            yAxis: yAxis,
+            valueYField: fieldName,
+            categoryXField: "year"
+        }));
+
+        series.columns.template.setAll({
+            tooltipText: "{name}, {categoryX}:{valueY}",
+            width: am5.percent(90),
+            tooltipY: 0
+        });
+
+        series.data.setAll(data);
+
+        // Make stuff animate on load
+        // https://www.amcharts.com/docs/v5/concepts/animations/
+        series.appear();
+
+        series.bullets.push(function () {
+            return am5.Bullet.new(root, {
+                locationY: 0,
+                sprite: am5.Label.new(root, {
+                    text: "{valueY}",
+                    fill: root.interfaceColors.get("alternativeText"),
+                    centerY: 0,
+                    centerX: am5.p50,
+                    populateText: true
+                })
+            });
+        });
+
+        legend.data.push(series);
+    }
+
+    makeSeries("Europe", "europe");
+    makeSeries("North America", "namerica");
+    makeSeries("Asia", "asia");
+    makeSeries("Latin America", "lamerica");
+    makeSeries("Middle East", "meast");
+    makeSeries("Africa", "africa");
+
+
+    // Make stuff animate on load
+    // https://www.amcharts.com/docs/v5/concepts/animations/
+    chart.appear(1000, 100);
+
+}); // end am5.ready()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             var element = document.getElementById('kt_apexcharts_3');
             var height = parseInt(KTUtil.css(element, 'height'));
