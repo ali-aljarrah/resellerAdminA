@@ -562,3 +562,8 @@ button.tablinks.active {
     background: #f0f0f06e;
     box-shadow: var(--bs-box-shadow-xs);
 }
+.inputCss {
+    border: none;
+    background: #e3e3e3;
+    border-radius: 8px;
+}
