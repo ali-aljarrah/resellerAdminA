@@ -95,7 +95,7 @@
                                                                           <p class="color-black-1 fs-14 mb-0">10,000 Credits</p> 
                                                                         <input class="form-check-input" type="radio" value="1" name="option2"/>
                                                                     </div>
-                                                                     <p class="color-black-1 fs-25 fw-bold mb-0">$10,000</p>
+                                                                     <p class="color-black-1 fs-25 fw-bold mb-0 pt-3">$10,000</p>
                                                                 </div>
                                                             </label>
                                                         </div>
