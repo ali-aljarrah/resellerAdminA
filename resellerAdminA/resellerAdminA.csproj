@@ -2164,6 +2164,7 @@
     <Content Include="assets\plugins\global\fonts\line-awesome\la-solid-900.svg" />
     <Content Include="assets\plugins\global\plugins.bundle.css" />
     <Content Include="assets\plugins\global\plugins.bundle.js" />
+    <Content Include="buy-credits.aspx" />
     <Content Include="Controls\footer.ascx" />
     <Content Include="Controls\footerLinks.ascx" />
     <Content Include="Controls\head.ascx" />
@@ -2174,6 +2175,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="buy-credits.aspx.cs">
+      <DependentUpon>buy-credits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buy-credits.aspx.designer.cs">
+      <DependentUpon>buy-credits.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\footer.ascx.cs">
       <DependentUpon>footer.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

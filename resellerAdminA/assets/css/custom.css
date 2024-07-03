@@ -398,15 +398,20 @@ button.btn.btn-secondary.buttons-pdf.buttons-html5 {
     border-color: #f1f1f1 !important;
     background: -webkit-linear-gradient(#0E41C1, #0047FF) !important;
 }
+    .form-check-image.active:not(.form-check-success):not(.form-check-danger) .form-check-wrapper p.color-black-1.fs-14.mb-0 {
+        color: #fff !important;
+    }
+.form-check-image.active:not(.form-check-success):not(.form-check-danger) .form-check-wrapper p.color-black-1.fs-25.fw-bold.mb-0.pt-3 {
+    color: #fff !important;
+}
 
 .form-check-image:not(.form-check-success):not(.form-check-danger) .form-check-wrapper {
-    border-color: gray !important;
-    background: #f8f5ff  !important;
+    border: 1px solid #e0e0e0 !important;
 }
 
 .form-check-image.active:not(.form-check-success):not(.form-check-danger) .form-check-wrapper .form-check-input:checked {
     background-color: #37d52f;
-    border-color:   #ffffff;
+    border: 3px solid #fff;
 }
 
 .form-check-input:checked[type=radio] {
@@ -420,7 +425,7 @@ button.btn.btn-secondary.buttons-pdf.buttons-html5 {
     color: #fff !important;
 }
 input.form-check-input {
-    background: lightgrey;
+    background: #e7e7e7;
 }
 button.tablinks.active {
     background: -webkit-linear-gradient(#0E41C1, #0047FF) !important;
