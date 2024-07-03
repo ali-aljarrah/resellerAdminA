@@ -211,8 +211,7 @@
                                              </div>
                                                <hr class="mt-8 pt-5" />
                                                    <!--begin::Page title-->
-                                                <div class="p-5">
-                                                         
+                                                <div class="pt-5 pb-5">
                                                         <div class="card shadow-xs p-5 d-flex mb-5">
                                                              <div class="page-title gap-1 d-flex justify-content-between align-items-start">
                                                                  <div>
