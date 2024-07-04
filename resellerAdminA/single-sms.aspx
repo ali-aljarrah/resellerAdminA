@@ -137,98 +137,88 @@
 		    </div>
 		   <!--end::App-->
        </div>
-
-
         <!-- Choose template modal -->
-		<div class="modal fade" tabindex="-1" id="chooseTemplate">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header py-3">
-                        <h3 class="modal-title primary-color fs-16 fw-500">Choose template</h3>
-                        <!--begin::Close-->
-                        <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
-                            <span class="svg-icon svg-icon-1">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="currentColor"></rect>
-                                    <rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="currentColor"></rect>
-                                </svg>
+    <div class="modal fade" tabindex="-1" id="chooseTemplate">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header py-3">
+                    <h3 class="modal-title primary-color fs-16 fw-500">Choose Message Template</h3>
+                    <!--begin::Close-->
+                    <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                        <span class="svg-icon svg-icon-1">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="currentColor"></rect>
+                                <rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="currentColor"></rect>
+                            </svg>
+                        </span>
+                    </div>
+                    <!--end::Close-->
+                </div>
+
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table id="templates-table" class="table dashed-bottom-table gy-6">
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="modal-footer justify-content-start">
+                    <button type="button" class="btn btn-grad-1 py-3 px-8 rounded-3" id="chooseTemplateSubmitBtn">
+                        <span class="indicator-label">Confirm</span>
+                        <span class="indicator-progress">
+                            <span class="spinner-border text-white" role="status">
+                                <span class="visually-hidden">Loading...</span>
                             </span>
-                        </div>
-                        <!--end::Close-->
-                    </div>
-
-                    <div class="modal-body">
-						<div class="table-responsive mt-5">
-							<table id="templates-table" class="table table-bordered">
-								<thead>
-									<tr class="fs-14 fw-600 dark-color">
-										<th></th>
-										<th width="140">Template Name</th>
-										<th>Template Text</th>
-									</tr>
-								</thead>
-								<tbody>
-									
-								</tbody>
-							</table>
-						</div>
-                    </div>
-
-					<div class="modal-footer">
-                        <button type="button" class="btn btn-outline-dark btn-bordered py-2 px-8 rounded-3" data-bs-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-dark py-2 px-8 rounded-3" id="chooseTemplateSubmitBtn">
-							<span class="indicator-label">Select</span>
-							<span class="indicator-progress">
-								<span class="spinner-border text-white" role="status">
-									<span class="visually-hidden">Loading...</span>
-								</span>
-							</span>
-						</button>
-                    </div>
+                        </span>
+                    </button>
+                    <button type="button" class="btn btn-outline-dark btn-bordered py-3 px-8 rounded-3" data-bs-dismiss="modal">Cancel</button>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Save template modal -->
-		<div class="modal fade" tabindex="-1" id="saveTemplate">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header py-3">
-                        <h3 class="modal-title primary-color fs-16 fw-500">Save template</h3>
-                        <!--begin::Close-->
-                        <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
-                            <span class="svg-icon svg-icon-1">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="currentColor"></rect>
-                                    <rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="currentColor"></rect>
-                                </svg>
+    <!-- Save template modal -->
+    <div class="modal fade" tabindex="-1" id="saveTemplate">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header py-3">
+                    <h3 class="modal-title primary-color fs-16 fw-500">Save template</h3>
+                    <!--begin::Close-->
+                    <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                        <span class="svg-icon svg-icon-1">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="currentColor"></rect>
+                                <rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="currentColor"></rect>
+                            </svg>
+                        </span>
+                    </div>
+                    <!--end::Close-->
+                </div>
+
+                <div class="modal-body">
+                    <div class="mb-8 templateNewName" style="">
+                        <label for="templateName" class="form-label fs-14 color-black-1 required">Template name</label>
+                        <input type="text" class="form-control form-custom-input" name="templateName" id="templateName" placeholder="Type Template Name" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="New template name" data-bs-original-title="New template name" data-kt-initialized="1" fdprocessedid="nnyci4">
+                    </div>
+                </div>
+
+                <div class="modal-footer justify-content-start">
+                    <button type="button" class="btn btn-grad-1 py-4 px-8 rounded-3" id="saveTemplateSubmitBtn">
+                        <span class="indicator-label">Select</span>
+                        <span class="indicator-progress">
+                            <span class="spinner-border text-white" role="status">
+                                <span class="visually-hidden">Loading...</span>
                             </span>
-                        </div>
-                        <!--end::Close-->
-                    </div>
-
-                    <div class="modal-body">
-                        <div class="mb-8 templateNewName" style="">
-                            <label for="templateName" class="form-label fs-14 dark-color required">Template name</label>
-                            <input type="text" class="form-control form-control-solid" name="templateName" id="templateName" placeholder="Type Template Name" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="New template name" data-bs-original-title="New template name" data-kt-initialized="1">
-                        </div>
-                    </div>
-
-					<div class="modal-footer">
-                        <button type="button" class="btn btn-outline-dark btn-bordered py-2 px-8 rounded-3" data-bs-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-dark py-2 px-8 rounded-3" id="saveTemplateSubmitBtn">
-							<span class="indicator-label">Select</span>
-							<span class="indicator-progress">
-								<span class="spinner-border text-white" role="status">
-									<span class="visually-hidden">Loading...</span>
-								</span>
-							</span>
-						</button>
-                    </div>
+                        </span>
+                    </button>
+                    <button type="button" class="btn btn-outline-dark btn-bordered py-4 px-8 rounded-3" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-
+    </div>
 
 			<uc1:footerLinks runat="server" id="footerLinks" />
             <script src="/assets/js/sendsms.js"></script>

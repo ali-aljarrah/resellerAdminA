@@ -7,11 +7,48 @@ $('#latest-table').DataTable({
 // Templates placeholders to test the modal
 var templates = [
     {
-        templateName: "Test1",
-        templateText: 'Hello',
-    }, {
-        templateName: "Test2",
-        templateText: 'Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world ',
+        templateName: "Evacuation",
+        templateText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+    },
+    {
+        templateName: "First Warning",
+        templateText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
+    },
+    {
+        templateName: "Second Warning",
+        templateText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
+    },
+    {
+        templateName: "Third Warning",
+        templateText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
+    },
+    {
+        templateName: "Third Warning",
+        templateText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
+    },
+    {
+        templateName: "Third Warning",
+        templateText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
+    },
+    {
+        templateName: "Third Warning",
+        templateText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
+    },
+    {
+        templateName: "Third Warning",
+        templateText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
+    },
+    {
+        templateName: "Third Warning",
+        templateText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
+    },
+    {
+        templateName: "Third Warning",
+        templateText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
+    },
+    {
+        templateName: "Third Warning",
+        templateText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
     }
 ];
 
@@ -35,14 +72,15 @@ $('#chooseTemplateBtn').click(function (e) {
                         <input class="form-check-input select-template" type="radio" value="`+ templates[i].templateText + `" name="selectTempalte"/>
                     </div>
                 </td>
-                <td>
+                <td class="fs-14 black-color-1">
                     `+ templates[i].templateName + `
                 </td>
                 <td>
-                    `+ templates[i].templateText + `
+                  <div class="p-2 black-color-1 fs-12 rounded bg-gray">  `+ templates[i].templateText + `</div>
                 </td>
             </tr>
         `);
+
     });
 
     chooseTemplate.show();
