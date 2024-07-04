@@ -567,3 +567,17 @@ button.tablinks.active {
     background: #e3e3e3;
     border-radius: 8px;
 }
+
+.num {
+    width: 100% !important;
+    border-bottom: 1px solid #1b1c22 !important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.b-none{
+    border:none;
+}
+.color-red{
+    color:red !important;
+}

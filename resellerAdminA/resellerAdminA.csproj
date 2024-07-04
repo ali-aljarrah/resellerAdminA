@@ -2172,6 +2172,7 @@
     <Content Include="Controls\menuTop.ascx" />
     <Content Include="Controls\sideBar.ascx" />
     <Content Include="index.aspx" />
+    <Content Include="single-sms.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -2232,6 +2233,13 @@
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="single-sms.aspx.cs">
+      <DependentUpon>single-sms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="single-sms.aspx.designer.cs">
+      <DependentUpon>single-sms.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\font\UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7SUc.woff2" />
