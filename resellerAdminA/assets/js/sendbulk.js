@@ -1,8 +1,11 @@
+// Table datatable
 $('#latest-table').DataTable({
     "paging": false,
-    "bInfo" : false
+    "bInfo": false
 });
 
+// On keypress event to check the message length
+// and update the counter
 $('#txtMessage').on('keypress', function () {
     let len = this.value.length;
 
@@ -21,30 +24,33 @@ $('#txtMessage').on('keypress', function () {
     }
 });
 
-$("[name='fileListCheckbox']").change(function() {
+// Updating the selected files after picking a file
+// from the files tree
+$("[name='file-list-checkbox']").change(function () {
     var value = $(this).val();
-    var filesTextArea = $('#selectedFiles').val();
+    var filesTextArea = $('#selected-files').val();
     var numbersCount = parseInt(value.match(/\|(.*?)\|/)[1]);
     var oldFilesCount = parseInt($('#files-count').text());
     var oldNumberCount = parseInt($('#number-count').text());
 
-    if($(this).is(':checked')) {
-        $('#selectedFiles').val(filesTextArea+value+',');
-        $('#files-count').text(oldFilesCount+1);
-        $('#total_files').text(oldFilesCount+1);
-        $('#number-count').text(oldNumberCount+numbersCount);
-        $('#total_recipients').text(oldNumberCount+numbersCount);
-        $('#total_message').text(oldNumberCount+numbersCount);
+    if ($(this).is(':checked')) {
+        $('#selected-files').val(filesTextArea + value + ',');
+        $('#files-count').text(oldFilesCount + 1);
+        $('#total_files').text(oldFilesCount + 1);
+        $('#number-count').text(oldNumberCount + numbersCount);
+        $('#total_recipients').text(oldNumberCount + numbersCount);
+        $('#total_message').text(oldNumberCount + numbersCount);
     } else {
-        $('#selectedFiles').val(filesTextArea.replace(value+',', ''));
-        $('#files-count').text(oldFilesCount-1);
-        $('#total_files').text(oldFilesCount-1);
-        $('#number-count').text(oldNumberCount-numbersCount);
-        $('#total_recipients').text(oldNumberCount-numbersCount);
-        $('#total_message').text(oldNumberCount-numbersCount);
+        $('#selected-files').val(filesTextArea.replace(value + ',', ''));
+        $('#files-count').text(oldFilesCount - 1);
+        $('#total_files').text(oldFilesCount - 1);
+        $('#number-count').text(oldNumberCount - numbersCount);
+        $('#total_recipients').text(oldNumberCount - numbersCount);
+        $('#total_message').text(oldNumberCount - numbersCount);
     }
-})
+});
 
+// Templates placeholders to test the modal
 var templates = [
     {
         templateName: "Evacuation",
@@ -92,26 +98,28 @@ var templates = [
     }
 ];
 
+// Modal initialize
 var chooseTemplate = new bootstrap.Modal(document.getElementById("chooseTemplate"), {});
 
-$('#chooseTemplateBtn').click(function(e) {
+// Updating the templates list in the modal and open it
+$('#chooseTemplateBtn').click(function (e) {
     e.preventDefault();
 
     $('#templates-table tbody').empty();
 
-    $.each(templates, function(i) {
+    $.each(templates, function (i) {
         $('#templates-table tbody').append(`
             <tr class="fs-14 dark-color">
                 <td>
                     <div class="form-check form-check-custom form-check-success form-check-solid">
-                        <input class="form-check-input select-template" type="radio" value="`+templates[i].templateText+`" name="selectTempalte"/>
+                        <input class="form-check-input select-template" type="radio" value="`+ templates[i].templateText + `" name="selectTempalte"/>
                     </div>
                 </td>
                 <td>
-                    `+templates[i].templateName+`
+                    `+ templates[i].templateName + `
                 </td>
                 <td>
-                    `+templates[i].templateText+`
+                  <div class="p-2 black-color-1 fs-12 rounded bg-gray">  `+ templates[i].templateText + `</div>
                 </td>
             </tr>
         `);
@@ -120,7 +128,8 @@ $('#chooseTemplateBtn').click(function(e) {
     chooseTemplate.show();
 });
 
-$('#chooseTemplateSubmitBtn').click(function(e) {
+// Submit choose template event
+$('#chooseTemplateSubmitBtn').click(function (e) {
     e.preventDefault();
 
     $(this).prop('disabled', true);
@@ -142,23 +151,23 @@ $('#chooseTemplateSubmitBtn').click(function(e) {
     }
 });
 
-$('#var_1').click(function(e) {
+// Updating the message body after choosing a
+// Personalize option
+$('#var_1').click(function (e) {
     e.preventDefault();
 
     var oldText = $('#txtMessage').val();
 
     $('#txtMessage').val(oldText + ' [var1]');
 });
-
-$('#var_2').click(function(e) {
+$('#var_2').click(function (e) {
     e.preventDefault();
 
     var oldText = $('#txtMessage').val();
 
     $('#txtMessage').val(oldText + ' [var2]');
 });
-
-$('#var_3').click(function(e) {
+$('#var_3').click(function (e) {
     e.preventDefault();
 
     var oldText = $('#txtMessage').val();
@@ -166,7 +175,8 @@ $('#var_3').click(function(e) {
     $('#txtMessage').val(oldText + ' [var3]');
 });
 
-$('#btnSubmit').click(function(e) {
+// Submit send bulk SMS event
+$('#btnSubmit').click(function (e) {
     e.preventDefault();
 
     $(this).prop('disabled', true);
@@ -175,7 +185,7 @@ $('#btnSubmit').click(function(e) {
     var txtNumber = $('#txtNumber').val();
     var cmbMessageType = $('#cmbMessageType').find(":selected").val();
     var txtMessage = $('#txtMessage').val();
-    var selectedFiles = $('#selectedFiles').val();
+    var selectedFiles = $('#selected-files').val();
 
     if (txtSender.length > 18 || txtSender.trim() == '') {
 
