@@ -3,7 +3,7 @@
 
     bl.disabled = true;
 
-    const radioBtnPay = document.querySelectorAll("input[name=option2]:checked");
+    const radioBtnPay = document.querySelectorAll("input[name=payment]:checked");
 
     if (radioBtnPay.length <= 0) {
         toastr.error("Please Choose Reload Option!");
