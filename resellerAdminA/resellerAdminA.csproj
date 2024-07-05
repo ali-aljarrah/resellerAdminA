@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin-scheduled-log.aspx" />
     <Content Include="assets\css\custom.css" />
     <Content Include="assets\css\font.css" />
     <Content Include="assets\css\prism.css" />
@@ -75,6 +76,8 @@
     <Content Include="assets\img\home\Layer 1.svg" />
     <Content Include="assets\img\LOGO.svg" />
     <Content Include="assets\img\youtube.png" />
+    <Content Include="assets\js\admin-scheduled-log.js" />
+    <Content Include="assets\js\admin-sms-log.js" />
     <Content Include="assets\js\coverage.js" />
     <Content Include="assets\js\custom\authentication\reset-password\reset-password.js" />
     <Content Include="assets\js\custom\authentication\reset-password\reset_func.js" />
@@ -2175,9 +2178,17 @@
     <Content Include="index.aspx" />
     <Content Include="sendbulk.aspx" />
     <Content Include="single-sms.aspx" />
+    <Content Include="sms-log.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin-scheduled-log.aspx.cs">
+      <DependentUpon>admin-scheduled-log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-scheduled-log.aspx.designer.cs">
+      <DependentUpon>admin-scheduled-log.aspx</DependentUpon>
+    </Compile>
     <Compile Include="buy-credits.aspx.cs">
       <DependentUpon>buy-credits.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2255,6 +2266,13 @@
     </Compile>
     <Compile Include="single-sms.aspx.designer.cs">
       <DependentUpon>single-sms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sms-log.aspx.cs">
+      <DependentUpon>sms-log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sms-log.aspx.designer.cs">
+      <DependentUpon>sms-log.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

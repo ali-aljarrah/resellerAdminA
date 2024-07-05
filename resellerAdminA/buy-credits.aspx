@@ -55,12 +55,12 @@
                                                       <div class="col-lg-3">
                                                             <label class="form-check-image w-100 active">
                                                                  <div class="form-check-wrapper p-5">
-                                                                   <div class="form-check-label form-check-custom form-check-solid justify-content-between">
-                                                                         <p class="color-black-1 fs-14 mb-0">100 Credits</p> 
-                                                                       <input class="form-check-input" type="radio" value="1" name="option2" checked/>
-                                                                   </div>
-                                                                    <p class="color-black-1 fs-25 fw-bold mb-0 pt-3">$100</p>
-                                                               </div>
+                                                                       <div class="form-check-label form-check-custom form-check-solid justify-content-between">
+                                                                             <p class="color-black-1 fs-14 mb-0">100 Credits</p> 
+                                                                           <input class="form-check-input" type="radio" value="1" name="option2" checked/>
+                                                                       </div>
+                                                                        <p class="color-black-1 fs-25 fw-bold mb-0 pt-3">$100</p>
+                                                                 </div>
                                                            </label>
                                                         </div>
                                                           <!--begin::Col-->

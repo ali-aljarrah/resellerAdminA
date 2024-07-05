@@ -581,3 +581,15 @@ button.tablinks.active {
 .color-red{
     color:red !important;
 }
+
+/*form search js file */
+input#dt-search-0 {
+    border-color: #000;
+    border: 1px solid #80808000;
+    border-bottom: 1px solid black;
+    color: var(--bs-gray-700);
+    transition: color .2s ease;
+    border-radius: 0px;
+    background-color: #f0f8ff00;
+}
+/*form search js file */
