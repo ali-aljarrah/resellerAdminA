@@ -78,7 +78,7 @@
 														</div>
 														<div class="mb-8">
 															<label for="selected-files" class="form-label fs-14 color-black-1">Selected files</label>
-															<textarea name="selected-files" rows="4" cols="" id="selected-files" placeholder="Selected file's names." class="form-control form-custom-textarea" size="30" maxlength="765"  data-bs-toggle="tooltip" data-bs-placement="top" title="This block will show the selected files" disabled></textarea>
+															<textarea name="selected-files" rows="4" cols="" id="selected-files" placeholder="Selected file's names." class="form-control form-custom-textarea" size="30" maxlength="765"  data-bs-toggle="tooltip" data-bs-placement="top" title="This block will show the selected files"></textarea>
 															<div class="fs-12 text-gradients-blue">
 																<span id="files-count">0</span> files : <span id="number-count">0</span> numbers
 															</div>
