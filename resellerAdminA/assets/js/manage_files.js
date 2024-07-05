@@ -1,4 +1,5 @@
-$('.delete-file').click(function(e) {
+// Delete file event
+$('.delete-file').click(function (e) {
     Swal.fire({
         title: 'Are you sure this file?',
         text: "You won't be able to revert this!",
@@ -7,17 +8,17 @@ $('.delete-file').click(function(e) {
         confirmButtonColor: '#d33',
         cancelButtonColor: '#3085d6',
         confirmButtonText: 'Delete'
-      }).then((result) => {
+    }).then((result) => {
         if (result.isConfirmed) {
-          Swal.fire(
-            'Deleted!',
-            'Your file has been deleted.',
-            'success'
-          )
+            Swal.fire(
+                'Deleted!',
+                'Your file has been deleted.',
+                'success'
+            )
         }
-      })
+    })
 });
-
+// Checking the file if it's valid after uploading
 $("#attach1").change(function () {
     var fileExtension = ['txt', 'csv', 'xls', 'xlsx'];
     if ($.inArray($(this).val().split('.').pop().toLowerCase(), fileExtension) == -1) {
@@ -25,8 +26,8 @@ $("#attach1").change(function () {
         $("#attach1").val("");
     }
 });
-
-$('#upload').click(function(e) {
+// Upload event button
+$('#upload').click(function (e) {
     e.preventDefault();
 
     $(this).prop('disabled', true);

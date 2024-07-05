@@ -2171,6 +2171,7 @@
     <Content Include="Controls\loader.ascx" />
     <Content Include="Controls\menuTop.ascx" />
     <Content Include="Controls\sideBar.ascx" />
+    <Content Include="files-manager.aspx" />
     <Content Include="index.aspx" />
     <Content Include="sendbulk.aspx" />
     <Content Include="single-sms.aspx" />
@@ -2225,6 +2226,13 @@
     </Compile>
     <Compile Include="Controls\sideBar.ascx.designer.cs">
       <DependentUpon>sideBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="files-manager.aspx.cs">
+      <DependentUpon>files-manager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="files-manager.aspx.designer.cs">
+      <DependentUpon>files-manager.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
