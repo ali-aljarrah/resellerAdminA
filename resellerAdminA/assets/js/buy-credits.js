@@ -1,20 +1,17 @@
 ﻿function paySubmit(id) {
     var bl = document.getElementById(id);
-    alert("Hello");
-   
+
+    bl.disabled = true;
 
     const radioBtnPay = document.querySelectorAll("input[name=option2]:checked");
-    
-    alert("zainab is here");
+
     if (radioBtnPay.length <= 0) {
-        toastr.error("no no");
+        toastr.error("Please Choose Reload Option!");
        
         bl.disabled = false;
         return false;
     }
 
     bl.disabled = false;
-    toastr.success("all is done");
-
-    alert("if i have mistake i'll kill you");
+    toastr.success("thank you for choosing ");
 }

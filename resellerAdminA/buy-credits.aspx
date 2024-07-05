@@ -326,8 +326,7 @@
     </div>
 			<uc1:footerLinks runat="server" id="footerLinks" />
 			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-         <script src="/assets/js/pay-sub-btn.js"></script>
+            <script src="/assets/js/buy-credits.js"></script>
 	</body>
 	<!--end::Body-->
 </html>

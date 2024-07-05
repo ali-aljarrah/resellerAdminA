@@ -90,7 +90,7 @@
     <Content Include="assets\js\main.js" />
     <Content Include="assets\js\manage_files.js" />
     <Content Include="assets\js\manage_temp.js" />
-    <Content Include="assets\js\pay-sub-btn.js" />
+    <Content Include="assets\js\buy-credits.js" />
     <Content Include="assets\js\payment_report.js" />
     <Content Include="assets\js\prism.js" />
     <Content Include="assets\js\queue_report.js" />
