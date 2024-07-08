@@ -593,3 +593,14 @@ input#dt-search-0 {
     background-color: #f0f8ff00;
 }
 /*form search js file */
+
+.nav-line-tabs.nav-line-tabs-2x .nav-item .nav-link.active, .nav-line-tabs.nav-line-tabs-2x .nav-item .nav-link:hover:not(.disabled), .nav-line-tabs.nav-line-tabs-2x .nav-item.show .nav-link {
+    background: #006ae6 !important;
+    border: none !important;
+    border-radius: 20px !important;
+    color: white !important;
+}
+
+.b-right {
+    border-right: 2px solid #f1f1f1 !important;
+}
