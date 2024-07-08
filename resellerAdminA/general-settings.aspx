@@ -62,10 +62,11 @@
                                                     <div class="tab-content" id="myTabContent">
                                                         <div class="tab-pane fade show active" id="business_details_tab" role="tabpanel">
                                                             <div class="row">
-                                                                <div class="col-md-8 b-right">
+                                                                <div class="col-md-8">
                                                                     <!-- start branding details section -->
+                                                                  <div class="card shadow-xs p-5 d-flex my-5">
                                                                     <!--begin::Page title-->
-                                                                    <div class="page-title d-flex flex-column justify-content-center gap-1 pt-5 mt-5">
+                                                                    <div class="page-title d-flex flex-column justify-content-center gap-1">
                                                                         <!--begin::Title-->
                                                                         <h1 class="page-heading d-flex flex-column justify-content-center text-dark fw-bold my-5">Branding & Details</h1>
                                                                         <!--end::Title-->
@@ -303,10 +304,11 @@
                                                                     </form>
                                                                     <!-- end Outgoing Email Settings section -->
                                                                 </div>
-                                                                <div class="col-md-4 mb-md-0 mb-5 mt-5">
+                                                                 </div>
+                                                                <div class="col-md-4 mb-md-0 mb-5">
                                                                     <div class="custom-border-left h-100 mt-10 mt-md-0">
                                                                         <div class="p-5">
-                                                                            <div class="mb-6 p-5">
+                                                                            <div class="mb-6 px-5">
                                                                                <div class="card shadow-xs p-5 d-flex">
                                                                                     <p class="fs-18 fw-600 dark-color mb-5 pt-3">
                                                                                     Signature Upload Guidelines

@@ -70,9 +70,9 @@
                                                 <!--end::Item-->
                                             <!--end::Accordion-->
                                             <!--begin::Card widget 4-->
-                                            <div class="card card-flush border-0">
+                                            <div class="border-0">
                                                 <!--begin::Card body-->
-                                                <div class="card-body pb-4 mt-0 pt-5 ps-0 pr-0">
+                                                <div class="pb-4 mt-0 pt-5 ps-0 pr-0">
                                                     <div class="table-responsive">
                                                         <table id="sent-sms-report" class="table custom-table table-bordered table-row-gray-300 gy-5 datatable">
                                                             <thead>
