@@ -68,7 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="404.aspx" />
+    <Content Include="account.aspx" />
     <Content Include="admin-scheduled-log.aspx" />
+    <Content Include="affiliates.aspx" />
+    <Content Include="api.aspx" />
     <Content Include="assets\css\custom.css" />
     <Content Include="assets\css\font.css" />
     <Content Include="assets\css\prism.css" />
@@ -103,6 +106,7 @@
     <Content Include="assets\js\sendsms.js" />
     <Content Include="assets\js\sentreport.js" />
     <Content Include="assets\js\settings.js" />
+    <Content Include="assets\js\sms-summary.js" />
     <Content Include="assets\js\transactions-log.js" />
     <Content Include="assets\js\user-list.js" />
     <Content Include="assets\media\auth\404-error-dark.png" />
@@ -2180,6 +2184,7 @@
     <Content Include="Controls\loader.ascx" />
     <Content Include="Controls\menuTop.ascx" />
     <Content Include="Controls\sideBar.ascx" />
+    <Content Include="coverage-price.aspx" />
     <Content Include="credits-log.aspx" />
     <Content Include="files-manager.aspx" />
     <Content Include="general-settings.aspx" />
@@ -2188,6 +2193,7 @@
     <Content Include="sendbulk.aspx" />
     <Content Include="single-sms.aspx" />
     <Content Include="sms-log.aspx" />
+    <Content Include="sms-summary.aspx" />
     <Content Include="smslog.aspx" />
     <Content Include="transactions-log.aspx" />
     <Content Include="users-list.aspx" />
@@ -2201,12 +2207,33 @@
     <Compile Include="404.aspx.designer.cs">
       <DependentUpon>404.aspx</DependentUpon>
     </Compile>
+    <Compile Include="account.aspx.cs">
+      <DependentUpon>account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="account.aspx.designer.cs">
+      <DependentUpon>account.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin-scheduled-log.aspx.cs">
       <DependentUpon>admin-scheduled-log.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="admin-scheduled-log.aspx.designer.cs">
       <DependentUpon>admin-scheduled-log.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="affiliates.aspx.cs">
+      <DependentUpon>affiliates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="affiliates.aspx.designer.cs">
+      <DependentUpon>affiliates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="api.aspx.cs">
+      <DependentUpon>api.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="api.aspx.designer.cs">
+      <DependentUpon>api.aspx</DependentUpon>
     </Compile>
     <Compile Include="buy-credits.aspx.cs">
       <DependentUpon>buy-credits.aspx</DependentUpon>
@@ -2256,6 +2283,13 @@
     </Compile>
     <Compile Include="Controls\sideBar.ascx.designer.cs">
       <DependentUpon>sideBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="coverage-price.aspx.cs">
+      <DependentUpon>coverage-price.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="coverage-price.aspx.designer.cs">
+      <DependentUpon>coverage-price.aspx</DependentUpon>
     </Compile>
     <Compile Include="credits-log.aspx.cs">
       <DependentUpon>credits-log.aspx</DependentUpon>
@@ -2313,6 +2347,13 @@
     </Compile>
     <Compile Include="sms-log.aspx.designer.cs">
       <DependentUpon>sms-log.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sms-summary.aspx.cs">
+      <DependentUpon>sms-summary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sms-summary.aspx.designer.cs">
+      <DependentUpon>sms-summary.aspx</DependentUpon>
     </Compile>
     <Compile Include="smslog.aspx.cs">
       <DependentUpon>smslog.aspx</DependentUpon>
