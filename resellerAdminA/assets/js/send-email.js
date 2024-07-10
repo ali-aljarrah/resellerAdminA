@@ -32,6 +32,7 @@ $(document).ready(function () {
 
     });
 
+    var popupUserList = new bootstrap.Modal(document.getElementById("popupUserList"), {});
     // Submit new message event
     $('#sendEmailSubmitBtn').click(function (e) {
         e.preventDefault();
@@ -54,6 +55,9 @@ $(document).ready(function () {
 
         toastr.success("Email sent Successfully!");
         $(this).prop('disabled', false);
+        
+        popupUserList.hide();
+
         $('#emailMessage').val('');
         $("#emailRecipient").val($("#emailRecipient option:first").val());
     })

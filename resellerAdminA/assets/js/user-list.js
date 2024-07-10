@@ -5,7 +5,7 @@
     $('#sms_report_table').on('error.dt', function (e, settings, techNote, message) {
         console.log('An error has been reported by DataTables: ', message);
     }).DataTable();
-
+   
     var reportdata = $('#sent-sms-report').DataTable({
         dom: "<'d-flex mb-5 justify-content-between align-items-center flex-column flex-md-row'<''f><'mt-3 mt-md-0 mb-3 mb-md-0'B>>" +
             "<'row'<'col-sm-12'tr>>" +
@@ -56,6 +56,7 @@
     // validate expression
     const emailRegexp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
 
+    var popupUserList = new bootstrap.Modal(document.getElementById("popupUserList"), {});
     // Submit add new user event
     $('#addNewUserSubmitBtn').click(function (e) {
         e.preventDefault();
@@ -92,6 +93,8 @@
             return;
         }
         toastr.success("User added Successfully!");
+        
+        popupUserList.hide();
 
         $(this).prop('disabled', false);
 
@@ -102,6 +105,7 @@
         $('#newUserCity').val('');
         $('#newUserState').val('');
         $("#newUserCountry").val($("#newUserCountry option:first").val());
-    });
 
+    });
+   
 });

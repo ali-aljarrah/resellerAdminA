@@ -66,7 +66,7 @@
                                                     </div>
                                                     <!--end::Page title-->
                                                     <!--begin::Header-->
-                                                    <button type="button" class="btn btn-primary btn-grad" id="btn-modal-popup" data-bs-toggle="modal" data-bs-target="#kt_modal_1">
+                                                    <button type="button" class="btn btn-primary btn-grad" id="btn-modal-popup" data-bs-toggle="modal" data-bs-target="#popupUserList">
                                                         New Message
                                                     </button>
                                                     <!--end::Header-->
@@ -149,7 +149,7 @@
 
 
         <!--modal add user popup-->
-        <div class="modal fade" tabindex="-1" id="kt_modal_1">
+        <div class="modal fade" tabindex="-1" id="popupUserList">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
