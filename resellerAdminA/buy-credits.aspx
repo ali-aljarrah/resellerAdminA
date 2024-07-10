@@ -45,7 +45,7 @@
                                 <div class="row d-flex">
                                     <div class="col-xl-9">
                                         <!--begin::Row-->
-                                        <div class="card shadow-xs p-5 d-flex mb-5">
+                                        <div class="card shadow-xs p-8 d-flex mb-5">
                                             <div class="row mb-5" data-kt-buttons="true" data-kt-buttons-target=".form-check-image,.form-check-input">
 
 
@@ -191,8 +191,8 @@
                                                                 <p class="color-black-1 fs-14 mb-0">Custom Credits</p>
                                                                 <input class="form-check-input" type="radio" value="custom" name="payment" />
                                                             </div>
-                                                            <div class="mb-8">
-                                                                <input type="text" class="num mt-3 p-2" onkeypress="return goodchars(event,'0123456789');" name="customPrice" id="customPrice" placeholder="$" data-bs-toggle="tooltip" data-bs-placement="top" title="Please Enter Your price"/>
+                                                            <div class="">
+                                                                <input type="text" class="input-number-form" onkeypress="return goodchars(event,'0123456789');" name="customPrice" id="customPrice" placeholder="$" data-bs-toggle="tooltip" data-bs-placement="top" title="Please Enter Your price"/>
                                                             </div>
                                                       </div>
                                                     </label>
@@ -214,7 +214,7 @@
                                         <hr class="mt-8 pt-5" />
                                         <!--begin::Page title-->
                                         <div class="pt-5 pb-5">
-                                            <div class="card shadow-xs p-5 d-flex mb-5">
+                                            <div class="card shadow-xs p-8 d-flex mb-5">
                                                 <div class="page-title gap-1 d-flex justify-content-between align-items-start">
                                                     <div>
                                                         <!--begin::Title-->

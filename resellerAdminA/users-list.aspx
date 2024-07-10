@@ -46,7 +46,7 @@
 									<div class="row gy-5 g-xl-10">
                                         <!--begin::Col-->
                                         <div class="col-md-12 mb-md-0 mb-5 mt-5">
-                                            <div class="card card-flush shadow-xs border-0 p-5">
+                                            <div class="card card-flush shadow-xs border-0 p-8">
                                             <!--begin::Accordion-->
                                                     <!--begin::Item-->
                                                     <div class="mb-5">
@@ -65,14 +65,19 @@
                                                                 </div>
                                                             </div>
                                                             <!--end::Page title-->
+                                                            <!--begin::Header-->
+                                                            <button type="button" class="btn btn-primary btn-grad" id="btn-modal-popup" data-bs-toggle="modal" data-bs-target="#kt_modal_1">
+                                                                Add new user
+                                                            </button>
+                                                        <!--end::Header-->
                                                         </div>
                                                     </div>
                                                     <!--end::Item-->
                                                 <!--end::Accordion-->
                                                 <!--begin::Card widget 4-->
-                                                <div class="border-0">
+                                                <div class=" card-body border-0 ps-0 pr-0">
                                                     <!--begin::Card body-->
-                                                    <div class="pb-4 mt-0 pt-5 ps-0 pr-0">
+                                                    <div class="pb-4 mt-0 pt-5">
                                                         <div class="table-responsive">
                                                             <table id="sent-sms-report" class="table custom-table table-bordered table-row-gray-300 gy-5 datatable">
                                                            
@@ -176,6 +181,91 @@
 		    </div>
 		   <!--end::App-->
        </div>
+                                         <!--modal add user popup-->
+                                        <div class="modal fade" tabindex="-1" id="kt_modal_1">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h3 class="modal-title">Add New User</h3>
+
+                                                    <!--begin::Close-->
+                                                    <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                                                        <i class="ki-duotone ki-cross fs-1"><span class="path1"></span><span class="path2"></span></i>
+                                                    </div>
+                                                    <!--end::Close-->
+                                                </div>
+                                                <!--begin::Body-->
+                                                        <form action="#">
+                                                            <div class="row my-4 p-8">
+                                                                <div class="col-lg-6">
+                                                                    <div class="mb-5">
+                                                                        <label for="newUserFullName" class="form-label required">Full name</label>
+                                                                        <input required class="form-control-solid form-control" value="" type="text" name="newUserFullName" id="newUserFullName" placeholder="Enter new user full name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="mb-5">
+                                                                        <label for="newUserEmail" class="form-label required">Email</label>
+                                                                        <input required class="form-control-solid form-control" value="" type="email" name="newUserEmail" id="newUserEmail" placeholder="Enter new user email">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="mb-5">
+                                                                        <label for="newUserPhoneNumber" class="form-label required">Phone number</label>
+                                                                        <input required class="form-control-solid form-control" value="" type="text"  onkeypress="return goodchars(event,'0123456789,+');" name="newUserPhoneNumber" id="newUserPhoneNumber" placeholder="Enter new user phone number">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="mb-5">
+                                                                        <label for="newUserAddress" class="form-label">Address</label>
+                                                                        <input class="form-control-solid form-control" value="" type="text" name="newUserAddress" id="newUserAddress" placeholder="Enter new user address">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="mb-5">
+                                                                        <label for="newUserCity" class="form-label">City</label>
+                                                                        <input class="form-control-solid form-control" value="" type="text" name="newUserCity" id="newUserCity" placeholder="Enter new user city">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="mb-5">
+                                                                        <label for="newUserState" class="form-label">State</label>
+                                                                        <input class="form-control-solid form-control" value="" type="text" name="newUserState" id="newUserState" placeholder="Enter new user state">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="mb-5">
+                                                                        <label for="newUserCountry" class="form-label required">Country</label>
+                                                                        <select required name="newUserCountry" id="newUserCountry" class="form-select form-select-solid">
+                                                                            <option value="" selected>Select...</option>
+                                                                            <option value="USA">USA</option>
+                                                                            <option value="canada">Canada</option>
+                                                                            <option value="france">France</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </form>
+                                                    <!--end::Body-->
+                                                <div class="modal-footer">
+                                                   <!-- <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>-->
+                                                    <button type="button" class="btn btn-primary btn-grad py-2 px-6 rounded-1" id="addNewUserSubmitBtn">
+                                                    <span class="indicator-label">Save changes</span>
+                                                    <span class="indicator-progress">
+                                                        <span class="spinner-border text-white" role="status">
+                                                            <span class="visually-hidden">Loading...</span>
+                                                        </span>
+                                                    </span>
+                                                </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
 
 			<uc1:footerLinks runat="server" id="footerLinks" />
 		  <script src="/assets/js/user-list.js"></script>

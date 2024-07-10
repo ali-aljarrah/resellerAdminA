@@ -46,7 +46,7 @@
                                     <div class="row mb-xl-10 mt-0">
                                         <!--begin::Col-->
                                         <div class="col-md-8 mb-md-0 mb-5">
-                                            <div class="card card-flush shadow-xs p-5">
+                                            <div class="card card-flush shadow-xs p-8  h-100">
                                             <!--begin::Page title-->
                                                 <div class="page-title d-flex flex-column justify-content-center gap-1">
                                                     <!--begin::Title-->
@@ -61,16 +61,17 @@
                                                 </div>
                                             <!--end::Page title-->
                                             <!--begin::Card widget 4-->
-                                            <div class="card card-flush border-0 ms-3">
+                                            <div class="card-body border-0 ps-0 pr-0">
                                                 <!--begin::Card body-->
-                                                <div class="card-body pb-4 mt-0 pt-5 ps-0 pr-0">
+                                                <div class="pb-4 mt-0 pt-5">
                                                     <div class="table-responsive">
-                                                        <table class="table table-bordered table-row-gray-300 gy-5">
+                                                        <table class="table custom-table table-bordered table-row-gray-300 gy-5">
                                                             <thead class=" bg-blue">
                                                                 <tr class="fs-14 fw-600 dark-color">
                                                                     <th class="white-color">File name</th>
                                                                     <th class="white-color">Quantity</th>
                                                                     <th class="white-color">Modified date</th>
+                                                                    <th></th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -121,9 +122,9 @@
                                      </div>
                                         <!--end::Col-->
                                         <!--begin::Col-->
-										<div class="col-md-4 mb-md-0 mt-md-0 mb-5 mt-5">
-                                             <div class="card card-flush shadow-xs">
-											    <div class="custom-border-left h-100 mt-10 mt-md-0">
+										<div class="col-md-4 mb-md-0 mt-md-0 mb-5 mt-5 flex-grow-1">
+                                             <div class="card card-flush shadow-xs h-100">
+											    <div class="custom-border-left mt-10 mt-md-0">
 												    <div class="p-8">
                                                         <div>
                                                             <div class="d-flex justify-content-start align-items-center mb-1">
@@ -143,7 +144,7 @@
                                                                         <div class="form-group">
                                                                             <input name="attach1" id="attach1" type="file" accept=".txt,.csv,.xls,.xlsx" class="form-control form-control-solid">
                                                                             <div class="mt-8">
-                                                                                <button type="submit" id="upload" name="upload" value="Upload" class="btn btn-primary py-2 px-8 rounded-1 w-100">
+                                                                                <button type="submit" id="upload" name="upload" value="Upload" class="btn btn-primary btn-grad py-2 px-8 rounded-1 w-100">
                                                                                     <span class="indicator-label">Upload</span>
                                                                                     <span class="indicator-progress">
                                                                                         <span class="spinner-border text-white" role="status">

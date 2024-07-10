@@ -568,12 +568,13 @@ button.tablinks.active {
     border-radius: 8px;
 }
 
-.num {
+.input-number-form {
+    padding: 8px !important;
+    border: none !important;
+    background: #f3f3f3 !important;
+    border-radius: 8px !important;
+    margin-top: 10px !important;
     width: 100% !important;
-    border-bottom: 1px solid #1b1c22 !important;
-    border-top: none;
-    border-left: none;
-    border-right: none;
 }
 .b-none{
     border:none;

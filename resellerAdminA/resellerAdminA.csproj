@@ -70,6 +70,7 @@
     <Content Include="404.aspx" />
     <Content Include="account.aspx" />
     <Content Include="admin-scheduled-log.aspx" />
+    <Content Include="admin-sms-log.aspx" />
     <Content Include="affiliates.aspx" />
     <Content Include="api.aspx" />
     <Content Include="assets\css\custom.css" />
@@ -2220,6 +2221,13 @@
     </Compile>
     <Compile Include="admin-scheduled-log.aspx.designer.cs">
       <DependentUpon>admin-scheduled-log.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-sms-log.aspx.cs">
+      <DependentUpon>admin-sms-log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-sms-log.aspx.designer.cs">
+      <DependentUpon>admin-sms-log.aspx</DependentUpon>
     </Compile>
     <Compile Include="affiliates.aspx.cs">
       <DependentUpon>affiliates.aspx</DependentUpon>

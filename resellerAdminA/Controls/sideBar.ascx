@@ -54,7 +54,7 @@
                     </div>
                     <div class="menu-item">
                         <!--begin:Menu link-->
-                        <a class="menu-link" href="/sendsms.aspx" id="sendsms-lg-link">
+                        <a class="menu-link" href="/single-sms.aspx" id="sendsms-lg-link">
                             <span class="menu-bullet">
                                 <span class="bullet bullet-dot"></span>
                             </span>
@@ -92,7 +92,7 @@
               <div class="menu-item py-2" data-bs-toggle="tooltip" data-bs-placement="right" title="SMS Log">
                 <!--begin:Menu link-->
                 <span class="menu-link menu-center" id="sms-log-lg-link">
-                  <a class="menu-link" href="/sentreport.aspx">
+                  <a class="menu-link" href="/smslog.aspx">
                    <svg width="26" height="27" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.5 3.42661C13.5593 3.8025 14.5209 4.41106 15.3141 5.20755C16.1073 6.00404 16.7118 6.9682 17.0833 8.02911M9.16663 3.04578C7.90265 3.18708 6.69537 3.64746 5.65824 4.38365C4.62112 5.11984 3.78823 6.10766 3.23784 7.25425C2.68746 8.40084 2.43767 9.66856 2.51195 10.9382C2.58623 12.2079 2.98213 13.4378 3.66246 14.5124L2.49996 17.9999L5.98746 16.8374C7.06205 17.5178 8.29199 17.9137 9.56167 17.988C10.8313 18.0622 12.0991 17.8124 13.2457 17.2621C14.3922 16.7117 15.3801 15.8788 16.1162 14.8417C16.8524 13.8045 17.3128 12.5972 17.4541 11.3333" stroke="#121212" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M9.99992 14.6666C8.89485 14.6666 7.83504 14.2276 7.05364 13.4462C6.27224 12.6648 5.83325 11.605 5.83325 10.4999M7.49992 7.16659C8.3023 6.5648 9.29483 6.27264 10.2953 6.34374C11.2957 6.41484 12.237 6.84443 12.9462 7.55365C13.6554 8.26286 14.085 9.2041 14.1561 10.2046C14.2272 11.205 13.935 12.1975 13.3333 12.9999" stroke="#121212" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>

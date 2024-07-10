@@ -55,11 +55,11 @@
 													        <form class="px-5 mb-5" action="#" id="frmSendSingleSms" name="frmSendSingleSms" novalidate="novalidate">
                                                             <div class="mb-8">
                                                                 <label for="txtSender" class="form-label fs-14 dark-color required">Sender name</label>
-                                                                <input type="text" class="num mt-3 p-2" name="txtSender" id="txtSender" placeholder="Sender name" data-bs-toggle="tooltip" data-bs-placement="top" title="Please Enter Sender For Message,Max length for numeric:18 and alphanumeric:11"/>
+                                                                <input type="text" class="form-control form-custom-input mt-3 p-2" name="txtSender" id="txtSender" placeholder="Sender name" data-bs-toggle="tooltip" data-bs-placement="top" title="Please Enter Sender For Message,Max length for numeric:18 and alphanumeric:11"/>
                                                             </div>
                                                             <div class="mb-8">
                                                                 <label for="cmbMessageType" class="form-label fs-14 dark-color required">SMS type</label>
-                                                                <select class="num mt-3 p-2" onchange="javascript:setMessageLength();" id="cmbMessageType" name="cmbMessageType" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Please Select Message Type">
+                                                                <select class="form-control form-custom-input mt-3 p-2" onchange="javascript:setMessageLength();" id="cmbMessageType" name="cmbMessageType" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Please Select Message Type">
                                                                     <option value="">Please select one</option>
                                                                     <option value="0">Text</option>
                                                                     <option value="2">Arabic</option>
@@ -68,7 +68,7 @@
                                                             </div>
                                                             <div class="mb-8">
                                                                 <label for="txtNumber" class="form-label fs-14 dark-color required">Mobile number</label>
-                                                                <input type="text" class="num mt-3 p-2" onkeypress="return goodchars(event,'0123456789,+');" name="txtNumber" id="txtNumber" placeholder="Use number with country code" data-bs-toggle="tooltip" data-bs-placement="top" title="Please Enter Mobile Number,Maximum 30 numbers can be added seperated by comma.."/>
+                                                                <input type="text" class="form-control form-custom-input mt-3 p-2" onkeypress="return goodchars(event,'0123456789,+');" name="txtNumber" id="txtNumber" placeholder="Use number with country code" data-bs-toggle="tooltip" data-bs-placement="top" title="Please Enter Mobile Number,Maximum 30 numbers can be added seperated by comma.."/>
                                                             </div>
                                                             <div class="mb-8">
                                                                 <div class="d-flex justify-content-between align-items-center">
@@ -98,7 +98,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="d-flex justify-content-start align-items-start">
-                                                                <button type="submit" class="btn btn-primary py-2 px-8 rounded-1" id="btnSubmit" name="btnSubmit">
+                                                                <button type="submit" class="btn btn-primary btn-grad py-2 px-8 rounded-1" id="btnSubmit" name="btnSubmit">
                                                                     <span class="indicator-label">Send SMS</span>
                                                                     <span class="indicator-progress">
                                                                         <span class="spinner-border text-white" role="status">
@@ -106,7 +106,7 @@
                                                                         </span>
                                                                     </span>
                                                                 </button>
-                                                                <button type="button" class="btn btn-outline-dark btn-bordered py-2 px-8 rounded-2 ms-3" id="btnSaveTemplate" name="btnSaveTemplate">
+                                                                <button type="button" class="btn btn-outline-dark btn-bordered my-3 py-2 px-8 rounded-2 ms-3" id="btnSaveTemplate" name="btnSaveTemplate">
                                                                     <span class="indicator-label">Save as template</span>
                                                                     <span class="indicator-progress">
                                                                         <span class="spinner-border text-white" role="status">

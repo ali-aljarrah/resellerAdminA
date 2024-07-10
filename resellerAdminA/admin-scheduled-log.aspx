@@ -43,10 +43,10 @@
 								<!--begin::Content container-->
 								<div id="kt_app_content_container" class="app-container container-fluid">
 								<!--begin::Row-->
-                                    <div class="row g-5 g-xl-10 mb-xl-10 mt-0">
+                                    <div class="row g-5 mt-0">
                                         <!--begin::Col-->
-                                        <div class="col-md-12 mb-md-0 mb-5 mt-5">
-                                             <div class="card shadow-xs p-5 d-flex mb-5">
+                                        <div class="col-md-12 mb-md-0 mb-5">
+                                             <div class="card card-flush shadow-xs p-8 d-flex mb-5">
                                             <!--begin::Page title-->
                                             <div class="page-title gap-1 d-flex justify-content-between align-items-start">
                                                 <div>
@@ -62,9 +62,9 @@
                                             </div>
                                             <!--end::Page title-->
                                             <!--begin::Card widget 4-->
-                                            <div class="card card-flush border-0">
+                                            <div class="card-body border-0 ps-0 pr-0">
                                                 <!--begin::Card body-->
-                                                <div class="card-body pb-4 mt-0 pt-5 ps-0 pr-0">
+                                                <div class="pb-4 mt-0 pt-5">
                                                     <div class="table-responsive">
                                                         <table id="sent-sms-report" class="table custom-table table-row-gray-300 gy-5 datatable">
                                                             <thead>
