@@ -3,7 +3,7 @@
 
     bl.disabled = true;
 
-    const radioBtnPay = document.querySelectorAll("input[name=payment]:checked");
+    const radioBtnPay = document.querySelector("input[name=payment]:checked");
 
 
 
@@ -14,11 +14,20 @@
         return false;
     }
 
-    console.log(radioBtnPay.value)
-
     if (radioBtnPay.value == "custom") {
       
-        var customPrice = document.getElementById("the name of the price input")
+        var customPrice = document.getElementById("customPrice");
+
+        if (customPrice.value.trim() == "") {
+            toastr.error("Please enter your custom price!");
+
+            bl.disabled = false;
+            return false;
+        }
+
+        bl.disabled = false;
+        toastr.success("thank you for choosing ");
+        return false;
     }
 
     bl.disabled = false;
