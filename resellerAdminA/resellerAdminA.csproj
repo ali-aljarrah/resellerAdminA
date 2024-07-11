@@ -83,6 +83,7 @@
     <Content Include="assets\img\youtube.png" />
     <Content Include="assets\js\admin-scheduled-log.js" />
     <Content Include="assets\js\admin-sms-log.js" />
+    <Content Include="assets\js\affiliates.js" />
     <Content Include="assets\js\coverage.js" />
     <Content Include="assets\js\credits-log.js" />
     <Content Include="assets\js\custom\authentication\reset-password\reset-password.js" />
@@ -2194,6 +2195,7 @@
     <Content Include="sendbulk.aspx" />
     <Content Include="single-sms.aspx" />
     <Content Include="sms-log.aspx" />
+    <Content Include="sms-scheduled.aspx" />
     <Content Include="sms-summary.aspx" />
     <Content Include="smslog.aspx" />
     <Content Include="transactions-log.aspx" />
@@ -2355,6 +2357,13 @@
     </Compile>
     <Compile Include="sms-log.aspx.designer.cs">
       <DependentUpon>sms-log.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sms-scheduled.aspx.cs">
+      <DependentUpon>sms-scheduled.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sms-scheduled.aspx.designer.cs">
+      <DependentUpon>sms-scheduled.aspx</DependentUpon>
     </Compile>
     <Compile Include="sms-summary.aspx.cs">
       <DependentUpon>sms-summary.aspx</DependentUpon>

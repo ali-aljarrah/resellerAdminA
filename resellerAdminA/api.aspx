@@ -12,6 +12,7 @@
 
     <uc1:head runat="server" ID="head" />
     	<title>Metronic - The World's #1 Selling Bootstrap Admin Template by KeenThemes</title>
+        <link rel="stylesheet" href="/assets/css/prism.css">
 	</head>
 	<!--end::Head-->
 	<!--begin::Body-->
@@ -27,7 +28,7 @@
 			<!--begin::Page-->
 			<div class="app-page flex-column flex-column-fluid" id="kt_app_page">
 				<!--begin::Header-->
-                <uc1:menuTop runat="server" id="menuTop1" parentPageText="Home" childPageText="Dashboard"/>
+                <uc1:menuTop runat="server" id="menuTop1" parentPageText="API" childPageText="Dashboard"/>
 				<!--end::Header-->
 				<!--begin::Wrapper-->
 				<div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
@@ -152,7 +153,7 @@
                                                                 <p class="fs-14 gray mb-3 py-3">
                                                                 Here's a sample request using the 'GET' method on the HTTP interface.
                                                                 </p>
-                                                                <pre class="language-http white-color"><code class="language-http">https://demos.ynetinteractive.com/sendroidultimate/app/smsAPI?sendsms&apikey=Your_API_KEY&apitoken=YOUR_API_TOKEN&type=sms&from=SENDERID&to=123456&text=My+first+text&scheduledate=2023-08-30 04:33:19&route=0</code></pre>
+                                                                <pre class="language-http"><code class="language-http">https://demos.ynetinteractive.com/sendroidultimate/app/smsAPI?sendsms&apikey=Your_API_KEY&apitoken=YOUR_API_TOKEN&type=sms&from=SENDERID&to=123456&text=My+first+text&scheduledate=2023-08-30 04:33:19&route=0</code></pre>
                                                                 <div class="table-responsive my-8">
                                                                     <table class="table custom-table table-bordered table-striped table-row-gray-300 gy-5">
                                                                         <thead>
@@ -210,14 +211,14 @@
                                                                     </table>
                                                                 </div>
                                                                 <div class="fs-16 dark-color fw-600 mb-3">Sample Success Response (JSON)</div>
-                                                                <pre class="language-json white-color"><code class="language-json">{ 
+                                                                <pre class="language-json"><code class="language-json">{ 
     "request": "sendsms", 
     "status": "queued",
     "group_id": "1234",
     "date": "2023-08-30 04:33:19"
 }</code></pre>
                                                                 <div class="fs-16 dark-color fw-600 mt-8 mb-3">Sample Error Response (JSON)</div>
-                                                                <pre class="language-json white-color"><code class="language-json">{ 
+                                                                <pre class="language-json"><code class="language-json">{ 
     "request": "sendsms", 
     "status": "error",
     "message": "Sender ID not allowed"
@@ -231,7 +232,7 @@
                                                                 <p class="fs-14 gray mb-3 py-3">
                                                                 Here's a sample request using the 'GET' method on the HTTP interface.
                                                                 </p>
-                                                                <pre class="language-http white-color"><code class="language-http">https://demos.ynetinteractive.com/sendroidultimate/app/smsAPI&groupstatus&apikey=Your_API_KEY&apitoken=YOUR_API_TOKEN&groupid=1234</code></pre>
+                                                                <pre class="language-http"><code class="language-http">https://demos.ynetinteractive.com/sendroidultimate/app/smsAPI&groupstatus&apikey=Your_API_KEY&apitoken=YOUR_API_TOKEN&groupid=1234</code></pre>
                                                                 <div class="table-responsive my-8">
                                                                     <table class="table custom-table table-bordered table-striped table-row-gray-300 gy-5">
                                                                         <thead>
@@ -257,7 +258,7 @@
                                                                     </table>
                                                                 </div>
                                                                 <div class="fs-16 dark-color fw-600 mb-3">Sample Success Response (JSON)</div>
-                                                                <pre class="language-json white-color"><code class="language-json">{ 
+                                                                <pre class="language-json"><code class="language-json">{ 
     "request": "groupstatus",
     "status": "success",
     "group_id": "1234",
@@ -282,7 +283,7 @@
          "date": "2023-08-30 04:33:19"
 }</code></pre>
                                                                 <div class="fs-16 dark-color fw-600 mt-8 mb-3">Sample Error Response (JSON)</div>
-                                                                <pre class="language-json white-color"><code class="language-json">{ 
+                                                                <pre class="language-json"><code class="language-json">{ 
     "request": "groupstatus", 
     "status": "error",
     "message": "Error message"
@@ -296,7 +297,7 @@
                                                                 <p class="fs-14 gray mb-3 py-3">
                                                                 Here's a sample request using the 'GET' method on the HTTP interface.
                                                                 </p>
-                                                                <pre class="language-http white-color"><code class="language-http">https://demos.ynetinteractive.com/sendroidultimate/app/smsAPI?getinbox&apikey=Your_API_KEY&apitoken=YOUR_API_TOKEN&list=unread</code></pre>
+                                                                <pre class="language-http"><code class="language-http">https://demos.ynetinteractive.com/sendroidultimate/app/smsAPI?getinbox&apikey=Your_API_KEY&apitoken=YOUR_API_TOKEN&list=unread</code></pre>
                                                                 <div class="table-responsive white-color my-8">
                                                                     <table class="table custom-table table-bordered table-striped table-row-gray-300 gy-5">
                                                                         <thead>
@@ -322,7 +323,7 @@
                                                                     </table>
                                                                 </div>
                                                                 <div class="fs-16 dark-color fw-600 mb-3">Sample Success Response (JSON)</div>
-                                                                <pre class="language-json white-color"><code class="language-json">{ 
+                                                                <pre class="language-json"><code class="language-json">{ 
     "request": "groupstatus",
     "status": "success",
     "group_id": "1234",
@@ -347,7 +348,7 @@
          "date": "2023-08-30 04:33:19"
 }</code></pre>
                                                                 <div class="fs-16 dark-color fw-600 mt-8 mb-3">Sample Error Response (JSON)</div>
-                                                                <pre class="language-json white-color"><code class="language-json">{ 
+                                                                <pre class="language-json "><code class="language-json">{ 
     "request": "groupstatus", 
     "status": "error",
     "message": "Error message"
@@ -361,7 +362,7 @@
                                                                 <p class="fs-14 gray py-3 mb-3">
                                                                 Here's a sample request using the 'GET' method on the HTTP interface.
                                                                 </p>
-                                                                <pre class="language-http white-color"><code class="language-http">https://demos.ynetinteractive.com/sendroidultimate/app/smsAPI?balance&apikey=Your_API_KEY&apitoken=YOUR_API_TOKEN</code></pre>
+                                                                <pre class="language-http"><code class="language-http">https://demos.ynetinteractive.com/sendroidultimate/app/smsAPI?balance&apikey=Your_API_KEY&apitoken=YOUR_API_TOKEN</code></pre>
                                                                 <div class="table-responsive my-8">
                                                                     <table class="table custom-table table-bordered table-striped table-row-gray-300 gy-5">
                                                                         <thead>
@@ -383,11 +384,11 @@
                                                                     </table>
                                                                 </div>
                                                                 <div class="fs-16 dark-color fw-600 mb-3">Sample Success Response (JSON)</div>
-                                                                <pre class="language-json white-color"><code class="language-json">{ 
+                                                                <pre class="language-json"><code class="language-json">{ 
     "balance": "12345"
 }</code></pre>
                                                                 <div class="fs-16 dark-color fw-600 mt-8 mb-3">Sample Error Response (JSON)</div>
-                                                                <pre class="language-json white-color"><code class="language-json">{ 
+                                                                <pre class="language-json"><code class="language-json">{ 
     "request": "balance", 
     "status": "error",
     "message": "Invalid user"
@@ -421,6 +422,7 @@
    </div>
 
 		<uc1:footerLinks runat="server" id="footerLinks" />
+         <script src="/assets/js/prism.js"></script>
 
 </body>
 <!--end::Body-->

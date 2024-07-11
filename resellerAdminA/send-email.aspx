@@ -27,7 +27,7 @@
         <!--begin::Page-->
         <div class="app-page flex-column flex-column-fluid" id="kt_app_page">
             <!--begin::Header-->
-            <uc1:menuTop runat="server" ID="menuTop1" parentPageText="Home" childPageText="Dashboard" />
+            <uc1:menuTop runat="server" ID="menuTop1" parentPageText="Send Email" childPageText="Dashboard" />
             <!--end::Header-->
             <!--begin::Wrapper-->
             <div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
@@ -146,8 +146,6 @@
             </div>
             <!--end::App-->
         </div>
-
-
         <!--modal add user popup-->
         <div class="modal fade" tabindex="-1" id="popupUserList">
             <div class="modal-dialog">
@@ -167,7 +165,7 @@
                             <div class="col-lg-12">
                                 <div class="mb-5">
                                     <label for="emailRecipient" class="form-label fs-14 dark-color required">Email recipient</label>
-                                    <select class="form-select form-select-solid" name="emailRecipient" id="emailRecipient">
+                                    <select class="form-control form-custom-input mt-3 p-2" name="emailRecipient" id="emailRecipient">
                                         <option value="" selected>Select...</option>
                                         <option value="all-registered-customers">All Registered Customers</option>
                                         <option value="all-unverified-customers">All Unverified Customers</option>
@@ -176,7 +174,7 @@
                                 </div>
                                 <div class="mb-5">
                                     <label for="emailMessage" class="form-label fs-14 dark-color required">Full name</label>
-                                    <textarea class="form-control form-control-solid" name="emailMessage" id="emailMessage" rows="5" placeholder="Enter the email's message here..."></textarea>
+                                    <textarea class="form-control form-custom-input mt-3 p-2" name="emailMessage" id="emailMessage" rows="5" placeholder="Enter the email's message here..."></textarea>
                                 </div>
                             </div>
                         </div>
@@ -196,18 +194,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
         <uc1:footerLinks runat="server" ID="footerLinks" />
         <script src="/assets/js/send-email.js"></script>
 </body>

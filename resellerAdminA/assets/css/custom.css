@@ -329,7 +329,52 @@ button.btn.btn-secondary.buttons-pdf.buttons-html5 {
 :not(pre) > code[class*=language-], pre[class*=language-] {
     background: #121212 !important;
     border-radius: 10px;
+    color:red;
 }
+
+code[class*=language-], pre[class*=language-] {
+    color: #ccc;
+    background: 0 0;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 1em;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+pre[class*=language-] {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .fs-12.cyan-color.fw-bold.cyan-bg.rounded-2.p-2.cyan-border.mb-4.w-fit {
     border: 1px solid !important;

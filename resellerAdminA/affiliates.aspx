@@ -27,7 +27,7 @@
 			<!--begin::Page-->
 			<div class="app-page flex-column flex-column-fluid" id="kt_app_page">
 				<!--begin::Header-->
-                <uc1:menuTop runat="server" id="menuTop1" parentPageText="Home" childPageText="Dashboard"/>
+                <uc1:menuTop runat="server" id="menuTop1" parentPageText="Affiliates" childPageText="Dashboard"/>
 				<!--end::Header-->
 				<!--begin::Wrapper-->
 				<div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
@@ -245,15 +245,15 @@
 												<p class="fs-18 dark-color fw-600 py-5 my-5">
 													Your unique affiliate link:
 												</p>
-												<div class="card-body border-1 rounded-4 bg-gray w-100 pt-4">
-													<div class="d-flex align-items-center justify-content-between mt-5">
-                                                        <div class="fs-14 mx-3">
+												<div class="card-body border-1 rounded-4 bg-gray w-100">
+													<div class="d-flex justify-content-between align-items-md-center">
+                                                        <div class="fs-14"> 
                                                             <a class="colored-link" href="https://demos.ynetinteractive.com/sendroidultimate/app/index.php?ref=mjuoALt69I3QoSza">
                                                                 https://demos.ynetinteractive.com/sendroidultimate/app/index.php?ref=mjuoALt69I3QoSza
                                                             </a>
                                                         </div>
                                                         <div class="mt-5 mt-md-0">
-                                                            <button id="kt_clipboard_3" class="btn btn-primary py-2 px-8 rounded-1" data-clipboard-text="https://demos.ynetinteractive.com/sendroidultimate/app/index.php?ref=mjuoALt69I3QoSza">
+                                                            <button id="kt_clipboard_3" class="btn btn-primary btn-grad py-2 px-8 rounded-1" data-clipboard-text="https://demos.ynetinteractive.com/sendroidultimate/app/index.php?ref=mjuoALt69I3QoSza">
                                                                 Copy link
                                                             </button> 
                                                         </div>
@@ -282,6 +282,9 @@
 
 			<uc1:footerLinks runat="server" id="footerLinks" />
 			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+			
+			<script src="/assets/js/affiliates.js"></script>
+
 			<script>
                 // GOOGLE CHARTS INIT
                 google.load('visualization', '1', {

@@ -19,7 +19,7 @@
 		<uc1:loader runat="server" id="loader" />
 		<!--begin::Theme mode setup on page load-->
 		<script>
-			var defaultThemeMode = "light"; var themeMode; if ( document.documentElement ) { if ( document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if ( localStorage.getItem("data-bs-theme") !== null ) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }
+            var defaultThemeMode = "light"; var themeMode; if (document.documentElement) { if (document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if (localStorage.getItem("data-bs-theme") !== null) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }
         </script>
 		<!--end::Theme mode setup on page load-->
 		<!--begin::App-->
@@ -27,7 +27,7 @@
 			<!--begin::Page-->
 			<div class="app-page flex-column flex-column-fluid" id="kt_app_page">
 				<!--begin::Header-->
-                <uc1:menuTop runat="server" id="menuTop1" parentPageText="Home" childPageText="Dashboard"/>
+                <uc1:menuTop runat="server" id="menuTop1" parentPageText="SMS Log" childPageText="Dashboard"/>
 				<!--end::Header-->
 				<!--begin::Wrapper-->
 				<div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
@@ -48,56 +48,36 @@
                                             
 										<!--begin::Col-->
 										  <div class=" pb-5">
-                                              <div class="card shadow-xs p-5 d-flex mb-5">
+                                              <div class="card shadow-xs p-8 d-flex mb-5">
                                                    <div class="page-title gap-1 d-flex justify-content-between align-items-start">
                                                        <div>
                                                           <!--begin::Title-->
                                                            <div class="d-flex justify-content-start align-items-center mb-1">
-                                                               <h2 class="page-heading text-dark fw-bold mb-3 me-3">Sent SMS Log</h2>
+                                                               <h2 class="page-heading text-dark fw-bold mb-3 me-3">SMS Log</h2>
                                                            </div>
                                                            <p class="fs-16 color-neutral-grey pb-5">
-                                                                This list is a temporary list of reports for precisely 24 hours. This ensures swift access to recent data while maintaining data privacy and security.                                                       </div>
+                                                              See a complete list of all the SMS users.
+														   </p>
+													   </div>
                                                    </div>
                                                     <!--begin::Card body-->
                                                     <div class="table-responsive">
 														<table id="sent-sms-report" class="table custom-table table-row-gray-300 gy-5 datatable">
                                                             <thead>
                                                                 <tr class="fs-14 fw-600 dark-color">
-                                                                    <th class="white-color">Recipient</th>
-                                                                    <th class="white-color">Message Content</th>
-                                                                    <th class="white-color">Date & Time</th>
-                                                                    <th class="white-color">Status</th>
+                                                                    <th class="white-color">Header 1</th>
+                                                                    <th class="white-color">Header 2</th>
+                                                                    <th class="white-color">Header 3</th>
+                                                                    <th class="white-color">Header 4</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>60146255666</td>
-                                                                    <td class="mw-100px">
-																		<div class="overflow-clip-ellipsis" data-bs-toggle="tooltip" data-bs-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.">
-																		Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-																		</div>
-																	</td>
-                                                                    <td>22/08/2023 03:09:36</td>
-                                                                    <td class="text-success">Sent</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>0147775666</td>
-                                                                    <td class="mw-100px">
-																		<div class="overflow-clip-ellipsis" data-bs-toggle="tooltip" data-bs-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.">
-																		Lorem ipsum dolor sit amet, consectetur adipiscing elit. 																		</div>
-																	</td>
-                                                                    <td>22/08/2023 03:09:36</td>
-                                                                    <td class="text-success">Sent</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>0136255666</td>
-                                                                    <td class="mw-100px">
-																		<div class="overflow-clip-ellipsis" data-bs-toggle="tooltip" data-bs-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.">
-																		Lorem ipsum dolor sit amet, consectetur adipiscing elit. 																		</div>
-																	</td>
-                                                                    <td>22/08/2023 03:09:36</td>
-                                                                    <td class="text-danger">Failed</td>
-                                                                </tr>
+																  <td>-</td>
+																  <td>-</td>
+																  <td>-</td>
+																  <td>-</td>
+															   </tr>
                                                             </tbody>
                                                         </table> 
                                                     </div>

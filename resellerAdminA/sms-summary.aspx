@@ -27,7 +27,7 @@
 			<!--begin::Page-->
 			<div class="app-page flex-column flex-column-fluid" id="kt_app_page">
 				<!--begin::Header-->
-                <uc1:menuTop runat="server" id="menuTop1" parentPageText="Home" childPageText="Dashboard"/>
+                <uc1:menuTop runat="server" id="menuTop1" parentPageText="SMS Summary" childPageText="Dashboard"/>
 				<!--end::Header-->
 				<!--begin::Wrapper-->
 				<div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
@@ -215,9 +215,9 @@
 												</div>
 												<!--end::Header-->
 												<!--begin::Body-->
-												<div class="card-body d-flex align-items-end px-0 pt-3 pb-5">
+												<div class="px-0 pt-3 pb-5">
 													<!--begin::Chart-->
-													<div id="kt_docs_google_chart_column_2"></div>
+													<div id="kt_docs_google_chart_column_2" style="height: 350px;"></div>
 													<!--end::Chart-->
 												</div>
 												<!--end: Card Body-->
@@ -350,19 +350,24 @@
 					data.addColumn('number', 'Motivation Level');
 					data.addColumn('number', 'Energy Level');
 
+
 					data.addRows([
+                        [{
+                            v: [7, 0, 0],
+                            f: 'syria'
+                        }, 4, 4.25],
 						[{
 							v: [8, 0, 0],
 							f: '8 am'
-						}, 1, .5],
+						}, 10, 3.25],
 						[{
 							v: [9, 0, 0],
 							f: '9 am'
-						}, 2, .5],
+						}, 2, 1.5],
 						[{
 							v: [10, 0, 0],
 							f: '10 am'
-						}, 3, 1],
+						}, 3, 3.5],
 						[{
 							v: [11, 0, 0],
 							f: '11 am'
@@ -373,7 +378,7 @@
 						}, 5, 2.25],
 						[{
 							v: [13, 0, 0],
-							f: '1 pm'
+							f: 'wrwrwrw'
 						}, 6, 3],
 						[{
 							v: [14, 0, 0],
@@ -393,21 +398,7 @@
 						}, 10, 10],
 					]);
 
-                    var data = google.visualization.arrayToDataTable([
-                        ['Element', 'SMS', { role: 'style' }],
-                        ['England', 22.94, '#245DF1'],
-                        ['Scotland', 22.94, '#E6E8EC'],
-                        ['Germany', 32.49, '#245DF1'],
-                        ['Japan', 32.49, '#E6E8EC'],
-                        ['China', 10.94, '#245DF1'],
-                        ['India', 10.94, '#E6E8EC'],
-                        ['Brazil', 20.30, '#245DF1'],
-                        ['Mongolia', 20.30, '#eE6E8EC'],
-                        ['Spain', 10.94, '#245DF1'],
-                        ['USA', 10.94, '#E6E8EC'],
-                        ['Korea', 32.49, '#245DF1'],
-                        ['Ireland', 32.49, '#E6E8EC'],
-                    ]);
+                   
 
 					var options = {
 						focusTarget: 'category',
