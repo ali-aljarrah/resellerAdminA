@@ -5,7 +5,12 @@
 
     const radioBtnPay = document.querySelector("input[name=payment]:checked");
 
+    if (radioBtnPay == null) {
+        toastr.error("Please Choose Reload Option!");
 
+        bl.disabled = false;
+        return false;
+    }
 
     if (radioBtnPay.length <= 0) {
         toastr.error("Please Choose Reload Option!");
@@ -26,14 +31,20 @@
         }
 
         bl.disabled = false;
-        toastr.success("thank you for choosing ");
-        return false;
+        __doPostBack(id, '');
     }
 
     bl.disabled = false;
-    toastr.success("thank you for choosing ");
-
-   
+    __doPostBack(id, '');
 }
 
 
+document.getElementById("customPrice").addEventListener("focus", function () {
+    document.querySelectorAll("input[name=payment]").forEach(el => {
+        if (el.value == 'custom') {
+            el.checked = true;
+        } else {
+            el.checked = false;
+        }
+    })
+});
