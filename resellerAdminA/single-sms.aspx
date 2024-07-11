@@ -84,7 +84,7 @@
                                                     <input type="hidden" name="codePoints" value="" onblur="document.frmSendSingleSms.txtMessage.value = convertCP2Char( document.frmSendSingleSms.codePoints.value );&#10;document.frmSendSingleSms.UTF16.value = convertCP2UTF16( document.frmSendSingleSms.codePoints.value );&#10;return false;" readonly="readonly" />
                                                     <input type="hidden" name="UTF16" value="" onblur="document.frmSendSingleSms.codePoints.value = convertUTF162CP( document.frmSendSingleSms.UTF16.value );&#10;return false;" rows="3" cols="50" />
                                                     <textarea runat="server" name="txtMessage" rows="4" id="txtMessage" placeholder="Write message here..."
-                                                        class="form-control form-custom-textarea" size="30" maxlength="335"
+                                                        class="form-control form-custom-input mt-3 " size="30" maxlength="335"
                                                         onkeypress="javascript:setCounter()"
                                                         onblur="javascript:setCounter();" onclick="javascript:setCounter();"
                                                         onkeyup="javascript:setCounter();" dir="ltr"></textarea>

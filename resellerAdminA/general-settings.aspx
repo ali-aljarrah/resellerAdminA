@@ -461,7 +461,7 @@
         </div>
         <!--modal add user popup-->
         <div class="modal fade" tabindex="-1" id="popupUserList">
-            <div class="modal-dialog modal-xl p-8">
+            <div class="modal-dialog modal-lg p-8">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h3 class="modal-title">Add Payment Gateway</h3>
@@ -473,71 +473,65 @@
                     </div>
                     <!--begin::Body-->
                     <form action="#">
-                        <div class="row my-4 p-8">
+                        <div class="row my-6 p-8">
                             <div class="col-lg-6">
                                 <div class="mb-5">
-                                    <label for="businessName" class="form-label required">Business name</label>
-                                    <input required class="form-control form-custom-input mt-3 p-2" value="Tesla X Inc." type="text" name="businessName" id="businessName" placeholder="Enter your business name">
+                                    <label for="newGatewayType" class="form-label required">Gateway type</label>
+                                    <select required name="newGatewayType" id="newGatewayType" class="form-control form-custom-input mt-3 p-2">
+                                        <option value="" selected>Select a gateway template</option>
+                                        <option value="custom">Custom</option>
+                                        <option value="paystack">Paystack</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="mb-5">
-                                    <label for="supportEmail" class="form-label required">Support email</label>
-                                    <input required class="form-control form-custom-input mt-3 p-2" value="alexflynch@gmail.com" type="email" name="supportEmail" id="supportEmail" placeholder="Enter business support email">
+                                    <label for="newGatewayName" class="form-label required">Display name</label>
+                                    <input required class="form-control form-custom-input mt-3 p-2" value="" type="text" name="newGatewayName" id="newGatewayName" placeholder="Display name">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="mb-5">
-                                    <label for="defaultSenderID" class="form-label required">Default sender ID</label>
-                                    <input required class="form-control form-custom-input mt-3 p-2" value="TeslaX" type="text" name="defaultSenderID" id="defaultSenderID" placeholder="Your default sender ID">
+                                    <label for="newGatewayMinimumOrder" class="form-label required">Minimum order (USD)</label>
+                                    <input required class="form-control form-custom-input mt-3 p-2" value="" type="number" name="newGatewayMinimumOrder" id="newGatewayMinimumOrder" placeholder="0.000000">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="mb-5">
-                                    <label for="businessAddress" class="form-label required">Business address</label>
-                                    <input required class="form-control form-custom-input mt-3 p-2" value="Office K-420-69, 69th floor, Wayne Enterprise, Gotham" type="text" name="businessAddress" id="businessAddress" placeholder="Your business address">
+                                    <label for="newGatewayFeeType" class="form-label required">Gateway Fee Type</label>
+                                    <select required name="newGatewayFeeType" id="newGatewayFeeType" class="form-control form-custom-input mt-3 p-2">
+                                        <option value="none">None</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="mb-5">
-                                    <label for="businessWebsite" class="form-label required">Website</label>
-                                    <input required class="form-control form-custom-input mt-3 p-2" value="www.teslax.com" type="text" name="businessWebsite" id="businessWebsite" placeholder="Your business website">
+                                    <label for="newGatewayFeeAmount" class="form-label required">Gateway Fee Amount (USD)</label>
+                                    <input required class="form-control form-custom-input mt-3 p-2" value="" type="number" name="newGatewayFeeAmount" id="newGatewayFeeAmount" placeholder="0.00">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="mb-5">
-                                    <label for="resellerDomain" class="form-label required">Reseller domain</label>
-                                    <input required class="form-control form-custom-input mt-3 p-2" value="teslaxx.com" type="text" name="resellerDomain" id="resellerDomain" placeholder="Your business reseller domain">
+                                    <label for="newGatewaynotice" class="form-label required">Gateway notice</label>
+                                    <input required class="form-control form-custom-input mt-3 p-2" value="" type="number" name="newGatewaynotice" id="newGatewaynotice" placeholder="0.00">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="mb-5">
-                                    <label for="businessSignature" class="form-label required">Signature</label>
-                                    <input required name="businessSignature" id="businessSignature" type="file" accept="image/*" class="form-control form-custom-input mt-3 p-2">
-                                </div>
-                                <div class="mb-5">
-                                    <label for="" class="form-label">Signature</label>
-                                    <div class="w-150px h-150px bg-gray-200"></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="mb-5">
-                                    <label for="businessLogo" class="form-label required">Logo</label>
-                                    <input required name="businessLogo" id="businessLogo" type="file" accept="image/*" class="form-control form-custom-input mt-3 p-2">
-                                </div>
-                                <div class="mb-5">
-                                    <label for="" class="form-label">Logo</label>
-                                    <div class="w-150px h-150px bg-gray-200"></div>
+                                    <label for="EnableNewGateway" class="form-label">Enable gateway</label>
+                                    <select name="EnableNewGateway" id="EnableNewGateway" class="form-control form-custom-input mt-3 p-2">
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
-                        
                     </form>
                     <!--end::Body-->
                     <div class="modal-footer">
                         <!-- <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>-->
-                        <button type="button" class="btn btn-primary btn-grad py-2 px-6 rounded-1" id="paymentSubmitBtn">
-                            <span class="indicator-label">Save Change</span>
+                       <button type="button" class="btn btn-primary btn-grad py-2 px-6 rounded-1" id="newGatewaySubmitBtn">
+                            <span class="indicator-label">Save gateway</span>
                             <span class="indicator-progress">
                                 <span class="spinner-border text-white" role="status">
                                     <span class="visually-hidden">Loading...</span>
