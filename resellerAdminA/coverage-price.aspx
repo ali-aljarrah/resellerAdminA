@@ -46,7 +46,7 @@
 									<div class="row gy-5 g-xl-10">
                                         <!--begin::Col-->
                                         <div class="col-md-12 mb-md-0 mb-5 mt-5">
-                                                <div class="card card-flush shadow-xs p-5 border-0">
+                                                <div class="card card-flush shadow-xs p-8 border-0">
                                                 <!--begin::Page title-->
                                                 <div class="page-title gap-1 d-flex justify-content-between align-items-start">
                                                     <div>

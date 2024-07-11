@@ -108,6 +108,7 @@
     <Content Include="assets\js\sendsms.js" />
     <Content Include="assets\js\sentreport.js" />
     <Content Include="assets\js\settings.js" />
+    <Content Include="assets\js\sms-scheduled.js" />
     <Content Include="assets\js\sms-summary.js" />
     <Content Include="assets\js\transactions-log.js" />
     <Content Include="assets\js\user-list.js" />

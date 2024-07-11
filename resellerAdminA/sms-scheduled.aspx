@@ -41,84 +41,86 @@
                         <!--begin::Content-->
                         <div id="kt_app_content" class="app-content flex-column-fluid">
                             <!--begin::Content container-->
-                            <div id="kt_app_content_container" class="app-container container-xxl">
+                            <div id="kt_app_content_container" class="app-container container-fluid">
                                 <!--begin::Row-->
-                                <div class="row g-5 g-xl-10 mb-xl-10 mt-0">
-                                    <!--begin::Col-->
-                                    <div class="col-md-12 mb-md-0 mb-5 mt-5">
-                                        <div class="card card-flush shadow-xs h-100 p-8">
-                                        <!--begin::Page title-->
-                                        <div class="page-title gap-1 d-flex justify-content-between align-items-start">
-                                            <div>
-                                                <!--begin::Title-->
-                                                <div class="d-flex justify-content-start align-items-center mb-1">
-                                                    <h1 class="page-heading text-dark fw-bold m-0 me-3">Sent SMS Scheduled Log</h1>
+                                <div class="row gy-5 g-xl-10">
+                                    <div class="col-md-12">
+
+                                        <!--begin::Col-->
+                                        <div class=" pb-5">
+                                            <div class="card shadow-xs p-8 d-flex mb-5">
+                                            <div class="page-title gap-1 d-flex justify-content-between align-items-start">
+                                                <div>
+                                                   <!--begin::Title-->
+                                                    <div class="d-flex justify-content-start align-items-center mb-1">
+                                                        <h2 class="page-heading text-dark fw-bold mb-3 me-3">Sent SMS Scheduled Log</h2>
+                                                    </div>
+                                                    <p class="fs-16 color-neutral-grey pb-5">
+                                                       This list is a temporary list of reports for precisely 24 hours. This ensures swift access to recent data while maintaining data privacy and security.
+					                                </p>
+	                                               </div>
+                                            </div>
+                                            <div class="card-body border-0 pt-5 ps-0 pr-0">
+                                                <!--begin::Card body-->
+                                                <div class="pb-4 mt-0">
+                                                    <div class="table-responsive">
+                                                        <table id="sent-sms-report" class="table custom-table table-bordered table-row-gray-300 gy-5 datatable">
+                                                            <thead>
+                                                                <tr class="fs-14 fw-600 dark-color">
+                                                                    <th class="white-color">Recipient</th>
+                                                                    <th class="white-color">Message Content</th>
+                                                                    <th class="white-color">Date & Time</th>
+                                                                    <th class="white-color">Status</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>60146255666</td>
+                                                                    <td class="mw-100px">
+                                                                        <div class="overflow-clip-ellipsis" data-bs-toggle="tooltip" data-bs-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.">
+                                                                            Lorem ipsum dolor sit amet, 
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>22/08/2023 03:09:36</td>
+                                                                    <td class="text-success fw-600">Sent</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>0147775666</td>
+                                                                    <td class="mw-100px">
+                                                                        <div class="overflow-clip-ellipsis" data-bs-toggle="tooltip" data-bs-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.">
+                                                                            Lorem ipsum dolor sit amet, 
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>22/08/2023 03:09:36</td>
+                                                                    <td class="text-success fw-600">Sent</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>0136255666</td>
+                                                                    <td class="mw-100px">
+                                                                        <div class="overflow-clip-ellipsis" data-bs-toggle="tooltip" data-bs-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.">
+                                                                            Lorem ipsum dolor sit amet, 
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>22/08/2023 03:09:36</td>
+                                                                    <td class="text-primary fw-600">Upcoming</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
-                                                <p class="fs-14 gray pt-5">
-                                                    This list is a temporary list of reports for precisely 24 hours. This ensures swift access to recent data while maintaining data privacy and security.
-                                                </p>
-                                                <!--end::Title-->
+                                                <!--end::Card body-->
+
+                                                <!--end::Card widget 4-->
                                             </div>
                                         </div>
-                                        <!--end::Page title-->
-                                        <!--begin::Card widget 4-->
-                                        <div class="card-body border-0 pt-5 ps-0 pr-0">
-                                            <!--begin::Card body-->
-                                            <div class="pb-4 mt-0">
-                                                <div class="table-responsive">
-                                                    <table id="sent-sms-report" class="table custom-table table-bordered table-row-gray-300 gy-5 datatable">
-                                                        <thead>
-                                                            <tr class="fs-14 fw-600 dark-color">
-                                                                <th class="white-color">Recipient</th>
-                                                                <th class="white-color">Message Content</th>
-                                                                <th class="white-color">Date & Time</th>
-                                                                <th class="white-color">Status</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>60146255666</td>
-                                                                <td class="mw-100px">
-                                                                    <div class="overflow-clip-ellipsis" data-bs-toggle="tooltip" data-bs-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.">
-                                                                        Lorem ipsum dolor sit amet, 
-                                                                    </div>
-                                                                </td>
-                                                                <td>22/08/2023 03:09:36</td>
-                                                                <td class="text-success fw-600">Sent</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>0147775666</td>
-                                                                <td class="mw-100px">
-                                                                    <div class="overflow-clip-ellipsis" data-bs-toggle="tooltip" data-bs-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.">
-                                                                        Lorem ipsum dolor sit amet, 
-                                                                    </div>
-                                                                </td>
-                                                                <td>22/08/2023 03:09:36</td>
-                                                                <td class="text-success fw-600">Sent</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>0136255666</td>
-                                                                <td class="mw-100px">
-                                                                    <div class="overflow-clip-ellipsis" data-bs-toggle="tooltip" data-bs-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.">
-                                                                        Lorem ipsum dolor sit amet, 
-                                                                    </div>
-                                                                </td>
-                                                                <td>22/08/2023 03:09:36</td>
-                                                                <td class="text-primary fw-600">Upcoming</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                            <!--end::Card body-->
-                                        </div>
-                                        <!--end::Card widget 4-->
+                                        <!--end::Row-->
                                     </div>
-                                    <!--end::Col-->
+                                    <!--end::Content container-->
                                 </div>
-                                <!--end::Row-->
+                                <!--end::Content-->
                             </div>
-                            <!--end::Content container-->
+                         </div>
+                            <!--end::Content wrapper-->
                             <!--begin::Footer-->
                             <uc1:footer runat="server" ID="footer" />
                             <!--end::Footer-->
@@ -131,8 +133,8 @@
             </div>
             <!--end::App-->
         </div>
-
         <uc1:footerLinks runat="server" ID="footerLinks" />
+         <script src="/assets/js/sms-scheduled.js"></script>
 </body>
 <!--end::Body-->
 </html>

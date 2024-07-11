@@ -174,7 +174,7 @@
                                 </div>
                                 <div class="mb-5">
                                     <label for="emailMessage" class="form-label fs-14 dark-color required">Full name</label>
-                                    <textarea class="form-control form-custom-input mt-3 p-2" name="emailMessage" id="emailMessage" rows="5" placeholder="Enter the email's message here..."></textarea>
+                                    <textarea class="form-control form-custom-textarea mt-3 p-2" name="emailMessage" id="emailMessage" rows="5" placeholder="Enter the email's message here..."></textarea>
                                 </div>
                             </div>
                         </div>
