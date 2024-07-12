@@ -212,9 +212,9 @@
 									<!--end::Row-->
 									<!--begin::Row-->
 									<div class="row g-5 g-xl-10">
-										<div class="col-md-12">
+										<div class="col-md-12 mb-5">
 											<!--begin::Chart widget 38-->
-											<div class="card card-flush h-100 mb-5">
+											<div class="card card-flush border-0 shadow-xs h-100 mb-5">
 												<!--begin::Header-->
 												<div class="card-header pt-8">
 													<!--begin::Title-->

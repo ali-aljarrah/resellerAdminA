@@ -52,10 +52,10 @@
                                             <div class="card-body pb-4 mt-5 pt-0 ps-0 pr-0">
                                                 <ul class="nav nav-tabs nav-line-tabs nav-line-tabs-2x fs-6">
                                                     <li class="nav-item">
-                                                        <a class="nav-link py-3 px-5 active" data-bs-toggle="tab" href="#business_details_tab">Business Details</a>
+                                                        <a class="nav-link py-3 px-5 fs-18 active" data-bs-toggle="tab" href="#business_details_tab">Business Details</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link py-3 px-5" data-bs-toggle="tab" href="#payment_gateway_tab">Payment Gateway</a>
+                                                        <a class="nav-link py-3 px-5 fs-18" data-bs-toggle="tab" href="#payment_gateway_tab">Payment Gateway</a>
                                                     </li>
                                                 </ul>
 
@@ -348,7 +348,7 @@
                                                     <div class="tab-pane fade" id="payment_gateway_tab" role="tabpanel">
                                                         <div class="row">
                                                             <div class="col-md-12">
-                                                                <div class="card shadow-xs p-5 d-flex my-5">
+                                                                <div class="card shadow-xs p-8 d-flex my-5">
                                                                     <!--begin::Accordion-->
                                                                     <!--begin::Item-->
                                                                     <div class="mb-5">

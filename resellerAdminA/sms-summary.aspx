@@ -177,7 +177,7 @@
 									<div class="row g-5 g-xl-10 mb-xl-10">
 										<div class="col-md-12 mb-xl-10">
 											<!--begin::Chart widget 38-->
-											<div class="card card-flush h-100 mb-5 mb-xl-10">
+											<div class="card card-flush border-0 shadow-xs h-100 mb-5 mb-xl-10">
 												<!--begin::Header-->
 												<div class="card-header pt-8">
 													<!--begin::Title-->
@@ -204,7 +204,7 @@
 										<!--begin::Col-->
 										<div class="col-xl-12">
 											<!--begin::Chart widget 38-->
-											<div class="card card-flush h-100 mb-5 mb-xl-10">
+											<div class="card card-flush border-0 shadow-xs h-100 mb-5 mb-xl-10">
 												<!--begin::Header-->
 												<div class="card-header pt-8">
 													<!--begin::Title-->

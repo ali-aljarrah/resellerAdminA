@@ -323,7 +323,7 @@ button.btn.btn-secondary.buttons-pdf.buttons-html5 {
 .cutom-tabs .nav-line-tabs.nav-line-tabs-2x .nav-item .nav-link:hover {
     color: #121212 !important;
     border-bottom-color: #0047ff;
-    border-bottom-width: 2px;
+    border-bottom-width: 0px;
 }
 
 :not(pre) > code[class*=language-], pre[class*=language-] {
@@ -355,6 +355,10 @@ pre[class*=language-] {
     padding: 1em;
     margin: .5em 0;
     overflow: auto;
+}
+
+.nav-line-tabs.nav-line-tabs-2x {
+    border-bottom-width: 0px;
 }
 
 
@@ -641,7 +645,7 @@ input#dt-search-0 {
 /*form search js file */
 
 .nav-line-tabs.nav-line-tabs-2x .nav-item .nav-link.active, .nav-line-tabs.nav-line-tabs-2x .nav-item .nav-link:hover:not(.disabled), .nav-line-tabs.nav-line-tabs-2x .nav-item.show .nav-link {
-    background: #006ae6 !important;
+    background: -webkit-linear-gradient(#0E41C1, #0047FF) !important;
     border: none !important;
     border-radius: 20px !important;
     color: white !important;

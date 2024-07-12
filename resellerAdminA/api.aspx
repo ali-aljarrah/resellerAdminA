@@ -54,22 +54,22 @@
                                                 <div class="card-body pb-4 mt-5 pt-0 ps-0 pr-0">
                                                     <ul class="nav nav-tabs nav-line-tabs nav-line-tabs-2x mb-5 fs-6">
                                                         <li class="nav-item">
-                                                            <a class="nav-link fs-16 px-5 active" data-bs-toggle="tab" href="#api_documentation_tab">API Documentation</a>
+                                                            <a class="nav-link fs-16 px-5 fs-18 active" data-bs-toggle="tab" href="#api_documentation_tab">API Documentation</a>
                                                         </li>
                                                         <li class="nav-item">
-                                                            <a class="nav-link fs-16 px-5" data-bs-toggle="tab" href="#send_sms_tab">Sending SMS</a>
+                                                            <a class="nav-link fs-16 px-5 fs-18" data-bs-toggle="tab" href="#send_sms_tab">Sending SMS</a>
                                                         </li>
                                                         <li class="nav-item">
-                                                            <a class="nav-link fs-16 px-5" data-bs-toggle="tab" href="#check_sms_tab">Check SMS Status</a>
+                                                            <a class="nav-link fs-16 px-5 fs-18" data-bs-toggle="tab" href="#check_sms_tab">Check SMS Status</a>
                                                         </li>
                                                         <li class="nav-item">
-                                                            <a class="nav-link fs-16 px-5" data-bs-toggle="tab" href="#read_sms_tab">Read SMS Inbox</a>
+                                                            <a class="nav-link fs-16 px-5 fs-18" data-bs-toggle="tab" href="#read_sms_tab">Read SMS Inbox</a>
                                                         </li>
                                                         <li class="nav-item">
-                                                            <a class="nav-link fs-16 px-5" data-bs-toggle="tab" href="#credit_balance_tab">Credit Balance</a>
+                                                            <a class="nav-link fs-16 px-5 fs-18" data-bs-toggle="tab" href="#credit_balance_tab">Credit Balance</a>
                                                         </li>
                                                     </ul>
-
+                                                  <div class="card shadow-xs p-8 d-flex mb-5">
                                                     <div class="tab-content mt-8" id="myTabContent">
                                                         <div class="tab-pane fade show active" id="api_documentation_tab" role="tabpanel">
                                                             <div>
@@ -393,7 +393,9 @@
     "status": "error",
     "message": "Invalid user"
 }</code></pre>
-                                                                 </div>
+
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
