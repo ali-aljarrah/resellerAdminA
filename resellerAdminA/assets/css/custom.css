@@ -651,3 +651,10 @@ input#dt-search-0 {
     color: white !important;
     margin-bottom: .75rem !important;
 }
+
+.bg-image-log {
+    background-image:url(/assets/img/Rectangle3.webp), -webkit-linear-gradient(#0E41C1, #0047FF);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}

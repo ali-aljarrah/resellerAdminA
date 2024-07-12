@@ -80,6 +80,7 @@
     <Content Include="assets\img\home\Frame 93.png" />
     <Content Include="assets\img\home\Layer 1.svg" />
     <Content Include="assets\img\LOGO.svg" />
+    <Content Include="assets\img\login-image.png" />
     <Content Include="assets\img\youtube.png" />
     <Content Include="assets\js\admin-scheduled-log.js" />
     <Content Include="assets\js\admin-sms-log.js" />
@@ -2190,8 +2191,11 @@
     <Content Include="coverage-price.aspx" />
     <Content Include="credits-log.aspx" />
     <Content Include="files-manager.aspx" />
+    <Content Include="forgot.aspx" />
     <Content Include="general-settings.aspx" />
     <Content Include="index.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="register.aspx" />
     <Content Include="send-email.aspx" />
     <Content Include="sendbulk.aspx" />
     <Content Include="single-sms.aspx" />
@@ -2316,6 +2320,13 @@
     <Compile Include="files-manager.aspx.designer.cs">
       <DependentUpon>files-manager.aspx</DependentUpon>
     </Compile>
+    <Compile Include="forgot.aspx.cs">
+      <DependentUpon>forgot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forgot.aspx.designer.cs">
+      <DependentUpon>forgot.aspx</DependentUpon>
+    </Compile>
     <Compile Include="general-settings.aspx.cs">
       <DependentUpon>general-settings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2330,7 +2341,21 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="send-email.aspx.cs">
       <DependentUpon>send-email.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2440,6 +2465,8 @@
     <Content Include="assets\plugins\global\fonts\line-awesome\la-solid-900.ttf" />
     <Content Include="assets\plugins\global\fonts\line-awesome\la-solid-900.woff" />
     <Content Include="assets\plugins\global\fonts\line-awesome\la-solid-900.woff2" />
+    <Content Include="assets\img\Rectangle3.webp" />
+    <Content Include="assets\img\Rectangle55.webp" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
