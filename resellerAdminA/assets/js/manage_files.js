@@ -27,23 +27,25 @@ $("#attach1").change(function () {
     }
 });
 // Upload event button
-$('#upload').click(function (e) {
-    e.preventDefault();
+function uploadFile(id) {
+    var el = document.getElementById(id);
+    el.disabled = true;
 
-    $(this).prop('disabled', true);
-
-    var uploaded_file = $("#attach1");
+    var uploaded_file = document.getElementById("attach1");
+    var filePath = uploaded_file.value;
 
     var fileExtension = ['txt', 'csv', 'xls', 'xlsx'];
-    if ($.inArray(uploaded_file.val().split('.').pop().toLowerCase(), fileExtension) == -1) {
+
+    var fileExt = filePath.split('.').pop().toLowerCase();
+
+    if (fileExtension.indexOf(fileExt) === -1) {
         toastr.error("File format invalid");
-        $("#attach1").val("");
-        $(this).prop('disabled', false);
-        return;
+        uploaded_file.value = "";
+        el.disabled = false;
+        return false;
     }
 
-    toastr.success("File uploaded Successfully!");
+    el.disabled = false;
+    __doPostBack(id, '');
 
-    $(this).prop('disabled', false);
-
-});
+}

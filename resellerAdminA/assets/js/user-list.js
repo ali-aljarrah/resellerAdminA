@@ -52,60 +52,53 @@
             }
         })
     });
-
-    // validate expression
-    const emailRegexp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-
-    var popupUserList = new bootstrap.Modal(document.getElementById("popupUserList"), {});
-    // Submit add new user event
-    $('#addNewUserSubmitBtn').click(function (e) {
-        e.preventDefault();
-        $(this).prop('disabled', true);
-
-        let newUserFullName = $('#newUserFullName').val();
-        let newUserEmail = $('#newUserEmail').val();
-        let newUserPhoneNumber = $('#newUserPhoneNumber').val();
-        let newUserCountry = $('#newUserCountry').find(":selected").val();
-
-        if (newUserFullName.trim() == '') {
-            toastr.error("Please add the user full name");
-            $(this).prop('disabled', false);
-            return;
-        }
-        if (newUserEmail.trim() == '') {
-            toastr.error("Please enter the user email!");
-            $(this).prop('disabled', false);
-            return;
-        }
-        if (!emailRegexp.test(newUserEmail.trim())) {
-            toastr.error("Please Enter a Valid Email Address in user email input");
-            $(this).prop('disabled', false);
-            return;
-        }
-        if (newUserPhoneNumber.trim() == '' || !$.isNumeric(newUserPhoneNumber)) {
-            toastr.error("Please enter the user phone number!");
-            $(this).prop('disabled', false);
-            return;
-        }
-        if (newUserCountry.trim() == '') {
-            toastr.error("Please enter the user country!");
-            $(this).prop('disabled', false);
-            return;
-        }
-        toastr.success("User added Successfully!");
-        
-        popupUserList.hide();
-
-        $(this).prop('disabled', false);
-
-        $('#newUserFullName').val('');
-        $('#newUserEmail').val('');
-        $('#newUserPhoneNumber').val('');
-        $('#newUserAddress').val('');
-        $('#newUserCity').val('');
-        $('#newUserState').val('');
-        $("#newUserCountry").val($("#newUserCountry option:first").val());
-
-    });
    
 });
+
+var popupUserList = new bootstrap.Modal(document.getElementById("popupUserList"), {});
+
+// validate expression
+const emailRegexp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+function addNewUserSubmit(id) {
+    var el = document.getElementById(id);
+    el.disabled = true;
+
+    var newUserFullName = document.getElementById("newUserFullName").value;
+    var newUserEmail = document.getElementById("newUserEmail").value;
+    var newUserPhoneNumber = document.getElementById("newUserPhoneNumber").value;
+    var newUserCountry = document.getElementById("newUserCountry").value;
+
+    if (newUserFullName.trim() == '') {
+        toastr.error("Please add the user full name");
+        el.disabled = false;
+        return false;
+    }
+    if (newUserEmail.trim() == '') {
+        toastr.error("Please enter the user email!");
+        el.disabled = false;
+        return false;
+    }
+    if (!emailRegexp.test(newUserEmail.trim())) {
+        toastr.error("Please Enter a Valid Email Address in user email input");
+        el.disabled = false;
+        return false;
+    }
+    if (newUserPhoneNumber.trim() == '') {
+        toastr.error("Please enter the user phone number!");
+        el.disabled = false;
+        return false;
+    }
+    if (newUserCountry.trim() == '') {
+        toastr.error("Please enter the user country!");
+        el.disabled = false;
+        return false;
+    }
+    el.disabled = false;
+    __doPostBack(id, '');
+
+    popupUserList.hide();
+}
+
+function showUserModal() {
+    popupUserList.show();
+}

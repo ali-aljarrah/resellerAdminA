@@ -161,22 +161,25 @@
                     </div>
                     <!--begin::Body-->
                     <form action="#">
-                        <div class="row my-4 p-8">
-                            <div class="col-lg-12">
-                                <div class="mb-5">
-                                    <label for="emailRecipient" class="form-label fs-14 dark-color required">Email recipient</label>
-                                    <select class="form-control form-custom-input mt-3 p-2" name="emailRecipient" id="emailRecipient">
-                                        <option value="" selected>Select...</option>
-                                        <option value="all-registered-customers">All Registered Customers</option>
-                                        <option value="all-unverified-customers">All Unverified Customers</option>
-                                        <option value="customers-with-zero-balance">Customers With Zero Balance</option>
-                                    </select>
-                                </div>
-                                <div class="mb-5">
-                                    <label for="emailMessage" class="form-label fs-14 dark-color required">Full name</label>
-                                    <textarea class="form-control form-custom-textarea mt-3 p-2" name="emailMessage" id="emailMessage" rows="5" placeholder="Enter the email's message here..."></textarea>
+                        <div class="modal-body">
+                            <div class="row my-4 p-8">
+                                <div class="col-lg-12">
+                                    <div class="mb-5">
+                                        <label for="emailRecipient" class="form-label fs-14 dark-color required">Email recipient</label>
+                                        <select class="form-control form-custom-input mt-3 p-2" name="emailRecipient" id="emailRecipient">
+                                            <option value="" selected>Select...</option>
+                                            <option value="all-registered-customers">All Registered Customers</option>
+                                            <option value="all-unverified-customers">All Unverified Customers</option>
+                                            <option value="customers-with-zero-balance">Customers With Zero Balance</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-5">
+                                        <label for="emailMessage" class="form-label fs-14 dark-color required">Full name</label>
+                                        <textarea class="form-control form-custom-textarea mt-3 p-2" name="emailMessage" id="emailMessage" rows="5" placeholder="Enter the email's message here..."></textarea>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
                     </form>
                     <!--end::Body-->
