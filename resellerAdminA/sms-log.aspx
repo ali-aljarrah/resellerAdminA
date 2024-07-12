@@ -27,7 +27,7 @@
 			<!--begin::Page-->
 			<div class="app-page flex-column flex-column-fluid" id="kt_app_page">
 				<!--begin::Header-->
-                <uc1:menuTop runat="server" id="menuTop1" parentPageText="SMS Log" childPageText="Dashboard"/>
+                <uc1:menuTop runat="server" id="menuTop1" parentPageText="Dashboard" childPageText="SMS Log"/>
 				<!--end::Header-->
 				<!--begin::Wrapper-->
 				<div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">

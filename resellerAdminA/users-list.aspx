@@ -27,7 +27,7 @@
         <!--begin::Page-->
         <div class="app-page flex-column flex-column-fluid" id="kt_app_page">
             <!--begin::Header-->
-            <uc1:menuTop runat="server" ID="menuTop1" parentPageText="Users List" childPageText="Dashboard" />
+            <uc1:menuTop runat="server" ID="menuTop1" parentPageText="Dashboard" childPageText="Users List" />
             <!--end::Header-->
             <!--begin::Wrapper-->
             <div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
