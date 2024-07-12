@@ -32,34 +32,35 @@ $(document).ready(function () {
 
     });
 
-    var popupUserList = new bootstrap.Modal(document.getElementById("popupUserList"), {});
-    // Submit new message event
-    $('#sendEmailSubmitBtn').click(function (e) {
-        e.preventDefault();
-        $(this).prop('disabled', true);
-
-        let emailMessage = $('#emailMessage').val();
-        let emailRecipient = $('#emailRecipient').find(":selected").val();
-
-        if (emailRecipient == '') {
-            toastr.error("Please select email recipient");
-            $(this).prop('disabled', false);
-            return;
-        }
-
-        if (emailMessage == '') {
-            toastr.error("Please enter the email's message");
-            $(this).prop('disabled', false);
-            return;
-        }
-
-        toastr.success("Email sent Successfully!");
-        $(this).prop('disabled', false);
-        
-        popupUserList.hide();
-
-        $('#emailMessage').val('');
-        $("#emailRecipient").val($("#emailRecipient option:first").val());
-    })
-
 });
+
+var sendEmailModal = new bootstrap.Modal(document.getElementById("sendEmailModal"), {});
+
+// Submit new message event
+function sendEmailSubmit(id) {
+    var el = document.getElementById(id);
+    el.disabled = true;
+
+    var emailRecipient = document.getElementById("emailRecipient").value;
+    var emailMessage = document.getElementById("emailMessage").value;
+
+    if (emailRecipient == '') {
+        toastr.error("Please select email recipient");
+        el.disabled = false;
+        return false;
+    }
+
+    if (emailMessage == '') {
+        toastr.error("Please enter the email's message");
+        el.disabled = false;
+        return false;
+    }
+
+    el.disabled = false;
+    __doPostBack(id, '');
+    
+}
+
+function showSendEmailModal() {
+    sendEmailModal.show();
+}
