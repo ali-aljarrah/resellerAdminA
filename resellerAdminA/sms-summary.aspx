@@ -63,7 +63,7 @@
 										<!--begin::Col-->
 										<div class="col-sm-6 col-xl-4 mb-xl-10">
 											<!--begin::Card widget 2-->
-											<div class="card bg-blue h-lg-100">
+											<div class="card card-flush shadow-xs bg-blue h-lg-100">
 												<!--begin::Body-->
 												<div class="card-body">
 													<!--begin::Section-->
@@ -100,7 +100,7 @@
 										<!--begin::Col-->
 										<div class="col-sm-6 col-xl-4 mb-xl-10">
 											<!--begin::Card widget 2-->
-											<div class="card h-lg-100">
+											<div class="card card-flush shadow-xs h-lg-100">
 												<!--begin::Body-->
 												<div class="card-body">
 													<!--begin::Section-->
@@ -137,7 +137,7 @@
 										<!--begin::Col-->
 										<div class="col-sm-6 col-xl-4 mb-xl-10">
 											<!--begin::Card widget 2-->
-											<div class="card h-lg-100">
+											<div class="card card-flush shadow-xs h-lg-100">
 												<!--begin::Body-->
 												<div class="card-body">
 													<!--begin::Section-->
@@ -171,7 +171,7 @@
 											<!--end::Card widget 2-->
 										</div>
 										<!--end::Col-->
-									</div>
+								</div>
 									<!--end::Row-->
 									<!--begin::Row-->
 									<div class="row g-5 g-xl-10 mb-xl-10">
