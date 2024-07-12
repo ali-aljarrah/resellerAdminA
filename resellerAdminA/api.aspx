@@ -118,7 +118,7 @@
                                                                     </table>
                                                                 </div>
                                                                 <div class="mb-10">
-                                                                    <a class="btn btn-primary py-2 px-8 rounded-1" href="#">Generate New Key</a>
+                                                                    <a class="btn btn-primary btn-grad w-225px py-2 px-8 rounded-1" href="#">Generate New Key</a>
                                                                 </div>
                                                                 <div class="fs-16 dark-color fw-600 mb-3">White-Listed IP Addresses</div>
                                                                 <p class="fs-14 gray">
@@ -132,7 +132,7 @@
                                                                                 <input type="text" class="form-control form-control-solid" name="ip_addresses" id="ip_addresses" placeholder="Leave the box empty to disable this feature" data-bs-toggle="tooltip" data-bs-placement="top" title="Please Enter White-listed IP Addresses"/>
                                                                             </div>
                                                                             <div>
-                                                                            <button type="submit" class="btn btn-primary py-2 px-8 rounded-1 border-1" id="save_ip_addresses" name="save_ip_addresses">
+                                                                            <button type="submit" class="btn btn-primary btn-grad py-2 px-8 rounded-1 border-1" id="save_ip_addresses" name="save_ip_addresses">
                                                                                 <span class="indicator-label">Save settings</span>
                                                                                 <span class="indicator-progress">
                                                                                     <span class="spinner-border text-white" role="status">

@@ -52,7 +52,7 @@
                                                     <div class="d-flex justify-content-start align-items-center mb-1">
                                                         <h1 class="page-heading text-dark fw-bold m-0 me-3">SMS Summary</h1>
                                                     </div>
-                                                    <p class="fs-14 gray pt-3">
+                                                    <p class="fs-14 gray pt-4">
                                                     View and track your SMS summary here. Monitor your status activity and destination activity to be well informed of your sent SMS.
                                                     </p>
                                                     <!--end::Title-->
@@ -179,7 +179,7 @@
 											<!--begin::Chart widget 38-->
 											<div class="card card-flush h-100 mb-5 mb-xl-10">
 												<!--begin::Header-->
-												<div class="card-header pt-7">
+												<div class="card-header pt-8">
 													<!--begin::Title-->
 													<h3 class="card-title align-items-start flex-column">
 														<span class="card-label fw-bold dark-color">Status Activity</span>
@@ -206,7 +206,7 @@
 											<!--begin::Chart widget 38-->
 											<div class="card card-flush h-100 mb-5 mb-xl-10">
 												<!--begin::Header-->
-												<div class="card-header pt-7">
+												<div class="card-header pt-8">
 													<!--begin::Title-->
 													<h3 class="card-title align-items-start flex-column">
 														<span class="card-label fw-bold dark-color">Destination Activity</span>
@@ -347,8 +347,8 @@
 					// COLUMN CHART
                     var data = new google.visualization.DataTable();
 					data.addColumn('timeofday', 'Time of Day');
-					data.addColumn('number', 'Motivation Level');
-					data.addColumn('number', 'Energy Level');
+                    data.addColumn('number', 'Delivered');
+                    data.addColumn('number', 'Undelivered');
 
 
 					data.addRows([
@@ -359,11 +359,11 @@
 						[{
 							v: [8, 0, 0],
 							f: '8 am'
-						}, 10, 3.25],
+						}, 8, 3.25],
 						[{
 							v: [9, 0, 0],
 							f: '9 am'
-						}, 2, 1.5],
+						}, 7, 2.5],
 						[{
 							v: [10, 0, 0],
 							f: '10 am'
@@ -375,7 +375,7 @@
 						[{
 							v: [12, 0, 0],
 							f: '12 pm'
-						}, 5, 2.25],
+						}, 7, 2.25],
 						[{
 							v: [13, 0, 0],
 							f: 'wrwrwrw'
@@ -387,7 +387,7 @@
 						[{
 							v: [15, 0, 0],
 							f: '3 pm'
-						}, 8, 5.25],
+						}, 3, 4.5],
 						[{
 							v: [16, 0, 0],
 							f: '4 pm'

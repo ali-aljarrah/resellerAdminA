@@ -51,7 +51,7 @@
                                                 <div class="page-title gap-1 d-flex justify-content-between align-items-start">
                                                     <div>
                                                        <!--begin::Title-->
-                                                        <div class="d-flex pt-3 justify-content-start align-items-center mb-1">
+                                                        <div class="d-flex pt-1 justify-content-start align-items-center mb-1">
                                                             <h1 class="page-heading text-dark fw-bold m-0 me-3">List of Countries Covered</h1>
                                                         </div>
                                                         <p class="fs-14 gray pt-5">

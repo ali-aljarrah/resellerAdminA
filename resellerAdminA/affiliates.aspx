@@ -216,7 +216,7 @@
 											<!--begin::Chart widget 38-->
 											<div class="card card-flush h-100 mb-5">
 												<!--begin::Header-->
-												<div class="card-header pt-7">
+												<div class="card-header pt-8">
 													<!--begin::Title-->
 													<h3 class="card-title align-items-start flex-column">
 														<span class="card-label fw-bold dark-color">Affiliate Performance</span>
