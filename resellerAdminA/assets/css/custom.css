@@ -667,9 +667,8 @@ input#dt-search-0 {
     font-size: 40px;
 }
 
-@media (min-width: 592px) {
-    .media-size {
-        left: 275px !important;
-        top:225px;
-    }
+.media-size {
+    left: calc(100% - 59%);
+    top: calc(100vh - 66vh);
+    max-width: 435px;
 }

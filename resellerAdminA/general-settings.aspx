@@ -56,7 +56,7 @@
                                                             <a class="nav-link py-3 px-5 fs-18 active" data-bs-toggle="tab" href="#business_details_tab">Business Details</a>
                                                         </li>
                                                         <li class="nav-item">
-                                                            <a class="nav-link py-3 px-5 fs-18" data-bs-toggle="tab" href="#payment_gateway_tab">Payment Gateway</a>
+                                                            <a id="paymentGatewayBtnTab" class="nav-link py-3 px-5 fs-18" data-bs-toggle="tab" href="#payment_gateway_tab">Payment Gateway</a>
                                                         </li>
                                                     </ul>
 
@@ -77,44 +77,44 @@
                                                                             <div class="row my-4">
                                                                                 <div class="col-lg-6">
                                                                                     <div class="my-5">
-                                                                                        <label for="businessName" class="form-label required">Business name</label>
-                                                                                        <input runat="server" class="form-control form-custom-input mt-3 p-2" value="Tesla X Inc." type="text" name="businessName" id="businessName" placeholder="Enter your business name">
+                                                                                        <label for="businessName" class="form-label required mb-0">Business name</label>
+                                                                                        <input runat="server" class="form-control form-custom-input " value="Tesla X Inc." type="text" name="businessName" id="businessName" placeholder="Enter your business name">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-lg-6">
                                                                                     <div class="my-5">
-                                                                                        <label for="supportEmail" class="form-label required">Support email</label>
-                                                                                        <input runat="server" class="form-control form-custom-input mt-3 p-2" value="alexflynch@gmail.com" type="email" name="supportEmail" id="supportEmail" placeholder="Enter business support email">
+                                                                                        <label for="supportEmail" class="form-label required mb-0">Support email</label>
+                                                                                        <input runat="server" class="form-control form-custom-input " value="alexflynch@gmail.com" type="email" name="supportEmail" id="supportEmail" placeholder="Enter business support email">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-lg-6">
                                                                                     <div class="my-5">
-                                                                                        <label for="defaultSenderID" class="form-label required">Default sender ID</label>
-                                                                                        <input runat="server" class="form-control form-custom-input mt-3 p-2" value="TeslaX" type="text" name="defaultSenderID" id="defaultSenderID" placeholder="Your default sender ID">
+                                                                                        <label for="defaultSenderID" class="form-label required mb-0">Default sender ID</label>
+                                                                                        <input runat="server" class="form-control form-custom-input " value="TeslaX" type="text" name="defaultSenderID" id="defaultSenderID" placeholder="Your default sender ID">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-lg-6">
                                                                                     <div class="my-5">
-                                                                                        <label for="businessAddress" class="form-label required">Business address</label>
-                                                                                        <input runat="server" class="form-control form-custom-input mt-3 p-2" value="Office K-420-69, 69th floor, Wayne Enterprise, Gotham" type="text" name="businessAddress" id="businessAddress" placeholder="Your business address">
+                                                                                        <label for="businessAddress" class="form-label required mb-0">Business address</label>
+                                                                                        <input runat="server" class="form-control form-custom-input " value="Office K-420-69, 69th floor, Wayne Enterprise, Gotham" type="text" name="businessAddress" id="businessAddress" placeholder="Your business address">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-lg-6">
                                                                                     <div class="my-5">
-                                                                                        <label for="businessWebsite" class="form-label required">Website</label>
-                                                                                        <input runat="server" class="form-control form-custom-input mt-3 p-2" value="www.teslax.com" type="text" name="businessWebsite" id="businessWebsite" placeholder="Your business website">
+                                                                                        <label for="businessWebsite" class="form-label required mb-0">Website</label>
+                                                                                        <input runat="server" class="form-control form-custom-input " value="www.teslax.com" type="text" name="businessWebsite" id="businessWebsite" placeholder="Your business website">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-lg-6">
                                                                                     <div class="my-5">
-                                                                                        <label for="resellerDomain" class="form-label required">Reseller domain</label>
-                                                                                        <input runat="server" class="form-control form-custom-input mt-3 p-2" value="teslaxx.com" type="text" name="resellerDomain" id="resellerDomain" placeholder="Your business reseller domain">
+                                                                                        <label for="resellerDomain" class="form-label required mb-0">Reseller domain</label>
+                                                                                        <input runat="server" class="form-control form-custom-input " value="teslaxx.com" type="text" name="resellerDomain" id="resellerDomain" placeholder="Your business reseller domain">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-lg-6">
                                                                                     <div class="my-5">
-                                                                                        <label for="businessSignature" class="form-label required">Signature</label>
-                                                                                        <input runat="server" name="businessSignature" id="businessSignature" type="file" accept="image/*" class="form-control form-custom-input mt-3 p-2">
+                                                                                        <label for="businessSignature" class="form-label required mb-0">Signature</label>
+                                                                                        <input runat="server" name="businessSignature" id="businessSignature" type="file" accept="image/*" class="form-control form-custom-input ">
                                                                                     </div>
                                                                                     <div class="my-5">
                                                                                         <label for="" class="form-label">Signature</label>
@@ -123,8 +123,8 @@
                                                                                 </div>
                                                                                 <div class="col-lg-6">
                                                                                     <div class="my-5">
-                                                                                        <label for="businessLogo" class="form-label required">Logo</label>
-                                                                                        <input runat="server" name="businessLogo" id="businessLogo" type="file" accept="image/*" class="form-control form-custom-input mt-3 p-2">
+                                                                                        <label for="businessLogo" class="form-label required mb-0">Logo</label>
+                                                                                        <input runat="server" name="businessLogo" id="businessLogo" type="file" accept="image/*" class="form-control form-custom-input ">
                                                                                     </div>
                                                                                     <div class="my-5">
                                                                                         <label for="" class="form-label">Logo</label>
@@ -152,8 +152,8 @@
                                                                             <div class="row my-4">
                                                                                 <div class="col-lg-6">
                                                                                     <div class="my-5">
-                                                                                        <label for="billingModel" class="form-label">Default billing model</label>
-                                                                                        <select name="billingModel" id="billingModel" runat="server" class="form-select form-custom-select mt-3 p-2">
+                                                                                        <label for="billingModel" class="form-label mb-0">Default billing model</label>
+                                                                                        <select name="billingModel" id="billingModel" runat="server" class="form-select form-custom-select ">
                                                                                             <option value="">Select...</option>
                                                                                             <option value="SMSCreditModel">SMS Credit Model</option>
                                                                                         </select>
@@ -161,8 +161,8 @@
                                                                                 </div>
                                                                                 <div class="col-lg-6">
                                                                                     <div class="my-5">
-                                                                                        <label for="hideRegistrationForm" class="form-label">Hide registration form</label>
-                                                                                        <select runat="server" name="hideRegistrationForm" id="hideRegistrationForm" class="form-select form-custom-select mt-3 p-2">
+                                                                                        <label for="hideRegistrationForm" class="form-label mb-0">Hide registration form</label>
+                                                                                        <select runat="server" name="hideRegistrationForm" id="hideRegistrationForm" class="form-select form-custom-select ">
                                                                                             <option value="no" selected>No</option>
                                                                                             <option value="yes">Yes</option>
                                                                                         </select>
@@ -170,8 +170,8 @@
                                                                                 </div>
                                                                                 <div class="col-lg-6">
                                                                                     <div class="my-5">
-                                                                                        <label for="enableEmailVerification" class="form-label">Enable email verification</label>
-                                                                                        <select runat="server" name="enableEmailVerification" id="enableEmailVerification" class="form-select form-custom-select mt-3 p-2">
+                                                                                        <label for="enableEmailVerification" class="form-label mb-0">Enable email verification</label>
+                                                                                        <select runat="server" name="enableEmailVerification" id="enableEmailVerification" class="form-select form-custom-select ">
                                                                                             <option value="no" selected>No</option>
                                                                                             <option value="yes">Yes</option>
                                                                                         </select>
@@ -179,8 +179,8 @@
                                                                                 </div>
                                                                                 <div class="col-lg-6">
                                                                                     <div class="my-5">
-                                                                                        <label for="enablePhoneVerification" class="form-label">Enable phone verification</label>
-                                                                                        <select runat="server" name="enablePhoneVerification" id="enablePhoneVerification" class="form-select form-custom-select mt-3 p-2">
+                                                                                        <label for="enablePhoneVerification" class="form-label mb-0">Enable phone verification</label>
+                                                                                        <select runat="server" name="enablePhoneVerification" id="enablePhoneVerification" class="form-select form-custom-select ">
                                                                                             <option value="no" selected>No</option>
                                                                                             <option value="yes">Yes</option>
                                                                                         </select>
@@ -188,20 +188,20 @@
                                                                                 </div>
                                                                                 <div class="col-lg-6">
                                                                                     <div class="my-5">
-                                                                                        <label for="googleReCaptchaKey" class="form-label">Google reCaptcha key</label>
-                                                                                        <input class="form-control form-custom-input mt-3 p-2" value="" type="text" name="googleReCaptchaKey" id="googleReCaptchaKey" runat="server" placeholder="Leave empty to disable feature">
+                                                                                        <label for="googleReCaptchaKey" class="form-label mb-0">Google reCaptcha key</label>
+                                                                                        <input class="form-control form-custom-input " value="" type="text" name="googleReCaptchaKey" id="googleReCaptchaKey" runat="server" placeholder="Leave empty to disable feature">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-lg-6">
                                                                                     <div class="my-5">
-                                                                                        <label for="googleReCaptchaSecret" class="form-label">Google reCaptcha secret</label>
-                                                                                        <input class="form-control form-custom-input mt-3 p-2" value="" type="text" name="googleReCaptchaSecret" id="googleReCaptchaSecret" runat="server" placeholder="Leave empty to disable feature">
+                                                                                        <label for="googleReCaptchaSecret" class="form-label mb-0">Google reCaptcha secret</label>
+                                                                                        <input class="form-control form-custom-input " value="" type="text" name="googleReCaptchaSecret" id="googleReCaptchaSecret" runat="server" placeholder="Leave empty to disable feature">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-lg-6">
                                                                                     <div class="my-5">
-                                                                                        <label for="disableFundingByCreditPurchases" class="form-label">Disable funding by credit purchases</label>
-                                                                                        <select name="disableFundingByCreditPurchases" id="disableFundingByCreditPurchases" runat="server" class="form-select form-custom-select mt-3 p-2">
+                                                                                        <label for="disableFundingByCreditPurchases" class="form-label mb-0">Disable funding by credit purchases</label>
+                                                                                        <select name="disableFundingByCreditPurchases" id="disableFundingByCreditPurchases" runat="server" class="form-select form-custom-select ">
                                                                                             <option value="no" selected>No</option>
                                                                                             <option value="yes">Yes</option>
                                                                                         </select>
@@ -209,8 +209,8 @@
                                                                                 </div>
                                                                                 <div class="col-lg-6">
                                                                                     <div class="my-5">
-                                                                                        <label for="sendCustomersToWebsiteAfterLogout" class="form-label">Send customers to website after logout</label>
-                                                                                        <select runat="server" name="sendCustomersToWebsiteAfterLogout" id="sendCustomersToWebsiteAfterLogout" class="form-select form-custom-select mt-3 p-2">
+                                                                                        <label for="sendCustomersToWebsiteAfterLogout" class="form-label mb-0">Send customers to website after logout</label>
+                                                                                        <select runat="server" name="sendCustomersToWebsiteAfterLogout" id="sendCustomersToWebsiteAfterLogout" class="form-select form-custom-select ">
                                                                                             <option value="no" selected>No</option>
                                                                                             <option value="yes">Yes</option>
                                                                                         </select>
@@ -218,14 +218,14 @@
                                                                                 </div>
                                                                                 <div class="col-lg-6">
                                                                                     <div class="my-5">
-                                                                                        <label for="invoiceTax" class="form-label">Invoice Tax (%)</label>
-                                                                                        <input class="form-control form-custom-input mt-3 p-2" value="" type="number" runat="server" name="invoiceTax" id="invoiceTax" placeholder="Set to zero to disable feature">
+                                                                                        <label for="invoiceTax" class="form-label mb-0">Invoice Tax (%)</label>
+                                                                                        <input class="form-control form-custom-input " value="" type="number" runat="server" name="invoiceTax" id="invoiceTax" placeholder="Set to zero to disable feature">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-lg-6">
                                                                                     <div class="my-5">
-                                                                                        <label for="invoiceVat" class="form-label">Invoice VAT (%)</label>
-                                                                                        <input class="form-control form-custom-input mt-3 p-2" value="" type="number" name="invoiceVat" id="invoiceVat" runat="server" placeholder="Set to zero to disable feature">
+                                                                                        <label for="invoiceVat" class="form-label mb-0">Invoice VAT (%)</label>
+                                                                                        <input class="form-control form-custom-input " value="" type="number" name="invoiceVat" id="invoiceVat" runat="server" placeholder="Set to zero to disable feature">
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -252,32 +252,32 @@
                                                                             <div class="row my-4">
                                                                                 <div class="col-lg-6">
                                                                                     <div class="mb-5">
-                                                                                        <label for="smtpServer" class="form-label">SMTP server</label>
-                                                                                        <input class="form-control form-custom-input mt-3 p-2" value="" type="number" name="smtpServer" id="smtpServer" placeholder="Leave empty to disable feature">
+                                                                                        <label for="smtpServer" class="form-label mb-0">SMTP server</label>
+                                                                                        <input class="form-control form-custom-input " value="" type="text" name="smtpServer" id="smtpServer" runat="server" placeholder="Leave empty to disable feature">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-lg-6">
                                                                                     <div class="mb-5">
-                                                                                        <label for="smtpUsername" class="form-label">SMTP username</label>
-                                                                                        <input class="form-control form-custom-input mt-3 p-2" value="" type="text" name="smtpUsername" id="smtpUsername" placeholder="Leave empty to disable feature">
+                                                                                        <label for="smtpUsername" class="form-label mb-0">SMTP username</label>
+                                                                                        <input class="form-control form-custom-input " value="" type="text" name="smtpUsername" id="smtpUsername" runat="server" placeholder="Leave empty to disable feature">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-lg-6">
                                                                                     <div class="mb-5">
-                                                                                        <label for="smtpPassword" class="form-label">SMTP password</label>
-                                                                                        <input class="form-control form-custom-input mt-3 p-2" value="" type="text" name="smtpPassword" id="smtpPassword" placeholder="Leave empty to disable feature">
+                                                                                        <label for="smtpPassword" class="form-label mb-0">SMTP password</label>
+                                                                                        <input class="form-control form-custom-input " value="" type="text" name="smtpPassword" id="smtpPassword" runat="server" placeholder="Leave empty to disable feature">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-lg-6">
                                                                                     <div class="mb-5">
-                                                                                        <label for="smtpPort" class="form-label">SMTP port</label>
-                                                                                        <input class="form-control form-custom-input mt-3 p-2" value="" type="number" name="smtpPort" id="smtpPort" placeholder="Leave empty to disable feature">
+                                                                                        <label for="smtpPort" class="form-label mb-0">SMTP port</label>
+                                                                                        <input class="form-control form-custom-input " value="" type="number" name="smtpPort" id="smtpPort" runat="server" placeholder="Leave empty to disable feature">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-lg-6">
                                                                                     <div class="mb-5">
-                                                                                        <label for="smtpSecurity" class="form-label">SMTP security</label>
-                                                                                        <select name="smtpSecurity" id="smtpSecurity" class="form-control form-custom-input mt-3 p-2">
+                                                                                        <label for="smtpSecurity" class="form-label mb-0">SMTP security</label>
+                                                                                        <select name="smtpSecurity" id="smtpSecurity" runat="server" class="form-select form-custom-select">
                                                                                             <option value="no" selected>No</option>
                                                                                             <option value="yes">Yes</option>
                                                                                         </select>
@@ -285,14 +285,9 @@
                                                                                 </div>
                                                                             </div>
                                                                             <div>
-                                                                                <button type="button" class="btn btn-primary btn-grad py-2 px-8 rounded-1" id="outgoingEmailSettingsSubmitBtn">
-                                                                                    <span class="indicator-label">Save settings</span>
-                                                                                    <span class="indicator-progress">
-                                                                                        <span class="spinner-border text-white" role="status">
-                                                                                            <span class="visually-hidden">Loading...</span>
-                                                                                        </span>
-                                                                                    </span>
-                                                                                </button>
+                                                                                <asp:Button ID="outgoingEmailSettingsSubmitBtn" runat="server" Text="Save settings"
+                                                                                  CssClass="btn btn-primary btn-grad py-2 px-8 rounded-1"
+                                                                                  OnClientClick="emailSettingsSubmit('outgoingEmailSettingsSubmitBtn'); return false;" OnClick="outgoingEmailSettingsSubmitBtn_Click" />
                                                                             </div>
                                                                         </div>
                                                                         <!-- end Outgoing Email Settings section -->
@@ -357,7 +352,7 @@
                                                                                 </div>
                                                                                 <!--end::Page title-->
                                                                                 <!--begin::Header-->
-                                                                                <button type="button" class="btn btn-primary btn-grad" id="btn-modal-popup" data-bs-toggle="modal" data-bs-target="#popupUserList">
+                                                                                <button type="button" class="btn btn-primary btn-grad" id="btn-modal-popup" data-bs-toggle="modal" data-bs-target="#newGatewayModal">
                                                                                     Add Payment Gateway
                                                                                 </button>
                                                                                 <!--end::Header-->
@@ -454,7 +449,7 @@
             </div>
         </div>
         <!--modal add user popup-->
-        <div class="modal fade" tabindex="-1" id="popupUserList">
+        <div class="modal fade" tabindex="-1" id="newGatewayModal">
             <div class="modal-dialog modal-lg p-8">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -470,8 +465,8 @@
                     <div class="row my-6 p-8">
                         <div class="col-lg-6">
                             <div class="mb-5">
-                                <label for="newGatewayType" class="form-label required">Gateway type</label>
-                                <select required name="newGatewayType" id="newGatewayType" class="form-control form-custom-input mt-3 p-2">
+                                <label for="newGatewayType" class="form-label required mb-0">Gateway type</label>
+                                <select name="newGatewayType" id="newGatewayType" runat="server" class="form-select form-custom-select">
                                     <option value="" selected>Select a gateway template</option>
                                     <option value="custom">Custom</option>
                                     <option value="paystack">Paystack</option>
@@ -480,40 +475,40 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="mb-5">
-                                <label for="newGatewayName" class="form-label required">Display name</label>
-                                <input required class="form-control form-custom-input mt-3 p-2" value="" type="text" name="newGatewayName" id="newGatewayName" placeholder="Display name">
+                                <label for="newGatewayName" class="form-label required mb-0">Display name</label>
+                                <input class="form-control form-custom-input" runat="server" value="" type="text" name="newGatewayName" id="newGatewayName" placeholder="Display name">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="mb-5">
-                                <label for="newGatewayMinimumOrder" class="form-label required">Minimum order (USD)</label>
-                                <input required class="form-control form-custom-input mt-3 p-2" value="" type="number" name="newGatewayMinimumOrder" id="newGatewayMinimumOrder" placeholder="0.000000">
+                                <label for="newGatewayMinimumOrder" class="form-label required mb-0">Minimum order (USD)</label>
+                                <input class="form-control form-custom-input " value="" runat="server" type="number" name="newGatewayMinimumOrder" id="newGatewayMinimumOrder" placeholder="0.000000">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="mb-5">
-                                <label for="newGatewayFeeType" class="form-label required">Gateway Fee Type</label>
-                                <select required name="newGatewayFeeType" id="newGatewayFeeType" class="form-control form-custom-input mt-3 p-2">
+                                <label for="newGatewayFeeType" class="form-label required mb-0">Gateway Fee Type</label>
+                                <select name="newGatewayFeeType" id="newGatewayFeeType" class="form-select form-custom-select" runat="server">
                                     <option value="none">None</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="mb-5">
-                                <label for="newGatewayFeeAmount" class="form-label required">Gateway Fee Amount (USD)</label>
-                                <input required class="form-control form-custom-input mt-3 p-2" value="" type="number" name="newGatewayFeeAmount" id="newGatewayFeeAmount" placeholder="0.00">
+                                <label for="newGatewayFeeAmount" class="form-label required mb-0">Gateway Fee Amount (USD)</label>
+                                <input class="form-control form-custom-input " value="" type="number" name="newGatewayFeeAmount" id="newGatewayFeeAmount" runat="server" placeholder="0.00">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="mb-5">
-                                <label for="newGatewaynotice" class="form-label required">Gateway notice</label>
-                                <input required class="form-control form-custom-input mt-3 p-2" value="" type="number" name="newGatewaynotice" id="newGatewaynotice" placeholder="0.00">
+                                <label for="newGatewaynotice" class="form-label required mb-0">Gateway notice</label>
+                                <input class="form-control form-custom-input " value="" type="number" name="newGatewaynotice" id="newGatewaynotice" runat="server" placeholder="0.00">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="mb-5">
                                 <label for="EnableNewGateway" class="form-label">Enable gateway</label>
-                                <select name="EnableNewGateway" id="EnableNewGateway" class="form-control form-custom-input mt-3 p-2">
+                                <select name="EnableNewGateway" id="EnableNewGateway" class="form-select form-custom-select" runat="server">
                                     <option value="yes">Yes</option>
                                     <option value="no">No</option>
                                 </select>
@@ -523,15 +518,9 @@
 
                     <!--end::Body-->
                     <div class="modal-footer">
-                        <!-- <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>-->
-                        <button type="button" class="btn btn-primary btn-grad py-2 px-6 rounded-1" id="newGatewaySubmitBtn">
-                            <span class="indicator-label">Save gateway</span>
-                            <span class="indicator-progress">
-                                <span class="spinner-border text-white" role="status">
-                                    <span class="visually-hidden">Loading...</span>
-                                </span>
-                            </span>
-                        </button>
+                       <asp:Button ID="newGatewaySubmitBtn" runat="server" Text="Save gateway"
+                         CssClass="btn btn-primary btn-grad py-2 px-6 rounded-1"
+                         OnClientClick="createGatewaySubmit('newGatewaySubmitBtn'); return false;" OnClick="newGatewaySubmitBtn_Click" />
                     </div>
                 </div>
             </div>

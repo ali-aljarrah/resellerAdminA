@@ -128,8 +128,8 @@
                            
                             <!--begin::Title-->
                             <div class="d-none d-lg-block mt-5 pt-5 px-8 media-size position-absolute">
-                                <h1 class="fs-32 mb-7 fw-bolder text-white">
-                                    <span class="text-btn-grad fs-44">Unlock profits</span> with every text.
+                                <h1 class="fs-56 mb-7 fw-bolder text-white">
+                                    <span class="text-btn-grad">Unlock profits</span> with every text.
                                 </h1>
                                 <!--end::Title-->
                                 <!--begin::Text-->

@@ -138,5 +138,116 @@ namespace resellerAdminA
             ScriptManager.RegisterStartupScript(this, GetType(), "showalert", script, true);
             return;
         }
+
+        protected void outgoingEmailSettingsSubmitBtn_Click(object sender, EventArgs e)
+        {
+            string script;
+            if(
+                smtpServer.Value.Trim() != "" || smtpUsername.Value.Trim() != "" ||
+                smtpPassword.Value.Trim() != "" || smtpPort.Value.Trim() != ""
+                )
+            {
+                if(smtpServer.Value.Trim() == "")
+                {
+                    script = "toastr.error(\"Please enter SMTP server\");";
+                    ScriptManager.RegisterStartupScript(this, GetType(), "showalert", script, true);
+                    return;
+                }
+
+                if (smtpUsername.Value.Trim() == "")
+                {
+                    script = "toastr.error(\"Please enter SMTP username\");";
+                    ScriptManager.RegisterStartupScript(this, GetType(), "showalert", script, true);
+                    return;
+                }
+
+                if (smtpPassword.Value.Trim() == "")
+                {
+                    script = "toastr.error(\"Please enter SMTP password\");";
+                    ScriptManager.RegisterStartupScript(this, GetType(), "showalert", script, true);
+                    return;
+                }
+
+                if (smtpPort.Value.Trim() == "")
+                {
+                    script = "toastr.error(\"Please enter SMTP port\");";
+                    ScriptManager.RegisterStartupScript(this, GetType(), "showalert", script, true);
+                    return;
+                }
+
+                if (smtpSecurity.Value.Trim() == "")
+                {
+                    script = "toastr.error(\"Please enter SMTP security option\");";
+                    ScriptManager.RegisterStartupScript(this, GetType(), "showalert", script, true);
+                    return;
+                }
+
+                script = "toastr.success(\"SMTP has been enabled Successfully!\");";
+                ScriptManager.RegisterStartupScript(this, GetType(), "showalert", script, true);
+                return;
+            }
+
+            script = "toastr.success(\"SMTP has been disabled Successfully!\");";
+            ScriptManager.RegisterStartupScript(this, GetType(), "showalert", script, true);
+            return;
+        }
+
+        protected void newGatewaySubmitBtn_Click(object sender, EventArgs e)
+        {
+            string script;
+
+            if (newGatewayType.Value.Trim() == "")
+            {
+                script = "toastr.error(\"Please enter gateway type\"); openGatewayTabAndModal();";
+                ScriptManager.RegisterStartupScript(this, GetType(), "showalert", script, true);
+                return;
+            }
+
+            if (newGatewayName.Value.Trim() == "")
+            {
+                script = "toastr.error(\"Please enter gateway name\"); openGatewayTabAndModal();";
+                ScriptManager.RegisterStartupScript(this, GetType(), "showalert", script, true);
+                return;
+            }
+
+            if (newGatewayMinimumOrder.Value.Trim() == "")
+            {
+                script = "toastr.error(\"Please enter gateway minimum order\"); openGatewayTabAndModal();";
+                ScriptManager.RegisterStartupScript(this, GetType(), "showalert", script, true);
+                return;
+            }
+
+            if (newGatewayFeeType.Value.Trim() == "")
+            {
+                script = "toastr.error(\"Please enter gateway fee type\"); openGatewayTabAndModal();";
+                ScriptManager.RegisterStartupScript(this, GetType(), "showalert", script, true);
+                return;
+            }
+
+            if (newGatewayFeeAmount.Value.Trim() == "")
+            {
+                script = "toastr.error(\"Please enter gateway fee amount\"); openGatewayTabAndModal();";
+                ScriptManager.RegisterStartupScript(this, GetType(), "showalert", script, true);
+                return;
+            }
+
+            if (newGatewaynotice.Value.Trim() == "")
+            {
+                script = "toastr.error(\"Please enter gateway notice\"); openGatewayTabAndModal();";
+                ScriptManager.RegisterStartupScript(this, GetType(), "showalert", script, true);
+                return;
+            }
+
+            if (EnableNewGateway.Value.Trim() == "")
+            {
+                script = "toastr.error(\"Please enter enable option\"); openGatewayTabAndModal();";
+                ScriptManager.RegisterStartupScript(this, GetType(), "showalert", script, true);
+                return;
+            }
+
+            script = "toastr.success(\"Gateway has been added Successfully!\");";
+            ScriptManager.RegisterStartupScript(this, GetType(), "showalert", script, true);
+            return;
+        }
     }
 }

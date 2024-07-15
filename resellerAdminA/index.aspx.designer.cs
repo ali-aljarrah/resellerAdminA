@@ -24,6 +24,15 @@ namespace resellerAdminA
         protected global::resellerAdminA.Controls.head head;
 
         /// <summary>
+        /// frmAPI control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm frmAPI;
+
+        /// <summary>
         /// loader control.
         /// </summary>
         /// <remarks>
@@ -51,6 +60,24 @@ namespace resellerAdminA
         protected global::resellerAdminA.Controls.sideBar sideBar;
 
         /// <summary>
+        /// generateNewAPIKeyBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button generateNewAPIKeyBtn;
+
+        /// <summary>
+        /// ip_addresses control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText ip_addresses;
+
+        /// <summary>
         /// footer control.
         /// </summary>
         /// <remarks>
@@ -67,5 +94,14 @@ namespace resellerAdminA
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::resellerAdminA.Controls.footerLinks footerLinks;
+
+        /// <summary>
+        /// ScriptManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
     }
 }

@@ -240,6 +240,60 @@ namespace resellerAdminA
         protected global::System.Web.UI.WebControls.Button otherSettingsSubmitBtn;
 
         /// <summary>
+        /// smtpServer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText smtpServer;
+
+        /// <summary>
+        /// smtpUsername control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText smtpUsername;
+
+        /// <summary>
+        /// smtpPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText smtpPassword;
+
+        /// <summary>
+        /// smtpPort control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl smtpPort;
+
+        /// <summary>
+        /// smtpSecurity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlSelect smtpSecurity;
+
+        /// <summary>
+        /// outgoingEmailSettingsSubmitBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button outgoingEmailSettingsSubmitBtn;
+
+        /// <summary>
         /// footer control.
         /// </summary>
         /// <remarks>
@@ -247,6 +301,78 @@ namespace resellerAdminA
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::resellerAdminA.Controls.footer footer;
+
+        /// <summary>
+        /// newGatewayType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlSelect newGatewayType;
+
+        /// <summary>
+        /// newGatewayName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText newGatewayName;
+
+        /// <summary>
+        /// newGatewayMinimumOrder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl newGatewayMinimumOrder;
+
+        /// <summary>
+        /// newGatewayFeeType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlSelect newGatewayFeeType;
+
+        /// <summary>
+        /// newGatewayFeeAmount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl newGatewayFeeAmount;
+
+        /// <summary>
+        /// newGatewaynotice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl newGatewaynotice;
+
+        /// <summary>
+        /// EnableNewGateway control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlSelect EnableNewGateway;
+
+        /// <summary>
+        /// newGatewaySubmitBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button newGatewaySubmitBtn;
 
         /// <summary>
         /// footerLinks control.

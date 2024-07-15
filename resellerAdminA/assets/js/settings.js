@@ -61,6 +61,7 @@ function editBusinessSubmit(id) {
     __doPostBack(id, '');
 }
 
+// Other settings submit function
 function otherSettingsSubmit(id) {
     var el = document.getElementById(id)
     el.disabled = true;
@@ -124,4 +125,122 @@ function otherSettingsSubmit(id) {
 
     el.disabled = false;
     __doPostBack(id, '');
+}
+
+// SMTP settings submit function
+function emailSettingsSubmit(id) {
+    var el = document.getElementById(id)
+    el.disabled = true;
+
+    var smtpServer = document.getElementById("smtpServer");
+    var smtpUsername = document.getElementById("smtpUsername");
+    var smtpPassword = document.getElementById("smtpPassword");
+    var smtpPort = document.getElementById("smtpPort");
+    var smtpSecurity = document.getElementById("smtpSecurity");
+
+    if (smtpServer.value.trim() != "" || smtpUsername.value.trim() != "" ||
+        smtpPassword.value.trim() != "" || smtpPort.value.trim() != "") {
+
+        if (smtpServer.value.trim() == "") {
+            toastr.error("Please enter SMTP server");
+            el.disabled = false;
+            return false;
+        }
+
+        if (smtpUsername.value.trim() == "") {
+            toastr.error("Please enter SMTP username");
+            el.disabled = false;
+            return false;
+        }
+
+        if (smtpPassword.value.trim() == "") {
+            toastr.error("Please enter SMTP password");
+            el.disabled = false;
+            return false;
+        }
+
+        if (smtpPort.value.trim() == "") {
+            toastr.error("Please enter SMTP port");
+            el.disabled = false;
+            return false;
+        }
+
+        if (smtpSecurity.value.trim() == "") {
+            toastr.error("Please enter SMTP security option");
+            el.disabled = false;
+            return false;
+        }
+
+        el.disabled = false;
+        __doPostBack(id, '');
+    }
+
+    el.disabled = false;
+    __doPostBack(id, '');
+}
+
+// Create new gateway function
+function createGatewaySubmit(id) {
+    //var el = document.getElementById(id)
+    //el.disabled = true;
+
+    //var newGatewayType = document.getElementById("newGatewayType");
+    //var newGatewayName = document.getElementById("newGatewayName");
+    //var newGatewayMinimumOrder = document.getElementById("newGatewayMinimumOrder");
+    //var newGatewayFeeType = document.getElementById("newGatewayFeeType");
+    //var newGatewayFeeAmount = document.getElementById("newGatewayFeeAmount");
+    //var newGatewaynotice = document.getElementById("newGatewaynotice");
+    //var EnableNewGateway = document.getElementById("EnableNewGateway");
+
+    //if (newGatewayType.value.trim() == "") {
+    //    toastr.error("Please enter gateway type");
+    //    el.disabled = false;
+    //    return false;
+    //}
+
+    //if (newGatewayName.value.trim() == "") {
+    //    toastr.error("Please enter gateway name");
+    //    el.disabled = false;
+    //    return false;
+    //}
+
+    //if (newGatewayMinimumOrder.value.trim() == "") {
+    //    toastr.error("Please enter gateway minimum order");
+    //    el.disabled = false;
+    //    return false;
+    //}
+
+    //if (newGatewayFeeType.value.trim() == "") {
+    //    toastr.error("Please enter gateway fee type");
+    //    el.disabled = false;
+    //    return false;
+    //}
+
+    //if (newGatewayFeeAmount.value.trim() == "") {
+    //    toastr.error("Please enter gateway fee amount");
+    //    el.disabled = false;
+    //    return false;
+    //}
+
+    //if (newGatewaynotice.value.trim() == "") {
+    //    toastr.error("Please enter gateway notice");
+    //    el.disabled = false;
+    //    return false;
+    //}
+
+    //if (EnableNewGateway.value.trim() == "") {
+    //    toastr.error("Please enter enable option");
+    //    el.disabled = false;
+    //    return false;
+    //}
+
+    //el.disabled = false;
+    __doPostBack(id, '');
+}
+
+var newGatewayModal = new bootstrap.Modal(document.getElementById("newGatewayModal"), {});
+
+function openGatewayTabAndModal() {
+    document.getElementById("paymentGatewayBtnTab").click();
+    newGatewayModal.show();
 }
