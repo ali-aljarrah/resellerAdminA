@@ -656,5 +656,9 @@ input#dt-search-0 {
     background-image:url(/assets/img/Rectangle3.webp), -webkit-linear-gradient(#0E41C1, #0047FF);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: bottom;
+    background-position: left;
+}
+
+.fs-44{
+    font-size:44px;
 }

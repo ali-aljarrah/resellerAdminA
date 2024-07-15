@@ -123,17 +123,17 @@
 				<!--begin::Aside-->
 				<div class="d-flex flex-lg-row-fluid w-lg-50  bg-image-log order-1 order-lg-2">
 					<!--begin::Content-->
-					<div class="d-flex justify-content-center align-items-center flex-column py-7 py-lg-15 px-5 px-lg-20 w-100">
-                        <div class="px-lg-20 px-5">
-                            
+					<div class="d-flex justify-content-end align-items-center py-7 py-lg-15 px-5 px-lg-20 w-100">
+                        <div class="row px-lg-20 pt-20 mt-5">
+                            <div class="col-4"></div>
                             <!--begin::Title-->
-                            <div class="d-none d-lg-block text-white fw-bolder">
-                                <h1 class="fs-32 mb-7">
-                                    <span class="text-btn-grad">Unlock profits</span> with every text.
+                            <div class="col-lg-8 d-none d-lg-block mt-5 pt-5">
+                                <h1 class="fs-32 mb-7 fw-bolder text-white">
+                                    <span class="text-btn-grad fs-44">Unlock profits</span> with every text.
                                 </h1>
                                 <!--end::Title-->
                                 <!--begin::Text-->
-                                <p class="d-none d-lg-block text-white fw-600 mt-5 fs-16">
+                                <p class="d-none d-lg-block text-white mt-5 fs-14">
                                     Earn additional revenue by buying and then reselling SMS credits to their customers. A reseller buys SMS credits in bulk and sells them in smaller batches to their customers.
                                 </p>
                             <!--end::Text-->
