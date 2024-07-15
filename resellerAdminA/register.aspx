@@ -23,31 +23,34 @@
     <link href="/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
     <link href="/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
      <!--end::Global Stylesheets Bundle-->
- <link rel="stylesheet" href="/assets/css/custom.css" />
+    <link rel="stylesheet" href="/assets/css/custom.css" />
     <script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
+      <!--begin::Javascript-->
+      <!--begin::Global Javascript Bundle(mandatory for all pages)-->
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+      <script src="/assets/plugins/global/plugins.bundle.js"></script>
+      <script src="/assets/js/scripts.bundle.js"></script>
+      <!--end::Global Javascript Bundle-->
+      <!--begin::Custom Javascript(used for this page only)-->
+      <script src="/assets/js/custom/authentication/sign-up/general.js"></script>
+      <script src="/assets/js/main.js"></script>
+      <!--end::Custom Javascript-->
+      <!--end::Javascript-->
 </head>
 <!--end::Head-->
 <!--begin::Body-->
 <body id="kt_body" data-kt-app-header-fixed="true" data-kt-app-header-fixed-mobile="true" data-kt-app-sidebar-enabled="true" data-kt-app-sidebar-fixed="true" data-kt-app-sidebar-push-toolbar="true" data-kt-app-sidebar-push-footer="true" class="app-default">
     <uc1:loader runat="server" ID="loader" />
     <!--begin::Theme mode setup on page load-->
-    <script>
-        var defaultThemeMode = "light"; var themeMode; if (document.documentElement) { if (document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if (localStorage.getItem("data-bs-theme") !== null) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }
-        var onSubmit = function (token) {
-            var form = document.getElementById("kt_sign_up_form");
-            var input = document.createElement("input");
-            input.type = "hidden";
-            input.name = "dfp";
-            input.value = "myValue";
+     <script>
+         var defaultThemeMode = "light"; var themeMode; if (document.documentElement) { if (document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if (localStorage.getItem("data-bs-theme") !== null) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }
+         var onSubmit = function (token) {
+             t = document.querySelector("#sign_up_submit");
+             (t.disabled = !0);
 
-            // Add the input to the form
-            form.appendChild(input);
-            t = document.querySelector("#kt_sign_up_submit");
-            t.setAttribute("data-kt-indicator", "on");
-            (t.disabled = !0);
-            document.getElementById('kt_sign_up_form').submit();
-        };
-    </script>
+             __doPostBack("sign_up_submit", '');
+         };
+     </script>
     <!--end::Theme mode setup on page load-->
     <!--begin::Root-->
     <div class="d-flex flex-column flex-root" id="kt_app_root">
@@ -59,7 +62,7 @@
                 <div class="d-flex flex-center flex-column flex-lg-row-fluid">
                     <!--begin::Wrapper-->
                     <div class="w-lg-500px p-10">
-                        <form method="post" action="register" runat="server" class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework" novalidate="novalidate" id="kt_sign_up_form" name="kt_sign_up_form">
+                        <form method="post" action="/register.aspx" runat="server" class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework" novalidate="novalidate" id="sign_up_form" name="sign_up_form">
                             <!--begin::List widget 10-->
                             <div class="card card-flush shadow-xs">
                                 <!--begin::Header-->
@@ -111,19 +114,13 @@
                                     </div>
                                     <!--end::Accept-->
                                     <div>
-                                        <div id="recaptcha" class="g-recaptcha " style="position: fixed; bottom: 0; right: 0;" data-badge="bottomright" data-style="bottomright" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback="onSubmit" data-size="invisible"></div>
+                                        <div id="recaptcha" class="g-recaptcha " style="position: fixed; bottom: 0; right: 0; z-index: 9;" data-badge="bottomright" data-style="bottomright" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback="onSubmit" data-size="invisible"></div>
                                     </div>
                                     <!--begin::Submit button-->
                                     <div class="d-grid mb-10">
-                                        <button type="submit" id="kt_sign_up_submit" runat="server" class="btn btn-grad-1 py-2 px-8 rounded-3" data-kt-indicator="off">
-                                            <!--begin::Indicator label-->
-                                            <span class="indicator-label">Sign up</span>
-                                            <!--end::Indicator label-->
-                                            <!--begin::Indicator progress-->
-                                            <span class="indicator-progress">Please wait...
-                                                <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-                                            <!--end::Indicator progress-->
-                                        </button>
+                                        <asp:Button ID="sign_up_submit" runat="server" Text="Sign up"
+                                            CssClass="btn btn-grad-1 py-2 px-8 rounded-3"
+                                            OnClientClick="return false;" OnClick="sign_up_submit_Click" />
                                     </div>
                                     <!--end::Submit button-->
                                     <!--begin::Sign up-->
@@ -136,7 +133,7 @@
                             </div>
                             <!--end::List widget 10-->
                             <!--begin::Input group=-->
-
+                            <asp:ScriptManager ID="ScriptManager1" runat="server" />
                         </form>
                     </div>
                     <!--end::Wrapper-->
@@ -170,17 +167,7 @@
         <!--end::Authentication - Sign-in-->
     </div>
     <!--end::Root-->
-    <!--begin::Javascript-->
-    <!--begin::Global Javascript Bundle(mandatory for all pages)-->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="/assets/plugins/global/plugins.bundle.js"></script>
-    <script src="/assets/js/scripts.bundle.js"></script>
-    <!--end::Global Javascript Bundle-->
-    <!--begin::Custom Javascript(used for this page only)-->
-    <script src="/assets/js/custom/authentication/sign-up/general.js"></script>
-    <script src="/assets/js/main.js"></script>
-    <!--end::Custom Javascript-->
-    <!--end::Javascript-->
+  
 </body>
 <!--end::Body-->
 </html>

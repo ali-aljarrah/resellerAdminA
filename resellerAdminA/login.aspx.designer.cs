@@ -24,13 +24,13 @@ namespace resellerAdminA
         protected global::resellerAdminA.Controls.loader loader;
 
         /// <summary>
-        /// kt_sign_in_form control.
+        /// sign_in_form control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm kt_sign_in_form;
+        protected global::System.Web.UI.HtmlControls.HtmlForm sign_in_form;
 
         /// <summary>
         /// email control.
@@ -51,12 +51,21 @@ namespace resellerAdminA
         protected global::System.Web.UI.HtmlControls.HtmlInputPassword password;
 
         /// <summary>
-        /// kt_sign_in_submit control.
+        /// sign_in_submit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton kt_sign_in_submit;
+        protected global::System.Web.UI.WebControls.Button sign_in_submit;
+
+        /// <summary>
+        /// ScriptManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
     }
 }

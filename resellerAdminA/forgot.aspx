@@ -25,7 +25,19 @@
 		<!--end::Global Stylesheets Bundle-->
 		<link rel="stylesheet" href="/assets/css/custom.css" />
 		<script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
-		</head>
+	    <!--begin::Javascript-->
+        <!--begin::Global Javascript Bundle(mandatory for all pages)-->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="/assets/plugins/global/plugins.bundle.js"></script>
+        <script src="/assets/js/scripts.bundle.js"></script>
+        <!--end::Global Javascript Bundle-->
+        <!--begin::Custom Javascript(used for this page only)-->
+        <script src="/assets/js/custom/authentication/reset-password/reset-password.js"></script>
+        <%--<script src="/assets/js/custom/authentication/reset-password/reset_func.js"></script>--%>
+        <script src="/assets/js/main.js"></script>
+        <!--end::Custom Javascript-->
+        <!--end::Javascript-->	
+    </head>
 	<!--end::Head-->
 	<!--begin::Body-->
 	<body id="kt_body" data-kt-app-header-fixed="true" data-kt-app-header-fixed-mobile="true" data-kt-app-sidebar-enabled="true" data-kt-app-sidebar-fixed="true" data-kt-app-sidebar-push-toolbar="true" data-kt-app-sidebar-push-footer="true" class="app-default">
@@ -34,10 +46,11 @@
 		<script>
             var defaultThemeMode = "light"; var themeMode; if (document.documentElement) { if (document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if (localStorage.getItem("data-bs-theme") !== null) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }
             var onSubmit = function (token) {
-                t = document.querySelector("#kt_sign_in_submit");
-                t.setAttribute("data-kt-indicator", "on");
+                t = document.querySelector("#password_reset_submit");
+                //t.setAttribute("data-kt-indicator", "on");
                 (t.disabled = !0);
-                document.getElementById('kt_sign_in_form').submit();
+                //document.getElementById('kt_sign_in_form').submit();
+                __doPostBack("password_reset_submit", '');
             };
         </script>
 		<!--end::Theme mode setup on page load-->
@@ -51,7 +64,7 @@
 					<div class="d-flex flex-center flex-column flex-lg-row-fluid">
 						<!--begin::Wrapper-->
 						<div class="w-lg-500px p-10">
-                            <form class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework" novalidate="novalidate" id="kt_password_reset_form" runat="server" method="post" action="forgot">
+                            <form class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework" novalidate="novalidate" id="password_reset_form" name="password_reset_form" runat="server" method="post" action="/forgot.aspx">
                                 <!--begin::List widget 10-->
                                 <div class="card card-flush shadow-xs">
                                     <!--begin::Header-->
@@ -76,20 +89,14 @@
                                             <input type="email" placeholder="Email" name="email" id="email" runat="server" autocomplete="off" class="form-control form-control-solid">
                                             <!--end::Email-->
                                         <div class="fv-plugins-message-container invalid-feedback"></div></div>
-                                        <div class="mb-8">
-                                            <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                                        <div>
+                                            <div id="recaptcha" class="g-recaptcha " style="position: fixed; bottom: 0; right: 0;" data-badge="bottomright" data-style="bottomright" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback="onSubmit" data-size="invisible"></div>
                                         </div>
                                         <!--begin::Actions-->
                                         <div class="d-grid my-10">
-                                            <button type="button" id="kt_password_reset_submit" runat="server" class="btn btn-grad-1 py-2 px-8 rounded-3 w-100">
-                                                <!--begin::Indicator label-->
-                                                <span class="indicator-label">Reset</span>
-                                                <!--end::Indicator label-->
-                                                <!--begin::Indicator progress-->
-                                                <span class="indicator-progress">Please wait...
-                                                <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-                                                <!--end::Indicator progress-->
-                                            </button>
+                                            <asp:Button ID="password_reset_submit" runat="server" Text="Reset"
+                                                CssClass="btn btn-grad-1 py-2 px-8 rounded-3 w-100"
+                                                OnClientClick="return false;" OnClick="password_reset_submit_Click" />
                                         </div>
                                         <!--end::Actions-->
                                           <!--begin::Sign in-->
@@ -102,7 +109,7 @@
                                 </div>
                                 <!--end::List widget 10-->
                                 <!--begin::Input group=-->
-                                
+                                <asp:ScriptManager ID="ScriptManager1" runat="server" />
 							</form>
 						</div>
 						<!--end::Wrapper-->
@@ -136,18 +143,7 @@
 			<!--end::Authentication - Sign-in-->
 		</div>
 		<!--end::Root-->
-		<!--begin::Javascript-->
-		<!--begin::Global Javascript Bundle(mandatory for all pages)-->
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-        <script src="/assets/plugins/global/plugins.bundle.js"></script>
-		<script src="/assets/js/scripts.bundle.js"></script>
-		<!--end::Global Javascript Bundle-->
-		<!--begin::Custom Javascript(used for this page only)-->
-        <script src="/assets/js/custom/authentication/reset-password/reset-password.js"></script>
-        <script src="/assets/js/custom/authentication/reset-password/reset_func.js"></script>
-        <script src="/assets/js/main.js"></script>
-		<!--end::Custom Javascript-->
-		<!--end::Javascript-->
+		
 	</body>
 	<!--end::Body-->
 </html>

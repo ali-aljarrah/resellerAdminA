@@ -25,6 +25,17 @@
     <!--end::Global Stylesheets Bundle-->
     <link rel="stylesheet" href="/assets/css/custom.css" />
     <script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
+     <!--begin::Javascript-->
+     <!--begin::Global Javascript Bundle(mandatory for all pages)-->
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <script src="/assets/plugins/global/plugins.bundle.js"></script>
+     <script src="/assets/js/scripts.bundle.js"></script>
+     <!--end::Global Javascript Bundle-->
+     <!--begin::Custom Javascript(used for this page only)-->
+     <script src="/assets/js/custom/authentication/sign-in/general.js"></script>
+     <script src="/assets/js/main.js"></script>
+     <!--end::Custom Javascript-->
+     <!--end::Javascript-->
 </head>
 <!--end::Head-->
 <!--begin::Body-->
@@ -34,10 +45,11 @@
     <script>
         var defaultThemeMode = "light"; var themeMode; if (document.documentElement) { if (document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if (localStorage.getItem("data-bs-theme") !== null) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }
         var onSubmit = function (token) {
-            t = document.querySelector("#kt_sign_in_submit");
-            t.setAttribute("data-kt-indicator", "on");
+            t = document.querySelector("#sign_in_submit");
+            //t.setAttribute("data-kt-indicator", "on");
             (t.disabled = !0);
-            document.getElementById('kt_sign_in_form').submit();
+            //document.getElementById('kt_sign_in_form').submit();
+            __doPostBack("sign_in_submit", '');
         };
     </script>
     <!--end::Theme mode setup on page load-->
@@ -51,7 +63,7 @@
                 <div class="d-flex flex-center flex-column flex-lg-row-fluid">
                     <!--begin::Wrapper-->
                     <div class="w-lg-500px p-10">
-                        <form class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework" novalidate="novalidate" id="kt_sign_in_form" runat="server" name="kt_sign_in_form" data-kt-redirect-url="/" action="login.aspx" method="post">
+                        <form runat="server" class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework" novalidate="novalidate" id="sign_in_form" runat="server" name="sign_in_form" data-kt-redirect-url="/" action="login.aspx" method="post">
                             <!--begin::List widget 10-->
                             <div class="card card-flush shadow-xs">
                                 <!--begin::Header-->
@@ -84,19 +96,13 @@
                                     </div>
                                     <!--end::Input group-->
                                     <div>
-                                        <div id="recaptcha" class="g-recaptcha " style="position: fixed; bottom: 0; right: 0;" data-badge="bottomright" data-style="bottomright" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback="onSubmit" data-size="invisible"></div>
-                                    </div>
+                                         <div id="recaptcha" class="g-recaptcha " style="position: fixed; bottom: 0; right: 0; z-index: 9;" data-badge="bottomright" data-style="bottomright" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback="onSubmit" data-size="invisible"></div>
+                                     </div>
                                     <!--begin::Submit button-->
                                     <div class="d-grid my-10">
-                                        <button type="submit" id="kt_sign_in_submit" runat="server" class="btn btn-grad-1 py-2 px-8 rounded-3 w-100" data-kt-indicator="off">
-                                            <!--begin::Indicator label-->
-                                            <span class="indicator-label">Sign In</span>
-                                            <!--end::Indicator label-->
-                                            <!--begin::Indicator progress-->
-                                            <span class="indicator-progress">Please wait...
-                                                <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-                                            <!--end::Indicator progress-->
-                                        </button>
+                                          <asp:Button ID="sign_in_submit" runat="server" Text="Sign In"
+                                              CssClass="btn btn-grad-1 py-2 px-8 rounded-3 w-100"
+                                              OnClientClick="return false;" OnClick="sign_in_submit_Click" />
                                     </div>
                                     <!--end::Submit button-->
                                     <!--begin::Sign up-->
@@ -118,7 +124,7 @@
                             </div>
                             <!--end::List widget 10-->
                             <!--begin::Input group=-->
-
+                            <asp:ScriptManager ID="ScriptManager1" runat="server" />
                         </form>
                     </div>
                     <!--end::Wrapper-->
@@ -152,17 +158,7 @@
         <!--end::Authentication - Sign-in-->
     </div>
     <!--end::Root-->
-    <!--begin::Javascript-->
-    <!--begin::Global Javascript Bundle(mandatory for all pages)-->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="/assets/plugins/global/plugins.bundle.js"></script>
-    <script src="/assets/js/scripts.bundle.js"></script>
-    <!--end::Global Javascript Bundle-->
-    <!--begin::Custom Javascript(used for this page only)-->
-    <script src="/assets/js/custom/authentication/sign-in/general.js"></script>
-    <script src="/assets/js/main.js"></script>
-    <!--end::Custom Javascript-->
-    <!--end::Javascript-->
+   
 </body>
 <!--end::Body-->
 </html>
