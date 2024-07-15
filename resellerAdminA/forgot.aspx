@@ -111,10 +111,10 @@
 					<div class="d-flex justify-content-center align-items-center flex-column py-7 py-lg-15 px-5 px-lg-20 w-100">
                         <div class="px-lg-20 px-5">
                             <div>
-                                <img class="img-fluid" width="580" height="431" loading="lazy" src="assets/img/Rectangle 5.webp" alt="Login image" />
+                                <img class="img-fluid" width="580" height="431" loading="lazy" src="assets/img/Rectangle55.webp" alt="Login image" />
                             </div>
                             <!--begin::Title-->
-                            <h1 class="d-none d-lg-block text-white fw-bolder fs-32 mb-7">
+                            <h1 class="d-none d-lg-block text-white fw-bolder fs-40 mb-7">
                                 <span class="text-btn-grad">Your gateway</span> to business success.
                             </h1>
                             <!--end::Title-->

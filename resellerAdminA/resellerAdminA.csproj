@@ -80,7 +80,6 @@
     <Content Include="assets\img\home\Frame 93.png" />
     <Content Include="assets\img\home\Layer 1.svg" />
     <Content Include="assets\img\LOGO.svg" />
-    <Content Include="assets\img\login-image.png" />
     <Content Include="assets\img\youtube.png" />
     <Content Include="assets\js\admin-scheduled-log.js" />
     <Content Include="assets\js\admin-sms-log.js" />
@@ -2467,6 +2466,7 @@
     <Content Include="assets\plugins\global\fonts\line-awesome\la-solid-900.woff2" />
     <Content Include="assets\img\Rectangle3.webp" />
     <Content Include="assets\img\Rectangle55.webp" />
+    <Content Include="assets\img\Rectangle4.webp" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

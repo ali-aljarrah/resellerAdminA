@@ -663,7 +663,9 @@ input#dt-search-0 {
     font-size:44px;
 }
 
-
+.fs-40 {
+    font-size: 40px;
+}
 
 @media (min-width: 592px) {
     .media-size {
