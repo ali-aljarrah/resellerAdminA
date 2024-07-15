@@ -15,6 +15,15 @@ namespace resellerAdminA
     {
 
         /// <summary>
+        /// loader control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::resellerAdminA.Controls.loader loader;
+
+        /// <summary>
         /// kt_sign_in_form control.
         /// </summary>
         /// <remarks>
