@@ -59,7 +59,7 @@
                                                 </div>
                                                 <div class="mb-8">
                                                     <label for="cmbMessageType" class="form-label fs-14 dark-color required">SMS type</label>
-                                                    <select class="form-control form-custom-input mt-3" runat="server" onchange="javascript:setMessageLength();" id="cmbMessageType" name="cmbMessageType" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Please Select Message Type">
+                                                    <select class="form-select form-custom-select mt-3" runat="server" onchange="javascript:setMessageLength();" id="cmbMessageType" name="cmbMessageType" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Please Select Message Type">
                                                         <option value="">Please select one</option>
                                                         <option value="0">Text</option>
                                                         <option value="2">Arabic</option>

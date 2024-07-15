@@ -240,7 +240,7 @@
                             <div class="col-lg-6">
                                 <div class="mb-5">
                                     <label for="newUserCountry" class="form-label required">Country</label>
-                                    <select runat="server" name="newUserCountry" id="newUserCountry" class="form-control form-custom-input mt-3 p-2">
+                                    <select runat="server" name="newUserCountry" id="newUserCountry" class="form-select form-custom-select mt-3 p-2">
                                         <option value="" selected>Select...</option>
                                         <option value="USA">USA</option>
                                         <option value="canada">Canada</option>
