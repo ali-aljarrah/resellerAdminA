@@ -84,6 +84,7 @@
     <Content Include="assets\img\home\Layer 1.svg" />
     <Content Include="assets\img\LOGO.svg" />
     <Content Include="assets\img\youtube.png" />
+    <Content Include="assets\js\account.js" />
     <Content Include="assets\js\admin-scheduled-log.js" />
     <Content Include="assets\js\admin-sms-log.js" />
     <Content Include="assets\js\affiliates.js" />

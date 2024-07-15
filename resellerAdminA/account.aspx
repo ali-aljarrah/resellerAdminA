@@ -414,7 +414,7 @@
        </div>
 
 			<uc1:footerLinks runat="server" id="footerLinks" />
-
+            <script src="/assets/js/account.js"></script>
 	</body>
 	<!--end::Body-->
 </html>
