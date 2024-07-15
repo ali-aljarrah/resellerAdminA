@@ -121,13 +121,13 @@
 				</div>
 				<!--end::Body-->
 				<!--begin::Aside-->
-				<div class="d-flex flex-lg-row-fluid w-lg-50  bg-image-log order-1 order-lg-2">
+				<div class="d-flex flex-lg-row-fluid w-lg-50 position-relative bg-image-log order-1 order-lg-2">
 					<!--begin::Content-->
-					<div class="d-flex justify-content-end align-items-center py-7 py-lg-15 px-5 px-lg-20 w-100">
-                        <div class="row px-lg-20 pt-20 mt-5">
-                            <div class="col-4"></div>
+					<div class="d-flex justify-content-center align-items-center flex-column py-7 py-lg-15 px-5 px-lg-20 w-100">
+                        <div class="px-lg-20">
+                           
                             <!--begin::Title-->
-                            <div class="col-lg-8 d-none d-lg-block mt-5 pt-5">
+                            <div class="d-none d-lg-block mt-5 pt-5 px-8 media-size position-absolute">
                                 <h1 class="fs-32 mb-7 fw-bolder text-white">
                                     <span class="text-btn-grad fs-44">Unlock profits</span> with every text.
                                 </h1>
