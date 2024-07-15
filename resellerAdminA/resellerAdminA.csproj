@@ -470,6 +470,7 @@
     <Content Include="assets\img\Rectangle3.webp" />
     <Content Include="assets\img\Rectangle55.webp" />
     <Content Include="assets\img\Rectangle4.webp" />
+    <Content Include="assets\img\img-user.webp" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
