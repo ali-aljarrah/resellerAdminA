@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="resellerAdminA.index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="account.aspx.cs" Inherits="resellerAdminA.account" %>
 
 
 <%@ Register Src="~/Controls/head.ascx" TagPrefix="uc1" TagName="head" %>

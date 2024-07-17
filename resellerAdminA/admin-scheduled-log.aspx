@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="resellerAdminA.index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="admin-scheduled-log.aspx.cs" Inherits="resellerAdminA.admin_scheduled_log" %>
 
 
 <%@ Register Src="~/Controls/head.ascx" TagPrefix="uc1" TagName="head" %>
