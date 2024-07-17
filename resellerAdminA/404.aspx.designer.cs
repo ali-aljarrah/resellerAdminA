@@ -11,8 +11,9 @@ namespace resellerAdminA
 {
 
 
-    public partial class 404 {
-        
+    public partial class _404
+    {
+
         /// <summary>
         /// head control.
         /// </summary>
@@ -22,49 +23,49 @@ namespace resellerAdminA
         /// </remarks>
         protected global::resellerAdminA.Controls.head head;
 
-    /// <summary>
-    /// loader control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::resellerAdminA.Controls.loader loader;
+        /// <summary>
+        /// loader control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::resellerAdminA.Controls.loader loader;
 
-    /// <summary>
-    /// menuTop1 control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::resellerAdminA.Controls.menuTop menuTop1;
+        /// <summary>
+        /// menuTop1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::resellerAdminA.Controls.menuTop menuTop1;
 
-    /// <summary>
-    /// sideBar control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::resellerAdminA.Controls.sideBar sideBar;
+        /// <summary>
+        /// sideBar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::resellerAdminA.Controls.sideBar sideBar;
 
-    /// <summary>
-    /// footer control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::resellerAdminA.Controls.footer footer;
+        /// <summary>
+        /// footer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::resellerAdminA.Controls.footer footer;
 
-    /// <summary>
-    /// footerLinks control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::resellerAdminA.Controls.footerLinks footerLinks;
-}
+        /// <summary>
+        /// footerLinks control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::resellerAdminA.Controls.footerLinks footerLinks;
+    }
 }
