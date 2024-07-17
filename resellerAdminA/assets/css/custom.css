@@ -650,10 +650,18 @@ input#dt-search-0 {
     border-radius: 20px !important;
     color: white !important;
     margin-bottom: .75rem !important;
+    padding-left:20px;
+    padding-right:20px;
 }
 
 .bg-image-log {
     background-image:url(/assets/img/Rectangle3.webp), -webkit-linear-gradient(#0E41C1, #0047FF);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom left;
+}
+.bg-img-404 {
+    background-image: url(/assets/img/404img.webp), -webkit-linear-gradient(#0E41C1, #0047FF);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom left;
@@ -672,3 +680,5 @@ input#dt-search-0 {
     top: calc(100vh - 66vh);
     max-width: 435px;
 }
+
+

@@ -11,7 +11,7 @@ namespace resellerAdminA
 {
 
 
-    public partial class _404
+    public partial class _500
     {
 
         /// <summary>

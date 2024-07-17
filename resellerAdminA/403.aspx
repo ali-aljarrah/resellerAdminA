@@ -1,11 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="404.aspx.cs" Inherits="resellerAdminA._404" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="403.aspx.cs" Inherits="resellerAdminA._403" %>
+
 
 <%@ Register Src="~/Controls/head.ascx" TagPrefix="uc1" TagName="head" %>
 <%@ Register Src="~/Controls/loader.ascx" TagPrefix="uc1" TagName="loader" %>
 <%@ Register Src="~/Controls/footerLinks.ascx" TagPrefix="uc1" TagName="footerLinks" %>
 
 <uc1:head runat="server" ID="head" />
-        <title>Reseller - 404</title>
+        <title>Reseller - 403</title>
 	</head>
 	<!--end::Head-->
 	<!--begin::Body-->
@@ -19,15 +20,14 @@
             <div>
                 <div class="text-center">
                     <div class="text-center fw-600 mb-5 text-btn-grad">
-                        <div class="fs-96 line-h-90">404</div>
-                        <div class="fs-24">Page not found</div>
+                        <div class="fs-96 line-h-90">403</div>
+                        <div class="fs-24">Page forbidden</div>
                     </div>
                     <div class="text-center fs-32 white-color fw-bold">
-                        Oh no... We lost this page
+                    You’re not allowed in here
                     </div>
                     <div class="fs-16 text-white">
-                    We searched everywhere but couldn’t find what you’re looking for.
-                    <br />Let’s get you back to the right page.
+                    We apologize. You don’t have permission to access this page or resources.
                     </div>
                     <div class="d-flex justify-content-center align-items-center mt-8">
                         <div class="me-3">
@@ -44,4 +44,3 @@
 	</body>
 	<!--end::Body-->
 </html>
-

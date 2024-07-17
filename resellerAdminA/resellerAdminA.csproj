@@ -70,7 +70,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="403.aspx" />
     <Content Include="404.aspx" />
+    <Content Include="500.aspx" />
     <Content Include="account.aspx" />
     <Content Include="admin-scheduled-log.aspx" />
     <Content Include="admin-sms-log.aspx" />
@@ -210,16 +212,31 @@
     <Content Include="sms-summary.aspx" />
     <Content Include="smslog.aspx" />
     <Content Include="transactions-log.aspx" />
+    <Content Include="user.aspx" />
     <Content Include="users-list.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="403.aspx.cs">
+      <DependentUpon>403.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="403.aspx.designer.cs">
+      <DependentUpon>403.aspx</DependentUpon>
+    </Compile>
     <Compile Include="404.aspx.cs">
       <DependentUpon>404.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="404.aspx.designer.cs">
       <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="500.aspx.cs">
+      <DependentUpon>500.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="500.aspx.designer.cs">
+      <DependentUpon>500.aspx</DependentUpon>
     </Compile>
     <Compile Include="account.aspx.cs">
       <DependentUpon>account.aspx</DependentUpon>
@@ -418,6 +435,13 @@
     <Compile Include="transactions-log.aspx.designer.cs">
       <DependentUpon>transactions-log.aspx</DependentUpon>
     </Compile>
+    <Compile Include="user.aspx.cs">
+      <DependentUpon>user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.aspx.designer.cs">
+      <DependentUpon>user.aspx</DependentUpon>
+    </Compile>
     <Compile Include="users-list.aspx.cs">
       <DependentUpon>users-list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -475,6 +499,7 @@
     <Content Include="assets\img\Rectangle55.webp" />
     <Content Include="assets\img\Rectangle4.webp" />
     <Content Include="assets\img\img-user.webp" />
+    <Content Include="assets\img\404img.webp" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
