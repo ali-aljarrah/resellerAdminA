@@ -28,7 +28,7 @@
             <!--begin::Page-->
             <div class="app-page flex-column flex-column-fluid" id="kt_app_page">
                 <!--begin::Header-->
-                <uc1:menuTop runat="server" ID="menuTop1" parentPageText="Dashboard" childPageText="Users List" />
+                <uc1:menuTop runat="server" ID="menuTop1" parentPageText="Dashboard" childPageText="Users" />
                 <!--end::Header-->
                 <!--begin::Wrapper-->
                 <div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
@@ -60,7 +60,7 @@
                                             <div class="d-flex flex-wrap flex-sm-nowrap">
                                                 <!--begin: Pic-->
                                                 <div class="me-7 mb-4">
-                                                    <div class="d-flex justify-content-center align-items-center w-150px h-150px bg-secondary-active rounded">
+                                                    <div class="d-flex justify-content-center align-items-center w-150px h-150px">
                                                         <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <rect width="150" height="150" rx="16" fill="#F6F6FD" />
                                                             <g opacity="0.2">
@@ -87,53 +87,14 @@
                                                                             <option value="active">Active</option>
                                                                             <option value="idle">Idle</option>
                                                                         </select>
-                                                                        <!--begin::Accordion-->
-                                                                        <div class="accordion border-0" id="user_accordion">
-                                                                            <div class="accordion-item border-0">
-                                                                                <h2 class="accordion-header" id="user_accordion_header_1">
-                                                                                    <button class="accordion-button rounded-0 bg-gray py-3 px-3 ms-5 fs-4 fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#user_accordion_body_1" aria-expanded="false" aria-controls="user_accordion_body_1">
-                                                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.83809 6.77814C1.58957 9.07768 1.60022 11.7297 1.94638 14.0195C2.0393 14.6352 2.33769 15.2017 2.79351 15.628C3.24933 16.0543 3.83603 16.3154 4.45913 16.3694L5.79939 16.4852C8.59528 16.7272 11.4054 16.7272 14.2013 16.4852L15.5415 16.3703C16.1646 16.3163 16.7513 16.0552 17.2071 15.6289C17.663 15.2026 17.9614 14.636 18.0543 14.0204C18.4004 11.7297 18.4111 9.07768 18.1626 6.77814C18.1305 6.51141 18.0944 6.24518 18.0543 5.97953C17.9614 5.36391 17.663 4.79734 17.2071 4.37107C16.7513 3.94479 16.1646 3.68362 15.5415 3.62963L14.2013 3.51478C11.4059 3.2729 8.59474 3.2729 5.79939 3.51478L4.45913 3.62963C3.83603 3.68362 3.24933 3.94479 2.79351 4.37107C2.33769 4.79734 2.0393 5.36391 1.94638 5.97953C1.90636 6.24519 1.87027 6.51142 1.83809 6.77814ZM5.91477 4.83461C8.63305 4.59942 11.3667 4.59942 14.085 4.83461L15.4252 4.95034C15.7507 4.97862 16.057 5.11501 16.2952 5.33757C16.5333 5.56014 16.6892 5.85594 16.738 6.17741L16.7682 6.38325L11.8323 9.11302C11.2719 9.4229 10.6414 9.58551 10.0003 9.58551C9.35925 9.58551 8.72875 9.4229 8.16835 9.11302L3.23249 6.38325L3.26267 6.17741C3.31109 5.85595 3.46684 5.56008 3.70482 5.33748C3.94281 5.11487 4.24916 4.9785 4.57452 4.95034L5.91477 4.83461ZM16.9306 7.80909C17.1031 9.81417 17.0385 11.8325 16.738 13.8225C16.6896 14.144 16.5338 14.4399 16.2958 14.6625C16.0578 14.8851 15.7515 15.0214 15.4261 15.0496L14.0859 15.1653C11.3673 15.4005 8.63335 15.4005 5.91477 15.1653L4.57452 15.0496C4.24916 15.0214 3.94281 14.8851 3.70482 14.6625C3.46684 14.4399 3.31109 14.144 3.26267 13.8225C2.96191 11.8325 2.89697 9.8142 3.06918 7.80909L7.5213 10.2712C8.2795 10.6904 9.13253 10.9104 9.99988 10.9104C10.8672 10.9104 11.7203 10.6904 12.4785 10.2712L16.9306 7.80909Z" fill="#121212"/>
-                                                                                        </svg>
-                                                                                        <span class="ps-5">Message Jessica</span>
-                                                                                    </button>
-                                                                                </h2>
-                                                                                <div id="user_accordion_body_1" class="accordion-collapse collapse" aria-labelledby="user_accordion_header_1" data-bs-parent="#user_accordion">
-                                                                                    <div class="accordion-body">
-                                                                                        <div>
-                                                                                            <form action="#">
-                                                                                                <div class="row mb-4">
-                                                                                                    <div class="col-lg-12">
-                                                                                                        <div class="mb-5">
-                                                                                                            <label for="messageSubject" class="form-label required">Subject</label>
-                                                                                                            <input required class="form-control-solid form-control" value="" type="text" name="messageSubject" id="messageSubject" placeholder="Enter message subject here">
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                    <div class="col-lg-12">
-                                                                                                        <div class="mb-5">
-                                                                                                            <label for="messageBody" class="form-label required">Message</label>
-                                                                                                            <textarea rows="5" required class="form-control-solid form-control" name="messageBody" id="messageBody" placeholder="Enter your message"></textarea>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="text-end">
-                                                                                                    <button type="button" class="btn btn-dark py-2 px-8 rounded-3" id="sendMessageSubmitBtn">
-                                                                                                        <span class="indicator-label">Send</span>
-                                                                                                        <span class="indicator-progress">
-                                                                                                            <span class="spinner-border text-white" role="status">
-                                                                                                                <span class="visually-hidden">Loading...</span>
-                                                                                                            </span>
-                                                                                                        </span>
-                                                                                                    </button>
-                                                                                                </div>
-                                                                                            </form>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-                                                                        <!--end::Accordion-->
+                                                                        <!--begin::button-->
+                                                                        <button type="button" class="btn border border-2 rounded-0 py-1 px-4 ms-5" id="btn-modal-popup" data-bs-toggle="modal" data-bs-target="#sendMessageModal">
+                                                                            <svg class="me-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.83809 6.77814C1.58957 9.07768 1.60022 11.7297 1.94638 14.0195C2.0393 14.6352 2.33769 15.2017 2.79351 15.628C3.24933 16.0543 3.83603 16.3154 4.45913 16.3694L5.79939 16.4852C8.59528 16.7272 11.4054 16.7272 14.2013 16.4852L15.5415 16.3703C16.1646 16.3163 16.7513 16.0552 17.2071 15.6289C17.663 15.2026 17.9614 14.636 18.0543 14.0204C18.4004 11.7297 18.4111 9.07768 18.1626 6.77814C18.1305 6.51141 18.0944 6.24518 18.0543 5.97953C17.9614 5.36391 17.663 4.79734 17.2071 4.37107C16.7513 3.94479 16.1646 3.68362 15.5415 3.62963L14.2013 3.51478C11.4059 3.2729 8.59474 3.2729 5.79939 3.51478L4.45913 3.62963C3.83603 3.68362 3.24933 3.94479 2.79351 4.37107C2.33769 4.79734 2.0393 5.36391 1.94638 5.97953C1.90636 6.24519 1.87027 6.51142 1.83809 6.77814ZM5.91477 4.83461C8.63305 4.59942 11.3667 4.59942 14.085 4.83461L15.4252 4.95034C15.7507 4.97862 16.057 5.11501 16.2952 5.33757C16.5333 5.56014 16.6892 5.85594 16.738 6.17741L16.7682 6.38325L11.8323 9.11302C11.2719 9.4229 10.6414 9.58551 10.0003 9.58551C9.35925 9.58551 8.72875 9.4229 8.16835 9.11302L3.23249 6.38325L3.26267 6.17741C3.31109 5.85595 3.46684 5.56008 3.70482 5.33748C3.94281 5.11487 4.24916 4.9785 4.57452 4.95034L5.91477 4.83461ZM16.9306 7.80909C17.1031 9.81417 17.0385 11.8325 16.738 13.8225C16.6896 14.144 16.5338 14.4399 16.2958 14.6625C16.0578 14.8851 15.7515 15.0214 15.4261 15.0496L14.0859 15.1653C11.3673 15.4005 8.63335 15.4005 5.91477 15.1653L4.57452 15.0496C4.24916 15.0214 3.94281 14.8851 3.70482 14.6625C3.46684 14.4399 3.31109 14.144 3.26267 13.8225C2.96191 11.8325 2.89697 9.8142 3.06918 7.80909L7.5213 10.2712C8.2795 10.6904 9.13253 10.9105 9.99988 10.9105C10.8672 10.9105 11.7203 10.6904 12.4785 10.2712L16.9306 7.80909Z" fill="#121212" />
+                                                                            </svg>
+                                                                            Message Jessica
+                                                                        </button>
+                                                                        <!--end::button-->
                                                                     </form>
                                                                 </div>
                                                                 <!--end::Menu-->
@@ -151,45 +112,16 @@
                                                         <!--begin::Actions-->
                                                         <div class="d-flex justify-content-between align-items-center my-4">
                                                             <!-- login as customer button  -->
-                                                            <div class="accordion-item border-0 bg-gradient px-6 py-3 rounded-1">
-                                                                <h2 class="accordion-header" id="user_accordion_header_2">
-                                                                    <button class="accordion-button fs-4 fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#user_accordion_body_2" aria-expanded="false" aria-controls="user_accordion_body_2">
-                                                                        <span class="me-2">
-                                                                           <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                                <path d="M18 9C18 9.26522 17.8946 9.51957 17.7071 9.70711C17.5196 9.89464 17.2652 10 17 10C16.7348 10 16.4804 9.89464 16.2929 9.70711C16.1054 9.51957 16 9.26522 16 9C16 8.73478 16.1054 8.48043 16.2929 8.29289C16.4804 8.10536 16.7348 8 17 8C17.2652 8 17.5196 8.10536 17.7071 8.29289C17.8946 8.48043 18 8.73478 18 9Z" fill="white"/>
-                                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.944 0.25H12.056C13.894 0.25 15.35 0.25 16.489 0.403C17.661 0.561 18.61 0.893 19.359 1.641C20.283 2.566 20.578 3.804 20.685 5.411C21.262 5.664 21.698 6.201 21.745 6.881C21.75 6.942 21.75 7.007 21.75 7.067V10.933C21.75 10.993 21.75 11.058 21.746 11.118C21.698 11.798 21.262 12.336 20.685 12.59C20.578 14.196 20.283 15.434 19.359 16.359C18.61 17.107 17.661 17.439 16.489 17.597C15.349 17.75 13.894 17.75 12.056 17.75H8.944C7.106 17.75 5.65 17.75 4.511 17.597C3.339 17.439 2.39 17.107 1.641 16.359C0.893 15.61 0.561 14.661 0.403 13.489C0.25 12.349 0.25 10.894 0.25 9.056V8.944C0.25 7.106 0.25 5.65 0.403 4.511C0.561 3.339 0.893 2.39 1.641 1.641C2.39 0.893 3.339 0.561 4.511 0.403C5.651 0.25 7.106 0.25 8.944 0.25ZM19.168 12.75H17.23C15.085 12.75 13.249 11.122 13.249 9C13.249 6.878 15.085 5.25 17.229 5.25H19.167C19.053 3.909 18.796 3.2 18.297 2.702C17.874 2.279 17.294 2.025 16.288 1.89C15.261 1.752 13.906 1.75 11.999 1.75H8.999C7.092 1.75 5.738 1.752 4.709 1.89C3.704 2.025 3.124 2.279 2.701 2.702C2.278 3.125 2.024 3.705 1.889 4.711C1.751 5.739 1.749 7.093 1.749 9C1.749 10.907 1.751 12.261 1.889 13.29C2.024 14.295 2.278 14.875 2.701 15.298C3.124 15.721 3.704 15.975 4.71 16.11C5.738 16.248 7.092 16.25 8.999 16.25H11.999C13.906 16.25 15.261 16.248 16.289 16.11C17.294 15.975 17.874 15.721 18.297 15.298C18.796 14.8 19.054 14.092 19.168 12.75ZM4.25 5C4.25 4.80109 4.32902 4.61032 4.46967 4.46967C4.61032 4.32902 4.80109 4.25 5 4.25H9C9.19891 4.25 9.38968 4.32902 9.53033 4.46967C9.67098 4.61032 9.75 4.80109 9.75 5C9.75 5.19891 9.67098 5.38968 9.53033 5.53033C9.38968 5.67098 9.19891 5.75 9 5.75H5C4.80109 5.75 4.61032 5.67098 4.46967 5.53033C4.32902 5.38968 4.25 5.19891 4.25 5ZM19.924 6.75H17.23C15.806 6.75 14.749 7.809 14.749 9C14.749 10.191 15.806 11.25 17.229 11.25H19.947C20.153 11.237 20.242 11.098 20.249 11.014V6.986C20.242 6.902 20.153 6.763 19.947 6.751H19.923L19.924 6.75Z" fill="white"/>
-                                                                           </svg>
-                                                                        </span>
-                                                                        <span class=" white-color ps-4 ">Add credits</span>
-                                                                    </button>
-                                                                </h2>
-                                                                <div id="user_accordion_body_2" class="accordion-collapse collapse" aria-labelledby="user_accordion_header_2" data-bs-parent="#user_accordion">
-                                                                    <div class="accordion-body">
-                                                                        <div>
-                                                                            <form action="#">
-                                                                                <div class="row mb-4">
-                                                                                    <div class="col-lg-12">
-                                                                                        <div class="mb-5">
-                                                                                            <label for="creditsAmount" class="form-label required">Credits amount</label>
-                                                                                            <input required class="form-control-solid form-control" value="" type="number" name="creditsAmount" id="creditsAmount" placeholder="500">
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="text-end">
-                                                                                    <button type="button" class="btn btn-dark py-2 px-8 rounded-3" id="addCreditsSubmitBtn">
-                                                                                        <span class="indicator-label">Add credits</span>
-                                                                                        <span class="indicator-progress">
-                                                                                            <span class="spinner-border text-white" role="status">
-                                                                                                <span class="visually-hidden">Loading...</span>
-                                                                                            </span>
-                                                                                        </span>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </form>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                            <!--login as Add Credits button-->
+                                                                <button type="button" class="btn btn-primary btn-grad py-2 px-6 ms-5" id="btn-modal-popup" data-bs-toggle="modal" data-bs-target="#AddCreditsModal">
+                                                                    <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M19 12C19 12.2652 18.8946 12.5196 18.7071 12.7071C18.5196 12.8946 18.2652 13 18 13C17.7348 13 17.4804 12.8946 17.2929 12.7071C17.1054 12.5196 17 12.2652 17 12C17 11.7348 17.1054 11.4804 17.2929 11.2929C17.4804 11.1054 17.7348 11 18 11C18.2652 11 18.5196 11.1054 18.7071 11.2929C18.8946 11.4804 19 11.7348 19 12Z" fill="white"/>
+                                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.944 3.25H13.056C14.894 3.25 16.35 3.25 17.489 3.403C18.661 3.561 19.61 3.893 20.359 4.641C21.283 5.566 21.578 6.804 21.685 8.411C22.262 8.664 22.698 9.201 22.745 9.881C22.75 9.942 22.75 10.007 22.75 10.067V13.933C22.75 13.993 22.75 14.058 22.746 14.118C22.698 14.798 22.262 15.336 21.685 15.59C21.578 17.196 21.283 18.434 20.359 19.359C19.61 20.107 18.661 20.439 17.489 20.597C16.349 20.75 14.894 20.75 13.056 20.75H9.944C8.106 20.75 6.65 20.75 5.511 20.597C4.339 20.439 3.39 20.107 2.641 19.359C1.893 18.61 1.561 17.661 1.403 16.489C1.25 15.349 1.25 13.894 1.25 12.056V11.944C1.25 10.106 1.25 8.65 1.403 7.511C1.561 6.339 1.893 5.39 2.641 4.641C3.39 3.893 4.339 3.561 5.511 3.403C6.651 3.25 8.106 3.25 9.944 3.25ZM20.168 15.75H18.23C16.085 15.75 14.249 14.122 14.249 12C14.249 9.878 16.085 8.25 18.229 8.25H20.167C20.053 6.909 19.796 6.2 19.297 5.702C18.874 5.279 18.294 5.025 17.288 4.89C16.261 4.752 14.906 4.75 12.999 4.75H9.999C8.092 4.75 6.738 4.752 5.709 4.89C4.704 5.025 4.124 5.279 3.701 5.702C3.278 6.125 3.024 6.705 2.889 7.711C2.751 8.739 2.749 10.093 2.749 12C2.749 13.907 2.751 15.261 2.889 16.29C3.024 17.295 3.278 17.875 3.701 18.298C4.124 18.721 4.704 18.975 5.71 19.11C6.738 19.248 8.092 19.25 9.999 19.25H12.999C14.906 19.25 16.261 19.248 17.289 19.11C18.294 18.975 18.874 18.721 19.297 18.298C19.796 17.8 20.054 17.092 20.168 15.75ZM5.25 8C5.25 7.80109 5.32902 7.61032 5.46967 7.46967C5.61032 7.32902 5.80109 7.25 6 7.25H10C10.1989 7.25 10.3897 7.32902 10.5303 7.46967C10.671 7.61032 10.75 7.80109 10.75 8C10.75 8.19891 10.671 8.38968 10.5303 8.53033C10.3897 8.67098 10.1989 8.75 10 8.75H6C5.80109 8.75 5.61032 8.67098 5.46967 8.53033C5.32902 8.38968 5.25 8.19891 5.25 8ZM20.924 9.75H18.23C16.806 9.75 15.749 10.809 15.749 12C15.749 13.191 16.806 14.25 18.229 14.25H20.947C21.153 14.237 21.242 14.098 21.249 14.014V9.986C21.242 9.902 21.153 9.763 20.947 9.751H20.923L20.924 9.75Z" fill="white"/>
+                                                                    </svg>
+                                                                    Add Credits
+                                                                </button>
+                                                                <!--login as Add Credits button-->
+                                                           
                                                             <a id="loginAsCutomerBtn" href="#" class="btn border border-2 ms-3 py-2 px-8 rounded-3">
                                                                 <span class="me-2">
                                                                     <svg class="dynamic-svg-color" xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" fill="none">
@@ -299,7 +231,7 @@
                                                                                             <div class="col-md-6">
                                                                                                 <div class="mb-5">
                                                                                                     <label for="accountType" class="form-label required">Account type</label>
-                                                                                                    <select required name="accountType" id="accountType" class="form-control form-custom-input">
+                                                                                                    <select required name="accountType" id="accountType" class="form-select form-custom-select">
                                                                                                         <option value="customer">Customer</option>
                                                                                                         <option value="admin">Admin</option>
                                                                                                     </select>
@@ -308,7 +240,7 @@
                                                                                             <div class="col-md-6">
                                                                                                 <div class="mb-5">
                                                                                                     <label for="accountStatus" class="form-label required">Account status</label>
-                                                                                                    <select required name="accountStatus" id="accountStatus" class="form-control form-custom-input">
+                                                                                                    <select required name="accountStatus" id="accountStatus" class="form-select form-custom-select">
                                                                                                         <option value="active">Active</option>
                                                                                                         <option value="idle">Adle</option>
                                                                                                     </select>
@@ -584,7 +516,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        
+
                                                     </div>
 
                                                 </div>
@@ -612,7 +544,7 @@
         </div>
 
         <!--modal add user popup-->
-        <div class="modal fade" tabindex="-1" id="popupUserList">
+        <div class="modal fade" tabindex="-1" id="popupUser">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -677,14 +609,99 @@
                             </div>
                         </div>
                     </div>
-
                     <!--end::Body-->
-
                 </div>
             </div>
         </div>
+        <!--start modal message popup-->
+        <div class="modal fade" tabindex="-1" id="sendMessageModal">
+            <div class="modal-dialog modal-lg p-8">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Add message</h3>
+                        <!--begin::Close-->
+                        <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="ki-duotone ki-cross fs-1"><span class="path1"></span><span class="path2"></span></i>
+                        </div>
+                        <!--end::Close-->
+                    </div>
+                    <!--begin::Body-->
+                    <div class="row my-6 p-8">
+                        <form action="#">
+                            <div class="row mb-4">
+                                <div class="col-lg-12">
+                                    <div class="mb-5">
+                                        <label for="messageSubject" class="form-label required">Subject</label>
+                                        <input required class="form-control-solid form-control" value="" type="text" name="messageSubject" id="messageSubject" placeholder="Enter message subject here">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="mb-5">
+                                        <label for="messageBody" class="form-label required">Message</label>
+                                        <textarea rows="5" required class="form-control-solid form-control" name="messageBody" id="messageBody" placeholder="Enter your message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--end::Body-->
+                    <div class="text-end">
+                        <button type="button" class="btn btn-primary btn-grad py-2 px-8 rounded-1" id="sendMessageSubmitBtn">
+                            <span class="indicator-label">Send</span>
+                            <span class="indicator-progress">
+                                <span class="spinner-border text-white" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end modal message popup-->
+
+        <!--start modal message popup-->
+        <div class="modal fade" tabindex="-1" id="AddCreditsModal">
+            <div class="modal-dialog modal-lg p-8">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Add Credits</h3>
+                        <!--begin::Close-->
+                        <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="ki-duotone ki-cross fs-1"><span class="path1"></span><span class="path2"></span></i>
+                        </div>
+                        <!--end::Close-->
+                    </div>
+                    <!--begin::Body-->
+                    <div class="row my-6 p-8">
+                      <form action="#">
+                          <div class="row mb-4">
+                              <div class="col-lg-12">
+                                  <div class="mb-5">
+                                      <label for="creditsAmount" class="form-label required">Credits amount</label>
+                                      <input required class="form-control-solid form-control" value="" type="number" name="creditsAmount" id="creditsAmount" placeholder="500">
+                                  </div>
+                              </div>
+                          </div>
+                      </form>
+                    </div>
+                    <!--end::Body-->
+                    <div class="text-end">
+                        <button type="button" class="btn btn-primary btn-grad py-2 px-8 rounded-1" id="addCreditsSubmitBtn">
+                            <span class="indicator-label">Add credits</span>
+                            <span class="indicator-progress">
+                                <span class="spinner-border text-white" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end modal message popup-->
         <uc1:footerLinks runat="server" ID="footerLinks" />
-        <script src="/assets/js/user-list.js"></script>
+        <script src="/assets/js/user.js"></script>
         <asp:ScriptManager ID="ScriptManager1" runat="server" />
     </form>
 </body>

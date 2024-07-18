@@ -118,6 +118,7 @@
     <Content Include="assets\js\sms-summary.js" />
     <Content Include="assets\js\transactions-log.js" />
     <Content Include="assets\js\user-list.js" />
+    <Content Include="assets\js\user.js" />
     <Content Include="assets\plugins\custom\ckeditor\ckeditor-balloon-block.bundle.js" />
     <Content Include="assets\plugins\custom\ckeditor\ckeditor-balloon.bundle.js" />
     <Content Include="assets\plugins\custom\ckeditor\ckeditor-classic.bundle.js" />

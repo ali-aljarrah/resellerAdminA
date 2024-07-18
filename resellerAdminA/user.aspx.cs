@@ -13,5 +13,10 @@ namespace resellerAdminA
         {
 
         }
+
+        protected void newMessageSubmitBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
