@@ -133,7 +133,7 @@
                                                                                 </div>
                                                                             </div>
                                                                             <asp:Button ID="editBusinissSubmitBtn" runat="server" Text="Edit business details"
-                                                                                CssClass="btn btn-primary btn-grad py-2 px-8 rounded-1"
+                                                                                CssClass="btn btn-primary btn-grad py-2 px-8 rounded-1 m-0"
                                                                                 OnClientClick="editBusinessSubmit('editBusinissSubmitBtn'); return false;" OnClick="editBusinissSubmitBtn_Click" />
                                                                         </div>
                                                                         <!-- end branding details section -->
@@ -231,7 +231,7 @@
                                                                             </div>
                                                                             <div>
                                                                                 <asp:Button ID="otherSettingsSubmitBtn" runat="server" Text="Save settings"
-                                                                                    CssClass="btn btn-primary btn-grad py-2 px-8 rounded-1"
+                                                                                    CssClass="btn btn-primary btn-grad py-2 px-8 rounded-1 m-0"
                                                                                     OnClientClick="otherSettingsSubmit('otherSettingsSubmitBtn'); return false;" OnClick="otherSettingsSubmitBtn_Click" />
 
                                                                             </div>
@@ -286,7 +286,7 @@
                                                                             </div>
                                                                             <div>
                                                                                 <asp:Button ID="outgoingEmailSettingsSubmitBtn" runat="server" Text="Save settings"
-                                                                                  CssClass="btn btn-primary btn-grad py-2 px-8 rounded-1"
+                                                                                  CssClass="btn btn-primary btn-grad py-2 px-8 rounded-1 m-0"
                                                                                   OnClientClick="emailSettingsSubmit('outgoingEmailSettingsSubmitBtn'); return false;" OnClick="outgoingEmailSettingsSubmitBtn_Click" />
                                                                             </div>
                                                                         </div>

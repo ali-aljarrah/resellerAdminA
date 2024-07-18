@@ -139,11 +139,11 @@
                                                         </div>
                                                         <div class="d-flex justify-content-start align-items-center">
                                                             <asp:Button ID="BulkBtnSubmit" runat="server" Text="Send Bulk"
-                                                                CssClass="btn btn-grad-1 py-4 px-9 rounded-3"
+                                                                CssClass="btn btn-primary btn-grad py-2 px-8 rounded-1 ms-0"
                                                                 OnClientClick="sendBulkSubmit('BulkBtnSubmit'); return false;" OnClick="BulkBtnSubmit_Click" />
 
                                                             <div>
-                                                                <a class="btn btn-outline-dark btn-bordered py-4 px-8 rounded-2 ms-8" href="/sentreport">View report</a>
+                                                                <a class="btn btn-outline-dark btn-bordered my-3 py-2 px-8 rounded-2 ms-3" href="/sms-log.aspx">View report</a>
                                                             </div>
                                                         </div>
                                                     </div>

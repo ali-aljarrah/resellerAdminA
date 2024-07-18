@@ -34,72 +34,67 @@ $(document).ready(function () {
 });
 
 // Submit edit account info event
-$('#editAccountInfoSubmitBtn').click(function (e) {
-    e.preventDefault();
-    $(this).prop('disabled', true);
+function editAccountInfoSubmit(id) {
+    var el = document.getElementById(id);
+    el.disabled = true;
 
-    var accountType = $('#accountType').find(":selected").val();
-    var accountStatus = $('#accountStatus').find(":selected").val();
+    const accountType = document.getElementById("accountType");
+    const accountStatus = document.getElementById("accountStatus");
 
-    if (accountType == '') {
+    if (accountType.value == "") {
         toastr.error("Select the account type!");
-        $(this).prop('disabled', false);
-        return;
+        el.disabled = false;
+        return false;
     }
 
-    if (accountStatus == '') {
+    if (accountStatus.value == "") {
         toastr.error("Select the account status!");
-        $(this).prop('disabled', false);
-        return;
+        el.disabled = false;
+        return false;
     }
 
-    toastr.success("Account information updated successfully!");
-
-    $(this).prop('disabled', false);
-});
+    el.disabled = false;
+    __doPostBack(id, '');
+}
 
 // Submit contact details event
-$('#editContactDetailsSubmitBtn').click(function (e) {
-    e.preventDefault();
-
-    toastr.success("Contact details updated successfully!");
-});
+function editContactDetailsSubmit(id) {
+    __doPostBack(id, '');
+}
 
 // Submit change password event
-$('#changePasswordSubmitBtn').click(function (e) {
-    e.preventDefault();
-    $(this).prop('disabled', true);
+function changePasswordSubmit(id) {
+    var el = document.getElementById(id);
+    el.disabled = true;
 
-    let oldPassword = $('#oldPassword').val();
-    let newPassword = $('#newPassword').val();
-    let confirmNewPassword = $('#confirmNewPassword').val();
+    const oldPassword = document.getElementById("oldPassword");
+    const newPassword = document.getElementById("newPassword");
+    const confirmNewPassword = document.getElementById("confirmNewPassword");
 
-    if (oldPassword.trim() == '') {
+    if (oldPassword.value.trim() == "") {
         toastr.error("Enter the account old password!");
-        $(this).prop('disabled', false);
-        return;
+        el.disabled = false;
+        return false;
     }
-    if (newPassword.trim() == '') {
+
+    if (newPassword.value.trim() == "") {
         toastr.error("Enter the account new password!");
-        $(this).prop('disabled', false);
-        return;
+        el.disabled = false;
+        return false;
     }
-    if (confirmNewPassword.trim() == '') {
+
+    if (confirmNewPassword.value.trim() == "") {
         toastr.error("Confirm the account new password!");
-        $(this).prop('disabled', false);
-        return;
+        el.disabled = false;
+        return false;
     }
-    if (newPassword.trim() != confirmNewPassword.trim()) {
+
+    if (confirmNewPassword.value.trim() != newPassword.value.trim()) {
         toastr.error("Confirm password is not correct!");
-        $(this).prop('disabled', false);
-        return;
+        el.disabled = false;
+        return false;
     }
 
-    toastr.success("Account password updated successfully!");
-
-    $(this).prop('disabled', false);
-
-    $('#oldPassword').val('');
-    $('#newPassword').val('');
-    $('#confirmNewPassword').val('');
-});
+    el.disabled = false;
+    __doPostBack(id, '');
+}

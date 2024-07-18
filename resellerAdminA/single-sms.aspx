@@ -97,7 +97,7 @@
                                                 </div>
                                                 <div class="d-flex justify-content-start align-items-start">
                                                     <asp:Button ID="BtnSubmit" runat="server" Text="Send SMS"
-                                                        CssClass="btn btn-primary btn-grad py-2 px-8 rounded-1"
+                                                        CssClass="btn btn-primary btn-grad py-2 px-8 rounded-1 ms-0"
                                                         OnClientClick="sendSubmit('BtnSubmit'); return false;" OnClick="BtnSubmit_Click" />
                                                     <button type="button" class="btn btn-outline-dark btn-bordered my-3 py-2 px-8 rounded-2 ms-3" id="btnSaveTemplate" name="btnSaveTemplate">
                                                         <span class="indicator-label">Save as template</span>
