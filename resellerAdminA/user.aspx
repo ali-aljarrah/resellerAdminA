@@ -615,7 +615,7 @@
         </div>
         <!--start modal message popup-->
         <div class="modal fade" tabindex="-1" id="sendMessageModal">
-            <div class="modal-dialog modal-lg p-8">
+            <div class="modal-dialog p-8">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h3 class="modal-title">Add message</h3>
@@ -632,13 +632,13 @@
                                 <div class="col-lg-12">
                                     <div class="mb-5">
                                         <label for="messageSubject" class="form-label required">Subject</label>
-                                        <input required class="form-control-solid form-control" value="" type="text" name="messageSubject" id="messageSubject" placeholder="Enter message subject here">
+                                        <input required class="form-custom-input form-control" value="" type="text" name="messageSubject" id="messageSubject" placeholder="Enter message subject here">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="mb-5">
                                         <label for="messageBody" class="form-label required">Message</label>
-                                        <textarea rows="5" required class="form-control-solid form-control" name="messageBody" id="messageBody" placeholder="Enter your message"></textarea>
+                                        <textarea rows="5" required class="form-custom-input form-control" name="messageBody" id="messageBody" placeholder="Enter your message"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -662,7 +662,7 @@
 
         <!--start modal message popup-->
         <div class="modal fade" tabindex="-1" id="AddCreditsModal">
-            <div class="modal-dialog modal-lg p-8">
+            <div class="modal-dialog p-8">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h3 class="modal-title">Add Credits</h3>
@@ -679,7 +679,7 @@
                               <div class="col-lg-12">
                                   <div class="mb-5">
                                       <label for="creditsAmount" class="form-label required">Credits amount</label>
-                                      <input required class="form-control-solid form-control" value="" type="number" name="creditsAmount" id="creditsAmount" placeholder="500">
+                                      <input required class=" form-custom-input form-control" value="" type="number" name="creditsAmount" id="creditsAmount" placeholder="500">
                                   </div>
                               </div>
                           </div>
